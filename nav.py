@@ -10,6 +10,16 @@ def selection_nonce():
     return st.session_state.setdefault("sel_nonce", 0)
 
 
+def picked_row(event):
+    """Row position chosen in a dataframe with row and/or cell selection, or None."""
+    sel = getattr(event, "selection", None) or {}
+    rows = sel.get("rows") or []
+    if rows:
+        return rows[0]
+    cells = sel.get("cells") or []
+    return cells[0][0] if cells else None
+
+
 def open_company(ticker):
     current = st.query_params.get("ticker")
     if current and current.upper() != ticker.upper():

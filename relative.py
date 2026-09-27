@@ -70,7 +70,7 @@ def render(ticker, info, row, stocks, last_close):
     company = row.to_dict()
     st.caption(f"Comparing with **{len(peers)}** {'Shariah-compliant ' if compliant_only else ''}peers in "
                f"**{row.get(col)}** ({by.lower()}). Peer, industry and sector figures are medians; negative "
-               "valuation multiples are excluded. Select any peer in the table or chart to open it.")
+               "valuation multiples are excluded. Click any peer in the table or charts to open it.")
 
     # ---- valuation snapshot ----
     snap = comparison_table(company, peers, industry, sector, ["pe", "forward_pe", "ev_ebitda", "ps", "pb"])
@@ -169,10 +169,11 @@ def render(ticker, info, row, stocks, last_close):
     ev = st.dataframe(
         view.style.apply(highlight, axis=1).format(formats)
         .map(lambda s: f"color:{STATUS_COLORS.get(s, 'inherit')}", subset=["status"]),
-        hide_index=True, column_config=labels, on_select="rerun", selection_mode="single-row",
+        hide_index=True, column_config=labels, on_select="rerun", selection_mode=["single-row", "single-cell"],
         height=min(36 * (len(view) + 1) + 4, 600), key=f"rv_tbl_{nav.selection_nonce()}_{ticker}_{group}_{by}_{n_label}_{compliant_only}")
-    if ev.selection.rows:
-        target = view.iloc[ev.selection.rows[0]]["ticker"]
+    picked = nav.picked_row(ev)
+    if picked is not None:
+        target = view.iloc[picked]["ticker"]
         if target != ticker:
             nav.open_company(target)
             st.rerun()

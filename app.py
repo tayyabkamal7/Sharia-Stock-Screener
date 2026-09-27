@@ -140,8 +140,7 @@ FORMATS = {
 def column_config():
     nc = st.column_config.NumberColumn
     cfg = {
-        "ticker": st.column_config.LinkColumn("Ticker", pinned=True, width="small", display_text=r"\?ticker=(.*)$",
-                                              help="Click to open the company page"),
+        "ticker": st.column_config.TextColumn("Ticker", pinned=True, width="small"),
         "name": st.column_config.TextColumn("Name", pinned=True, width="medium"),
         "status": st.column_config.TextColumn("Shariah status", width=115),
         "reason": st.column_config.TextColumn("Reason", width="large"),
@@ -329,7 +328,6 @@ view = view.sort_values(keys, ascending=asc, na_position="last",
 # ------------------------------------------------------------------------------------------------
 cols = ["ticker", "name", "status"] + (STOCK_COLUMNS if is_stock else ETF_COLUMNS)
 table = view[cols].copy()
-table["ticker"] = "?ticker=" + table["ticker"]  # clickable link to the company page
 for c in cols:
     if c in PCT_COLS:
         table[c] = table[c] * 100
@@ -343,9 +341,8 @@ if "ex_div_date" in table:
     table["ex_div_date"] = pd.to_datetime(table["ex_div_date"], errors="coerce").dt.strftime("%Y-%m-%d") \
         .fillna("—")
 
-st.caption(f"Showing **{len(view):,}** of {total:,} {asset.lower()} · Click a ticker (opens a new tab) or tick "
-           "the box at the left of a row to open the full profile, financials, ratios and peer comparison. "
-           "Click a column header to re-sort.")
+st.caption(f"Showing **{len(view):,}** of {total:,} {asset.lower()} · **Click any company** to open its full "
+           "profile, financials, ratios and peer comparison. Click a column header to re-sort.")
 
 
 def color_status(v):
@@ -359,11 +356,12 @@ event = st.dataframe(
     height=min(640, 35 * (len(table) + 1) + 3),
     column_config=column_config(),
     on_select="rerun",
-    selection_mode="single-row",
+    selection_mode=["single-row", "single-cell"],  # clicking any cell opens that company
     key=f"grid_{asset}_{nav.selection_nonce()}",
 )
-if event.selection.rows:
-    nav.open_company(view.iloc[event.selection.rows[0]]["ticker"])
+picked = nav.picked_row(event)
+if picked is not None:
+    nav.open_company(view.iloc[picked]["ticker"])
     st.rerun()
 
 st.download_button("Download results (CSV)", view[cols].to_csv(index=False),
