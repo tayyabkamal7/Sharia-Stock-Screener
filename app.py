@@ -98,14 +98,19 @@ ticker = st.query_params.get("ticker")
 page = st.query_params.get("view")
 
 # Top bar on every page: back navigation on the left, site navigation on the right
-t1, t2, _, t3, t4 = st.container(key="topbar").columns([1.4, 1.2, 4.4, 1, 1.2], vertical_alignment="center")
+# content-sized rows (not fixed columns), so labels never wrap however narrow the page gets
+bar = st.container(key="topbar", horizontal=True, vertical_alignment="center")
+left = bar.container(key="topbar_left", horizontal=True, vertical_alignment="center")
+right = bar.container(key="topbar_right", horizontal=True, horizontal_alignment="right",
+                      vertical_alignment="center")
 if ticker:
     prev = nav.back_target()
-    t1.button(f"← Back to {prev}" if prev else "← Back to screener", on_click=nav.go_back, type="tertiary")
-t3.button("Screener", on_click=nav.go_home, type="tertiary", icon=":material/table_view:",
-          disabled=not (ticker or page))
-t4.button("Methodology", on_click=nav.go_methodology, type="tertiary", icon=":material/menu_book:",
-          disabled=page == "methodology" and not ticker)
+    back_label = "← Back" if MOBILE else (f"← Back to {prev}" if prev else "← Back to screener")
+    left.button(back_label, on_click=nav.go_back, type="tertiary")
+right.button("Screener", on_click=nav.go_home, type="tertiary", icon=":material/table_view:",
+             disabled=not (ticker or page))
+right.button("Methodology", on_click=nav.go_methodology, type="tertiary", icon=":material/menu_book:",
+             disabled=page == "methodology" and not ticker)
 
 if page == "methodology" and not ticker:
     methodology.render(meta, stocks, etfs, market_state, quotes_as_of)

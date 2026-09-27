@@ -44,6 +44,14 @@ h1, h2, h3 {letter-spacing: -0.01em;}
 [data-testid="stTabs"] button p {font-size: 0.95rem;}
 footer {visibility: hidden;}
 .hs-mobile-only {display: none;}
+.st-key-topbar button p {white-space: nowrap;}
+/* Top bar: Back hugs its text on the left; the nav group takes the rest and right-aligns, all on one line */
+.st-key-topbar {flex-wrap: nowrap !important;}
+.st-key-topbar > [data-testid="stLayoutWrapper"] {min-width: 0 !important;}
+.st-key-topbar > [data-testid="stLayoutWrapper"]:has(> .st-key-topbar_left) {flex: 0 0 auto !important; width: auto !important;}
+.st-key-topbar_left {width: auto !important;}
+.st-key-topbar > [data-testid="stLayoutWrapper"]:has(> .st-key-topbar_right) {flex: 1 1 0 !important; width: auto !important;}
+.st-key-topbar_right {flex-wrap: nowrap !important; justify-content: flex-end !important; width: 100% !important;}
 
 /* ---------- phones ---------- */
 @media (max-width: 640px) {
