@@ -30,6 +30,7 @@ h1, h2, h3 {letter-spacing: -0.01em;}
 .hs-badge.bad {background: rgba(220,38,38,0.13); color: #DC2626;}
 .hs-reason {font-size: 0.92rem; opacity: 0.85; margin-top: 0.35rem;}
 .hs-muted {opacity: 0.62; font-size: 0.85rem;}
+.hs-stamp {font-size: 0.84rem; opacity: 0.85; margin: 0.35rem 0 0.2rem 0;}
 .hs-kv {display: flex; justify-content: space-between; gap: 1rem; padding: 0.45rem 0;
         border-bottom: 1px solid rgba(128,128,128,0.18); font-size: 0.92rem;}
 .hs-kv span:first-child {opacity: 0.7;}
@@ -78,6 +79,50 @@ def section(label):
 def kv_rows(pairs):
     html = "".join(f'<div class="hs-kv"><span>{k}</span><span>{v}</span></div>' for k, v in pairs)
     st.markdown(html.replace("$", "&#36;"), unsafe_allow_html=True)  # stop "$...$" rendering as math
+
+
+ET = "America/New_York"
+MARKET_TEXT = {"REGULAR": "Market open", "PRE": "Pre-market", "POST": "After hours",
+               "POSTPOST": "Market closed", "PREPRE": "Market closed", "CLOSED": "Market closed"}
+
+
+def _et(ts):
+    """Epoch seconds or a Timestamp -> Timestamp in US Eastern time."""
+    if ts is None or (isinstance(ts, float) and math.isnan(ts)):
+        return None
+    t = pd.Timestamp(ts, unit="s", tz="UTC") if isinstance(ts, (int, float)) else pd.Timestamp(ts)
+    if t.tzinfo is None:
+        t = t.tz_localize("UTC")
+    return t.tz_convert(ET)
+
+
+def price_stamp(state, price_time, checked_at=None, fallback_date=None):
+    """One line telling the reader how current the price is.
+
+    state: Yahoo marketState; price_time: time of the price shown (epoch or Timestamp);
+    checked_at: when the app fetched it; fallback_date: 'YYYY-MM-DD' of the last close when live data is missing.
+    """
+    t = _et(price_time)
+    is_open = state == "REGULAR"
+    dot = "#16A34A" if is_open else "#94A3B8"
+    if t is not None and is_open:
+        text = f"<b>Market open</b> · live price as of {t:%I:%M %p ET} on {t:%a, %b %d, %Y} · refreshes every minute"
+    elif t is not None:
+        label = MARKET_TEXT.get(state, "Market closed")
+        text = (f"<b>{label}</b> · prices are from the last close on {t:%a, %b %d, %Y} "
+                f"(last update {t:%I:%M %p ET})")
+        if state in ("PRE", "POST"):
+            text += " · extended-hours trading isn't included"
+    elif fallback_date:
+        text = f"<b>Live prices unavailable</b> · showing closing prices from {pd.Timestamp(fallback_date):%a, %b %d, %Y}"
+        dot = "#D97706"
+    else:
+        return ""
+    if checked_at is not None:
+        c = _et(checked_at)
+        text += f" · checked {c:%I:%M:%S %p ET}"
+    return (f'<div class="hs-stamp"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;'
+            f'background:{dot};margin-right:7px;vertical-align:middle"></span>{text}</div>')
 
 
 def rating_label(key):

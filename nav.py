@@ -41,6 +41,13 @@ def go_back():
         go_home()
 
 
+def go_methodology():
+    st.query_params.clear()
+    st.query_params["view"] = "methodology"
+    st.session_state["nav_history"] = []
+    st.session_state["sel_nonce"] = selection_nonce() + 1
+
+
 def go_home():
     st.query_params.clear()
     st.session_state["nav_history"] = []

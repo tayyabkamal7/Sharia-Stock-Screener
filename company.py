@@ -1,6 +1,7 @@
 """Company / ETF drill-down page. All data here is fetched live from Yahoo Finance and cached."""
 
 import json
+import time
 from datetime import date, datetime
 
 import numpy as np
@@ -29,7 +30,10 @@ UP, DOWN, NEUTRAL = "#16A34A", "#DC2626", "#3B82F6"
 # ------------------------------------------------------------------------------------------------
 @st.cache_data(ttl=QUOTE_TTL, show_spinner=False)
 def get_info(t):
-    return yf.Ticker(t).info or {}
+    info = dict(yf.Ticker(t).info or {})
+    if info:
+        info["_checked_at"] = time.time()  # when this quote was fetched (shown in the price stamp)
+    return info
 
 
 @st.cache_data(ttl=CHART_TTL, show_spinner=False)
@@ -153,6 +157,10 @@ def render(ticker, row, stock_status, stocks=None):
         f'<div class="hs-reason">{reason}</div>',
         unsafe_allow_html=True,
     )
+    # price time: Yahoo's last trade time, or the last daily bar when the quote has none
+    price_time = info.get("regularMarketTime") or (closes.index[-1] if len(closes) else None)
+    st.markdown(ui.price_stamp(info.get("marketState", "CLOSED"), price_time, info.get("_checked_at")),
+                unsafe_allow_html=True)
     st.write("")
 
     day_chg = (last_close / prev_close - 1) if last_close and prev_close else None
@@ -200,6 +208,8 @@ def _offline(ticker, row):
         f'<div class="hs-title">{g("name")} <span style="opacity:.55;font-weight:500">{ticker}</span> '
         f'&nbsp;{ui.badge(g("status"))}</div><p class="hs-sub">{sub}</p>'
         f'<div class="hs-reason">{g("reason")}</div>', unsafe_allow_html=True)
+    st.markdown(ui.price_stamp(None, None, fallback_date=g("last_close_date")
+                               if isinstance(g("last_close_date"), str) else None), unsafe_allow_html=True)
     st.write("")
     st.warning("Live financials, charts and analyst details are temporarily unavailable (Yahoo Finance is "
                "limiting requests). Showing the latest screened data; try again in a few minutes.")

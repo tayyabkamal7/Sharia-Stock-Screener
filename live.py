@@ -128,6 +128,14 @@ def apply_quotes(df, quotes, is_stock):
     return df
 
 
+def market_state(quotes):
+    """Most common Yahoo market state across the universe: REGULAR, PRE, POST, POSTPOST, PREPRE or CLOSED."""
+    if quotes is None or quotes.empty or "marketState" not in quotes:
+        return None
+    states = quotes["marketState"].dropna()
+    return states.mode().iloc[0] if len(states) else None
+
+
 def format_as_of(ts):
     if ts is None:
         return None

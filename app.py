@@ -8,6 +8,7 @@ import streamlit as st
 
 import company
 import live
+import methodology
 import nav
 import peers
 import ui
@@ -91,14 +92,26 @@ if st.session_state.get("f_autorefresh"):
 # ------------------------------------------------------------------------------------------------
 # Company page (routed with ?ticker=XYZ so pages can be bookmarked and shared)
 # ------------------------------------------------------------------------------------------------
+market_state = live.market_state(quotes)
 ticker = st.query_params.get("ticker")
+page = st.query_params.get("view")
+
+# Top bar on every page: back navigation on the left, site navigation on the right
+t1, t2, _, t3, t4 = st.columns([1.4, 1.2, 4.4, 1, 1.2], vertical_alignment="center")
+if ticker:
+    prev = nav.back_target()
+    t1.button(f"← Back to {prev}" if prev else "← Back to screener", on_click=nav.go_back, type="tertiary")
+t3.button("Screener", on_click=nav.go_home, type="tertiary", icon=":material/table_view:",
+          disabled=not (ticker or page))
+t4.button("Methodology", on_click=nav.go_methodology, type="tertiary", icon=":material/menu_book:",
+          disabled=page == "methodology" and not ticker)
+
+if page == "methodology" and not ticker:
+    methodology.render(meta, stocks, etfs, market_state, quotes_as_of)
+    st.stop()
+
 if ticker:
     ticker = ticker.upper()
-    prev = nav.back_target()
-    b1, b2, _ = st.columns([1.3, 1.3, 6])
-    b1.button(f"← Back to {prev}" if prev else "← Back to screener", on_click=nav.go_back, type="tertiary")
-    if prev:
-        b2.button("Screener", on_click=nav.go_home, type="tertiary", icon=":material/home:")
     row = None
     for d in (stocks, etfs):
         if len(d) and ticker in set(d["ticker"]):
@@ -204,16 +217,14 @@ def reset_filters():
 # Header
 # ------------------------------------------------------------------------------------------------
 h1, h2 = st.columns([5, 1], vertical_alignment="bottom")
-live_note = (f"Live quotes as of {live.format_as_of(quotes_as_of)}"
-             + (" · auto-refreshing every minute" if st.session_state.get("f_autorefresh")
-                else " · at most a minute old when loaded")
-             if quotes_as_of is not None
-             else f"Live quotes temporarily unavailable (Yahoo Finance is busy); showing {meta.get('prices_as_of', '—')} "
-                  "closing prices")
 h1.markdown(
     '<div class="hs-title">Halal Stock Screener</div>'
-    f'<p class="hs-sub">Shariah screening of US-listed stocks and ETFs using the AAOIFI methodology · '
-    f'{live_note} · Fundamentals updated {meta.get("updated", "—")}</p>',
+    '<p class="hs-sub">Shariah screening of US-listed stocks and ETFs using the AAOIFI methodology · '
+    f'Fundamentals updated {meta.get("updated", "—")}</p>'
+    + ui.price_stamp(market_state, quotes_as_of,
+                     fallback_date=meta.get("prices_as_of") if quotes_as_of is None else None)
+    + ('<div class="hs-muted">Auto-refreshing every minute</div>' if st.session_state.get("f_autorefresh")
+       else ""),
     unsafe_allow_html=True,
 )
 
@@ -388,27 +399,9 @@ if picked is not None:
 st.download_button("Download results (CSV)", view[cols].to_csv(index=False),
                    f"halal_{asset.lower()}.csv", "text/csv")
 
-with st.expander("Methodology"):
-    st.markdown("""
-**Stocks** are screened with AAOIFI Shari'ah Standard No. 21:
-
-1. **Business activity.** The core business must be permissible. Conventional banks, lenders and insurers,
-   alcohol, tobacco, gambling and similar industries are excluded. Asset managers, exchanges, defense,
-   entertainment and hotels are marked Questionable because scholars differ.
-2. **Interest-bearing debt** must be under **30%** of the 12-month average market cap.
-3. **Cash and interest-bearing securities** must be under **30%** of the 12-month average market cap.
-   All cash and short-term investments are counted, which is conservative.
-
-The company page also checks **interest income against revenue (5% limit)** and estimates **dividend purification**.
-
-**ETFs** are Compliant only when they're Shariah-screened by mandate. Bond, leveraged, inverse and derivatives
-funds are Non-Compliant. Other equity funds are Non-Compliant when more than 5% is in financials or in
-non-compliant top holdings, and Questionable otherwise.
-
-Data comes from Yahoo Finance. Prices, last close, upside, dividend yield and consensus ratings are pulled live
-each time the app is opened. Balance sheets, Shariah ratios and analyst price targets refresh every weekday
-after the US market close. Company pages load their financials live.
-
-*For information and education only. Not a fatwa and not investment advice. Verify with a qualified scholar
-or a certified Shariah screening service before investing.*
-""")
+st.divider()
+m1, m2 = st.columns([4, 1], vertical_alignment="center")
+m1.caption("Screened with the AAOIFI standard: a permissible core business, and interest-bearing debt and cash "
+           "each under 30% of the 12-month average market cap. For information and education only; not a fatwa "
+           "and not investment advice.")
+m2.button("Full methodology", on_click=nav.go_methodology, icon=":material/menu_book:", width="stretch")
