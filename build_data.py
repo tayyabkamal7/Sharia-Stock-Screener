@@ -318,24 +318,32 @@ def main():
     p.add_argument("--limit", type=int, default=0, help="only process N tickers (testing)")
     p.add_argument("--max-age-hours", type=float, default=20,
                    help="re-fetch fundamentals older than this (0 = re-fetch everything)")
+    p.add_argument("--offline", action="store_true",
+                   help="no downloads: re-screen the cached data (use after editing screening rules)")
     args = p.parse_args()
 
     DATA.mkdir(exist_ok=True)
-    universe = load_universe()
+    if args.offline:
+        universe = pd.read_csv(DATA / "universe.csv")
+        fundamentals = pd.read_csv(DATA / "fundamentals.csv")
+        prices = pd.read_csv(DATA / "prices.csv")
+    else:
+        universe = load_universe()
+        if args.limit:
+            universe = universe.sample(args.limit, random_state=1)
+        fundamentals = update_fundamentals(universe, args.minutes, args.workers, args.limit, args.max_age_hours)
+        have = universe[universe["ticker"].isin(fundamentals.loc[fundamentals["fetch_ok"].astype(bool), "ticker"])]
+        prices = fetch_prices(have["ticker"].tolist())
+        universe.to_csv(DATA / "universe.csv", index=False)
+        prices.to_csv(DATA / "prices.csv", index=False)
     print(f"Universe: {(universe['type'] == 'Stock').sum()} stocks, {(universe['type'] == 'ETF').sum()} ETFs")
-    if args.limit:
-        universe = universe.sample(args.limit, random_state=1)
-
-    fundamentals = update_fundamentals(universe, args.minutes, args.workers, args.limit, args.max_age_hours)
-    have = universe[universe["ticker"].isin(fundamentals.loc[fundamentals["fetch_ok"].astype(bool), "ticker"])]
-    prices = fetch_prices(have["ticker"].tolist())
     stocks, etfs = assemble(universe, fundamentals, prices)
 
     stocks.sort_values("market_cap", ascending=False).to_csv(DATA / "stocks.csv", index=False)
     etfs.sort_values("aum", ascending=False).to_csv(DATA / "etfs.csv", index=False)
     meta = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "prices_as_of": prices["last_close_date"].max() if len(prices) else None,
+        "prices_as_of": prices["last_close_date"].dropna().astype(str).max() if len(prices) else None,
         "stocks": int(len(stocks)), "etfs": int(len(etfs)),
         "universe_stocks": int((universe["type"] == "Stock").sum()),
         "universe_etfs": int((universe["type"] == "ETF").sum()),

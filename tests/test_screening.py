@@ -69,6 +69,12 @@ def test_ticker_override():
     assert screen_stock("HRL", "Packaged Foods", 0, 0, 10 * B)["status"] == NON_COMPLIANT
 
 
+def test_payment_networks_are_questionable_not_lenders():
+    r = screen_stock("V", "Credit Services", 1 * B, 1 * B, 500 * B)
+    assert r["status"] == QUESTIONABLE and "Payment network" in r["reason"]
+    assert screen_stock("COF", "Credit Services", 1 * B, 1 * B, 500 * B)["status"] == NON_COMPLIANT
+
+
 # ---------------- ETFs ----------------
 def etf(name="Some Equity ETF", family="Vanguard", category="Large Blend", holdings=None, fin=0.0, statuses=None):
     return screen_etf(name, family, category, json.dumps(holdings) if holdings is not None else None, fin,

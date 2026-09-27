@@ -33,8 +33,9 @@ def _mtime(name):
 
 
 @st.cache_data(show_spinner=False)
-def load(_version):
-    """Screened dataset. `_version` (file modification times) reloads it as soon as new data lands."""
+def load(version):
+    """Screened dataset. `version` (file modification times) is part of the cache key, so the data reloads
+    as soon as new files land. (Don't prefix it with "_": Streamlit leaves such arguments out of the key.)"""
     stocks = pd.read_csv(DATA / "stocks.csv") if (DATA / "stocks.csv").exists() else pd.DataFrame()
     etfs = pd.read_csv(DATA / "etfs.csv") if (DATA / "etfs.csv").exists() else pd.DataFrame()
     meta = json.loads((DATA / "meta.json").read_text()) if (DATA / "meta.json").exists() else {}
@@ -190,7 +191,8 @@ def reset_filters():
 # ------------------------------------------------------------------------------------------------
 h1, h2 = st.columns([5, 1], vertical_alignment="bottom")
 live_note = (f"Live quotes as of {live.format_as_of(quotes_as_of)}" if quotes_as_of is not None
-             else f"Live quotes unavailable; prices as of {meta.get('prices_as_of', '—')} close")
+             else f"Live quotes temporarily unavailable (Yahoo Finance is busy); showing {meta.get('prices_as_of', '—')} "
+                  "closing prices")
 h1.markdown(
     '<div class="hs-title">Halal Stock Screener</div>'
     f'<p class="hs-sub">Shariah screening of US-listed stocks and ETFs using the AAOIFI methodology · '
@@ -200,7 +202,7 @@ h1.markdown(
 
 
 def refresh():
-    live.fetch_quotes.clear()
+    live.clear_cache()
 
 
 h2.button("Refresh data", on_click=refresh, icon=":material/refresh:", width="stretch")

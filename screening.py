@@ -69,6 +69,10 @@ DOUBTFUL_INDUSTRIES = {
 TICKER_OVERRIDES = {
     "HRL": (NON_COMPLIANT, "Major pork products business"),
     "TSN": (QUESTIONABLE, "Significant pork processing segment"),
+    # Yahoo files payment networks under "Credit Services"; they mostly earn processing fees, not interest
+    "V": (QUESTIONABLE, "Payment network: mostly fee income, some interest exposure (scholars differ)"),
+    "MA": (QUESTIONABLE, "Payment network: mostly fee income, some interest exposure (scholars differ)"),
+    "PYPL": (QUESTIONABLE, "Payments company with a consumer credit business (scholars differ)"),
 }
 
 

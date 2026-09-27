@@ -4,6 +4,7 @@ Yahoo's batch quote endpoint returns ~250 symbols per request, so all ~11,000 US
 refresh in roughly 15 seconds. Results are cached for a few minutes and shared by every visitor.
 """
 
+import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -20,30 +21,62 @@ LIVE_TTL = 300  # seconds
 RATING_KEYS = [(1.5, "strong_buy"), (2.5, "buy"), (3.5, "hold"), (4.5, "underperform"), (9, "sell")]
 
 
+BACKOFF = 180  # seconds to wait after Yahoo refuses, before trying again
+QUOTE_FIELDS = ["symbol", "regularMarketPrice", "regularMarketPreviousClose", "regularMarketChangePercent",
+                "regularMarketTime", "marketState", "marketCap", "trailingPE", "forwardPE", "priceToBook",
+                "dividendRate", "trailingAnnualDividendRate", "averageAnalystRating",
+                "fiftyTwoWeekHigh", "fiftyTwoWeekLow"]
+
+
+class QuotesUnavailable(Exception):
+    pass
+
+
+@st.cache_resource
+def _status():
+    """Process-wide state shared by all visitors: when the last fetch failed."""
+    return {"failed_at": 0.0}
+
+
 def _fetch_batch(symbols):
     data = YfData()
-    for _ in range(3):
+    for attempt in range(2):
         try:
             r = data.get_raw_json(QUOTE_URL, params={"symbols": ",".join(symbols)})
             return r.get("quoteResponse", {}).get("result", [])
-        except Exception:
-            continue
+        except Exception as exc:
+            if "RateLimit" in type(exc).__name__ or "Too Many Requests" in str(exc):
+                return None  # don't retry into a rate limit
+            time.sleep(1 + attempt)
     return []
 
 
-@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
 def fetch_quotes(tickers):
+    """Live quotes for all tickers. Raises QuotesUnavailable (never cached) when Yahoo refuses."""
+    status = _status()
+    if time.time() - status["failed_at"] < BACKOFF:
+        raise QuotesUnavailable("backing off after a recent failure")
+    try:
+        return _fetch_quotes(tickers)
+    except QuotesUnavailable:
+        status["failed_at"] = time.time()
+        raise
+
+
+def clear_cache():
+    _fetch_quotes.clear()
+    _status()["failed_at"] = 0.0
+
+
+@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
+def _fetch_quotes(tickers):
     batches = [tickers[i:i + BATCH] for i in range(0, len(tickers), BATCH)]
-    with ThreadPoolExecutor(max_workers=4) as pool:
-        results = [q for batch in pool.map(_fetch_batch, batches) for q in batch]
-    if not results:
-        return pd.DataFrame(), None
-    q = pd.DataFrame(results)
-    keep = ["symbol", "regularMarketPrice", "regularMarketPreviousClose", "regularMarketChangePercent",
-            "regularMarketTime", "marketState", "marketCap", "trailingPE", "forwardPE", "priceToBook",
-            "dividendRate", "trailingAnnualDividendRate", "averageAnalystRating",
-            "fiftyTwoWeekHigh", "fiftyTwoWeekLow"]
-    q = q.reindex(columns=keep).rename(columns={"symbol": "ticker"})
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        chunks = list(pool.map(_fetch_batch, batches))
+    results = [q for chunk in chunks if chunk for q in chunk]
+    if not results or sum(c is None for c in chunks) > len(chunks) / 2:
+        raise QuotesUnavailable("Yahoo Finance returned no quotes")  # exceptions are not cached
+    q = pd.DataFrame(results).reindex(columns=QUOTE_FIELDS).rename(columns={"symbol": "ticker"})
     as_of = pd.to_datetime(q["regularMarketTime"].max(), unit="s", utc=True) if q["regularMarketTime"].notna().any() \
         else None
     return q, as_of
@@ -64,7 +97,7 @@ def apply_quotes(df, quotes, is_stock):
     """Overlay live quote fields onto a screener table and recompute price-dependent columns."""
     if quotes is None or quotes.empty or df.empty:
         return df
-    q = quotes.set_index("ticker")
+    q = quotes.reindex(columns=["ticker"] + QUOTE_FIELDS[1:]).set_index("ticker")
     df = df.copy()
     idx = df["ticker"]
 
