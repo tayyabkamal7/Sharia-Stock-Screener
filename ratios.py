@@ -176,7 +176,9 @@ def compute_ratios(inc, bal, cf, prices=None, quarterly=False):
     table = pd.DataFrame({k: v[2] for k, v in R.items()}).T
     table = table.reindex(columns=periods).replace([np.inf, -np.inf], np.nan)
     # Yahoo's oldest period is often almost empty; drop sparse periods and ratios that don't apply
-    table = table.loc[:, table.notna().mean() >= 0.25]
+    counts = table.notna().sum()
+    if counts.max() > 0:
+        table = table.loc[:, counts >= 0.4 * counts.max()]
     table = table[table.notna().any(axis=1)]
     meta = {k: (v[0], v[1]) for k, v in R.items() if k in table.index}
     return table, meta

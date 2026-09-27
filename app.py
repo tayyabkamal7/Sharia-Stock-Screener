@@ -224,7 +224,7 @@ def refresh():
     live.fetch_quotes.clear()
 
 
-h2.button("Refresh data", on_click=refresh, icon=":material/refresh:", use_container_width=True)
+h2.button("Refresh data", on_click=refresh, icon=":material/refresh:", width="stretch")
 st.write("")
 
 asset = st.segmented_control("Asset type", ["Stocks", "ETFs"], default="Stocks", key="f_asset",
@@ -267,7 +267,7 @@ with st.sidebar:
     exchanges = st.multiselect("Exchange", sorted(df["exchange"].dropna().unique()), key=p + "exchange",
                                placeholder="All exchanges")
     payers = st.toggle("Dividend payers only", key=p + "payers")
-    st.button("Reset filters", on_click=reset_filters, use_container_width=False)
+    st.button("Reset filters", on_click=reset_filters)
     st.divider()
     st.caption("Switch between light and dark themes from the ⋮ menu (top right) → Settings.")
 
@@ -338,8 +338,8 @@ col_view = st.segmented_control("Column set", list(views), default="Overview", k
 
 keys = [sorts[sort_by]] + ([sorts[then_by]] if then_by != "None" else [])
 asc = [order == "Ascending"] + ([order == "Ascending"] if then_by != "None" else [])
-view = view.sort_values(keys, ascending=asc, na_position="last", key=lambda s: s.str.lower()
-                        if s.dtype == object and s.name in ("name", "ticker") else s)
+view = view.sort_values(keys, ascending=asc, na_position="last",
+                        key=lambda s: s.astype("string").str.lower() if s.name in ("name", "ticker") else s)
 
 # ------------------------------------------------------------------------------------------------
 # Results table
