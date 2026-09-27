@@ -148,28 +148,15 @@ PCT_COLS = {"upside", "day_change", "dividend_yield", "roe", "roa", "gross_margi
             "noncompliant_weight"}
 
 
-def _f(spec):
-    return lambda v: "—" if pd.isna(v) else spec.format(v)
-
-
-# Display formats (applied through the Styler, which also colors the status column)
-FORMATS = {
-    "market_cap": _f("{:,.2f}"), "aum": _f("{:,.2f}"), "num_analysts": _f("{:,.0f}"),
-    "rating_score": _f("{:.2f}"), "last_div": _f("${:,.4f}"), "upside": _f("{:+.1f}%"),
-    "expense_ratio": _f("{:.2f}%"), "day_change": _f("{:+.2f}%"),
-    **{c: _f("${:,.2f}") for c in ("price", "last_close", "target_mean", "target_median", "target_low", "target_high",
-                                   "div_per_share", "low_52w", "high_52w")},
-    **{c: _f("{:,.2f}") for c in ("peg", "ps", "pb", "current_ratio", "debt_to_equity", "beta")},
-    **{c: _f("{:,.1f}") for c in ("pe", "forward_pe", "ev_ebitda")},
-}
-
-
 def column_config():
     nc = st.column_config.NumberColumn
     cfg = {
         "ticker": st.column_config.TextColumn("Ticker", pinned=True, width="small"),
         "name": st.column_config.TextColumn("Name", pinned=not MOBILE, width="medium"),
-        "status": st.column_config.TextColumn("Status" if MOBILE else "Shariah status", width=115),
+        # colored status chips, rendered natively (much faster than styling every cell)
+        "status": st.column_config.MultiselectColumn(
+            "Status" if MOBILE else "Shariah status", width=130, options=STATUSES,
+            color=[ui.STATUS_COLORS[s] for s in STATUSES]),
         "reason": st.column_config.TextColumn("Reason", width="large"),
         "sector": "Sector", "industry": "Industry", "category": "Category", "fund_family": "Fund family",
         "business_status": "Business activity",
@@ -384,13 +371,9 @@ st.caption(f"Showing **{len(view):,}** of {total:,} {asset.lower()} · **Click a
            "profile, financials, ratios and peer comparison. Click a column header to re-sort.")
 
 
-def color_status(v):
-    return f"color: {ui.STATUS_COLORS.get(v, 'inherit')}; font-weight: 600"
-
-
-fmt = {c: FORMATS.get(c, _f("{:.1f}%") if c in PCT_COLS else None) for c in table.columns}
+table["status"] = table["status"].map(lambda s: [s])  # chip column expects a list per cell
 event = st.dataframe(
-    table.style.map(color_status, subset=["status"]).format({c: f for c, f in fmt.items() if f}),
+    table,
     hide_index=True,
     height=min(640, 35 * (len(table) + 1) + 3),
     column_config=column_config(),
