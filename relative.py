@@ -93,7 +93,7 @@ def render(ticker, info, row, stocks, last_close):
 
     # ---- valuation snapshot ----
     snap = comparison_table(company, peers, industry, sector, ["pe", "forward_pe", "ev_ebitda", "ps", "pb"])
-    cols = st.columns(len(snap))
+    cols = st.container(key="grid_rv").columns(len(snap))
     for c, (_, r) in zip(cols, snap.iterrows()):
         delta = f"{r['vs peers']:+.0%} vs peer median {fmt(r['Peer median'], 'x')}" if pd.notna(r["vs peers"]) \
             else f"Peer median {fmt(r['Peer median'], 'x')}"
@@ -133,7 +133,7 @@ def render(ticker, info, row, stocks, last_close):
                               annotation_text=f"Last close ${last_close:,.2f}", annotation_position="top")
             fig.update_layout(height=80 + 55 * len(ip), margin=dict(l=0, r=10, t=30, b=0), showlegend=False,
                               xaxis=dict(tickprefix="$", rangemode="tozero"), yaxis=dict(autorange="reversed"))
-            st.plotly_chart(fig, key=f"rv_ff_{ticker}")
+            ui.chart(fig, key=f"rv_ff_{ticker}")
         with right:
             fair = ip["Median"].median()
             up = fair / last_close - 1 if last_close else None
@@ -234,7 +234,7 @@ def render(ticker, info, row, stocks, last_close):
         fig.update_layout(height=480, margin=dict(l=0, r=0, t=10, b=0), legend=dict(orientation="h", y=1.08),
                           xaxis=dict(title=METRICS[x_key][0], **pct_axis(x_key)),
                           yaxis=dict(title=METRICS[y_key][0], **pct_axis(y_key)))
-        ev = st.plotly_chart(fig, on_select="rerun", selection_mode="points",
+        ev = ui.chart(fig, on_select="rerun", selection_mode="points",
                              key=f"rv_map_{nav.selection_nonce()}_{ticker}_{x_key}_{y_key}_{by}_{n_label}_{compliant_only}")
         points = ev.selection.points if ev and ev.selection else []
         if points and points[0].get("customdata"):
@@ -263,7 +263,7 @@ def render(ticker, info, row, stocks, last_close):
         fig.update_layout(height=max(260, 26 * len(r) + 60), margin=dict(l=0, r=40, t=20, b=0),
                           yaxis=dict(autorange="reversed"),
                           xaxis=dict(tickformat=".0%") if METRICS[rk][1] == "pct" else {})
-        ev = st.plotly_chart(fig, on_select="rerun", selection_mode="points",
+        ev = ui.chart(fig, on_select="rerun", selection_mode="points",
                              key=f"rv_rank_{nav.selection_nonce()}_{ticker}_{rk}_{by}_{n_label}_{compliant_only}")
         points = ev.selection.points if ev and ev.selection else []
         if points and points[0].get("customdata"):

@@ -263,7 +263,7 @@ def _stock_metrics(info, row, last_close, last_date, day_chg, divs):
     dps = info.get("dividendRate") or _ttm_dividend(divs)
     ex = _next_ex_div(info, divs)
     n = info.get("numberOfAnalystOpinions")
-    c = st.columns(7)
+    c = st.container(key="grid_hdr").columns(7)
     _price_metric(c[0], info, last_close, last_date, day_chg)
     c[1].metric("Mean target", ui.money(target), help="Mean 12-month analyst price target", border=True)
     c[2].metric("Upside", ui.pct(upside, 1, sign=True), help="Mean target vs last close", border=True)
@@ -280,7 +280,7 @@ def _etf_metrics(info, row, last_close, last_date, day_chg, divs):
     ex = _next_ex_div(info, divs)
     er = info.get("netExpenseRatio")
     ytd = info.get("ytdReturn")
-    c = st.columns(7)
+    c = st.container(key="grid_hdr").columns(7)
     _price_metric(c[0], info, last_close, last_date, day_chg)
     c[1].metric("AUM", ui.big(info.get("totalAssets")), help="Assets under management", border=True)
     c[2].metric("Expense ratio", ui.pct(er / 100, 2) if er is not None else "—", border=True)
@@ -341,7 +341,7 @@ def _overview(ticker, info, hist, is_etf, row=None, stocks=None):
         show_t = False if is_etf else c2.toggle("Analyst targets", value=True, key=f"tg_{ticker}")
         fig = _price_chart(hist, info, rng, show_t) if not hist.empty else None
         if fig:
-            st.plotly_chart(fig, key=f"px_{ticker}")
+            ui.chart(fig, key=f"px_{ticker}")
         else:
             st.info("Price history unavailable.")
     with right:
@@ -533,7 +533,7 @@ def _financials(ticker):
             fig.add_trace(go.Bar(x=cols[::-1], y=(df.loc[l] / 1e6).values[::-1], name=l))
         fig.update_layout(barmode="group", height=360, margin=dict(l=0, r=0, t=10, b=0),
                           yaxis_title="USD millions", legend=dict(orientation="h", y=1.1))
-        st.plotly_chart(fig, key=f"fcc_{ticker}")
+        ui.chart(fig, key=f"fcc_{ticker}")
 
 
 # ------------------------------------------------------------------------------------------------
@@ -584,7 +584,7 @@ def _ratios(ticker, closes):
         fig.update_layout(height=380, margin=dict(l=0, r=0, t=30, b=0), legend=dict(orientation="h", y=1.12),
                           yaxis_title={"pct": "%", "x": "multiple (x)", "usd": "USD", "days": "days",
                                        "big": "USD"}.get(kind, ""))
-        st.plotly_chart(fig, key=f"rch_{ticker}")
+        ui.chart(fig, key=f"rch_{ticker}")
 
 
 # ------------------------------------------------------------------------------------------------
@@ -622,7 +622,7 @@ def _analysts(ticker, info, last_close):
             fig.update_layout(height=230, showlegend=False, margin=dict(l=0, r=40, t=30, b=0),
                               xaxis=dict(tickprefix="$", range=[0, max(vals) * 1.18]),
                               yaxis=dict(autorange="reversed"))
-            st.plotly_chart(fig, key=f"ptr_{ticker}")
+            ui.chart(fig, key=f"ptr_{ticker}")
     with right:
         n = info.get("numberOfAnalystOpinions")
         score = info.get("recommendationMean")
@@ -643,7 +643,7 @@ def _analysts(ticker, info, last_close):
                                      text=rec[col], textposition="inside"))
             fig.update_layout(barmode="stack", height=250, margin=dict(l=0, r=0, t=10, b=0),
                               legend=dict(orientation="h", y=-0.15), yaxis=dict(autorange="reversed"))
-            st.plotly_chart(fig, key=f"rec_{ticker}")
+            ui.chart(fig, key=f"rec_{ticker}")
 
     ud = a.get("upgrades_downgrades")
     if isinstance(ud, pd.DataFrame) and not ud.empty:
@@ -723,7 +723,7 @@ def _ownership(ticker, info):
                                texttemplate="%{percent:.1%}", textposition="inside"))
         fig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10), showlegend=True,
                           legend=dict(orientation="h", y=-0.05))
-        st.plotly_chart(fig, key=f"own_{ticker}")
+        ui.chart(fig, key=f"own_{ticker}")
     with right:
         ui.section("Ownership details")
         ui.kv_rows([
@@ -777,14 +777,14 @@ def _dividends(info, divs, last_close, is_etf):
     pay = cal.get("Dividend Date")
     next_ex = announced if announced is not None and announced > last_ex else None
 
-    c = st.columns(4)
+    c = st.container(key="grid_div1").columns(4)
     c[0].metric("Annual dividend per share", ui.money(fwd or ttm), "forward rate" if fwd else "trailing 12 months",
                 delta_color="off", border=True)
     c[1].metric("Dividend yield", ui.pct((fwd or ttm) / last_close if last_close and (fwd or ttm) else None, 2),
                 border=True)
     c[2].metric("Last dividend per share", ui.money(divs.iloc[-1], 4 if divs.iloc[-1] < 0.1 else 2), border=True)
     c[3].metric("Last ex-dividend date", last_ex.strftime("%b %d, %Y"), border=True)
-    c = st.columns(4)
+    c = st.container(key="grid_div2").columns(4)
     c[0].metric("Next ex-dividend date", next_ex.strftime("%b %d, %Y") if next_ex is not None else "Not announced",
                 border=True)
     c[1].metric("Payment date", pay.strftime("%b %d, %Y") if isinstance(pay, (date, datetime)) else "—", border=True)
@@ -811,7 +811,7 @@ def _dividends(info, divs, last_close, is_etf):
             fig = go.Figure(go.Bar(x=d.index, y=d.values, marker_color=NEUTRAL))
         fig.update_layout(height=340, margin=dict(l=0, r=0, t=10, b=0), yaxis_tickprefix="$",
                           yaxis_title="Dividend per share")
-        st.plotly_chart(fig, key=f"dch_{info.get('symbol')}")
+        ui.chart(fig, key=f"dch_{info.get('symbol')}")
     with right:
         ui.section("Recent payments")
         recent = divs.iloc[::-1].head(16)
@@ -891,7 +891,7 @@ def _shariah_stock(ticker, info, row, status, reason, closes, divs):
         fig.update_layout(height=230, margin=dict(l=0, r=30, t=10, b=0), showlegend=False,
                           xaxis=dict(title="% (red tick = limit)", range=[0, max(35, *(v * 115 for _, v, _ in vals
                                                                                     if v is not None and not pd.isna(v)))]))
-        st.plotly_chart(fig, key=f"sh_{ticker}")
+        ui.chart(fig, key=f"sh_{ticker}")
     with right:
         ui.section("Dividend purification")
         dps = info.get("dividendRate") or _ttm_dividend(divs)
@@ -922,7 +922,7 @@ def _shariah_stock(ticker, info, row, status, reason, closes, divs):
             fig.add_hline(y=5, line_dash="dot", line_color="#D97706", annotation_text="5% limit")
             fig.update_layout(height=320, margin=dict(l=0, r=0, t=10, b=0), yaxis_title="%",
                               legend=dict(orientation="h", y=1.12), xaxis_type="category")
-            st.plotly_chart(fig, key=f"sht_{ticker}")
+            ui.chart(fig, key=f"sht_{ticker}")
             st.caption("Historical ratios use each fiscal year-end market cap.")
     except Exception:
         pass
@@ -958,7 +958,7 @@ def _holdings(ticker, stock_status):
                                    marker_color=[DOWN if "Financial" in i else NEUTRAL for i in s.index],
                                    text=[f"{v:.1%}" for v in s.values], textposition="outside"))
             fig.update_layout(height=380, margin=dict(l=0, r=30, t=10, b=0), xaxis_title="% of fund")
-            st.plotly_chart(fig, key=f"sw_{ticker}")
+            ui.chart(fig, key=f"sw_{ticker}")
         ac = f.get("asset_classes")
         if ac:
             ui.section("Asset classes")

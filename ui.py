@@ -1,6 +1,7 @@
 """Shared styling and number formatting."""
 
 import math
+import re
 
 import pandas as pd
 import streamlit as st
@@ -42,6 +43,32 @@ h1, h2, h3 {letter-spacing: -0.01em;}
 [data-testid="stMetricDelta"] svg {display: none;}
 [data-testid="stTabs"] button p {font-size: 0.95rem;}
 footer {visibility: hidden;}
+.hs-mobile-only {display: none;}
+
+/* ---------- phones ---------- */
+@media (max-width: 640px) {
+  .block-container {padding: 3.2rem 0.8rem 3rem 0.8rem;}  /* clears Streamlit's fixed top bar */
+  .hs-title {font-size: 1.3rem;}
+  .hs-sub, .hs-reason {font-size: 0.82rem;}
+  .hs-stamp {font-size: 0.76rem;}
+  .hs-mobile-only {display: block;}
+  /* keep these rows side by side instead of stacking one per line */
+  .st-key-topbar [data-testid="stHorizontalBlock"],
+  [class*="st-key-grid"] [data-testid="stHorizontalBlock"] {
+      flex-direction: row !important; flex-wrap: wrap !important; gap: 0.5rem !important;}
+  .st-key-topbar [data-testid="stColumn"] {
+      flex: 0 1 auto !important; width: auto !important; min-width: 0 !important;}
+  /* metric cards: two per row */
+  [class*="st-key-grid"] [data-testid="stColumn"] {
+      flex: 1 1 calc(50% - 0.5rem) !important; width: calc(50% - 0.5rem) !important;
+      min-width: calc(50% - 0.5rem) !important;}
+  [data-testid="stMetric"] {padding: 0.45rem 0.6rem;}
+  [data-testid="stMetricLabel"] p {font-size: 0.72rem;}
+  [data-testid="stMetricValue"] {font-size: 1.02rem;}
+  [data-testid="stMetricDelta"] {font-size: 0.72rem;}
+  .hs-kv {font-size: 0.85rem;}
+  [data-testid="stTabs"] button p {font-size: 0.85rem;}
+}
 /* teal accent instead of Streamlit's default red, so red only ever means Non-Compliant */
 button[kind="segmented_controlActive"], button[kind="pillsActive"] {
     border-color: #14B8A6 !important; color: #14B8A6 !important; background: rgba(20,184,166,0.10) !important;}
@@ -53,6 +80,23 @@ span[data-baseweb="tag"] {background-color: #0F766E !important;}
 [data-testid="stSliderThumbValue"] {color: #14B8A6 !important;}
 </style>
 """
+
+
+def is_mobile():
+    """True for phone browsers (from the request's User-Agent)."""
+    try:
+        ua = st.context.headers.get("User-Agent", "") or ""
+    except Exception:
+        return False
+    return bool(re.search(r"Mobi|Android|iPhone|iPod", ua))
+
+
+def chart(fig, **kwargs):
+    """st.plotly_chart with a tidy toolbar: hidden on phones (it covers the chart), no Plotly logo."""
+    config = {"displaylogo": False, "displayModeBar": False if is_mobile() else "hover"}
+    if is_mobile():
+        fig.update_layout(margin=dict(l=0, r=0), legend=dict(font=dict(size=10)))
+    return st.plotly_chart(fig, config=config, **kwargs)
 
 
 def remember(key, default):

@@ -17,7 +17,8 @@ from screening import COMPLIANT, NON_COMPLIANT, QUESTIONABLE, STATUSES
 DATA = Path(__file__).parent / "data"
 
 st.set_page_config(page_title="Halal Stock Screener", page_icon="☪", layout="wide",
-                   initial_sidebar_state="expanded")
+                   initial_sidebar_state="auto")  # open on desktop, closed on phones
+MOBILE = ui.is_mobile()
 ui.inject_css()
 
 # Widgets that aren't drawn on a run lose their state; re-assigning keeps filters when visiting a company page.
@@ -97,7 +98,7 @@ ticker = st.query_params.get("ticker")
 page = st.query_params.get("view")
 
 # Top bar on every page: back navigation on the left, site navigation on the right
-t1, t2, _, t3, t4 = st.columns([1.4, 1.2, 4.4, 1, 1.2], vertical_alignment="center")
+t1, t2, _, t3, t4 = st.container(key="topbar").columns([1.4, 1.2, 4.4, 1, 1.2], vertical_alignment="center")
 if ticker:
     prev = nav.back_target()
     t1.button(f"← Back to {prev}" if prev else "← Back to screener", on_click=nav.go_back, type="tertiary")
@@ -167,8 +168,8 @@ def column_config():
     nc = st.column_config.NumberColumn
     cfg = {
         "ticker": st.column_config.TextColumn("Ticker", pinned=True, width="small"),
-        "name": st.column_config.TextColumn("Name", pinned=True, width="medium"),
-        "status": st.column_config.TextColumn("Shariah status", width=115),
+        "name": st.column_config.TextColumn("Name", pinned=not MOBILE, width="medium"),
+        "status": st.column_config.TextColumn("Status" if MOBILE else "Shariah status", width=115),
         "reason": st.column_config.TextColumn("Reason", width="large"),
         "sector": "Sector", "industry": "Industry", "category": "Category", "fund_family": "Fund family",
         "business_status": "Business activity",
@@ -333,7 +334,9 @@ else:
 # ------------------------------------------------------------------------------------------------
 counts = df["status"].value_counts()
 total = len(df)
-m = st.columns(4)
+if MOBILE:
+    st.caption("Tap **»** at the top left to search and filter.")
+m = st.container(key="grid_kpis").columns(4)
 m[0].metric(f"{asset} screened", f"{total:,}", border=True)
 for col, s in zip(m[1:], STATUSES):
     n = int(counts.get(s, 0))
@@ -345,7 +348,7 @@ for col, s in zip(m[1:], STATUSES):
 sorts = STOCK_SORTS if is_stock else ETF_SORTS
 p = "f_s_" if is_stock else "f_e_"
 st.write("")
-c1, c2, c3, _ = st.columns([1.4, 1, 1.4, 2.2])
+c1, c2, c3, _ = st.container(key="grid_sort").columns([1.4, 1, 1.4, 2.2])
 sort_by = c1.selectbox("Sort by", list(sorts), key=p + "sort")
 order = c2.selectbox("Order", ["Descending", "Ascending"], key=p + "order")
 then_by = c3.selectbox("Then by", ["None"] + [s for s in sorts if s != sort_by], key=p + "then")
@@ -359,6 +362,10 @@ view = view.sort_values(keys, ascending=asc, na_position="last",
 # Results table
 # ------------------------------------------------------------------------------------------------
 cols = ["ticker", "name", "status"] + (STOCK_COLUMNS if is_stock else ETF_COLUMNS)
+if MOBILE:
+    # phones: the figures people scan first come right after the ticker; the long name moves further right
+    first = ["ticker", "status", "price", "day_change", "dividend_yield"] + (["upside", "pe"] if is_stock else [])
+    cols = first + [c for c in cols if c not in first]
 table = view[cols].copy()
 for c in cols:
     if c in PCT_COLS:
