@@ -6,17 +6,28 @@ All data comes from Yahoo Finance via `yfinance`.
 
 ## Features
 
-- **Screener** for stocks and ETFs. Shows Shariah status, the reason for any non-compliance, sector, last
-  close, analyst price target and upside, rating, dividend yield and ex-dividend date.
-- **Filters:** Shariah status, minimum dividend yield, minimum analyst upside, sector, industry,
-  market cap, analyst rating, number of analysts, exchange, and dividend payers only. ETFs add category,
-  fund family, expense ratio and AUM.
-- **Sorting:** a primary and a secondary sort key on 20+ fields, or click any column header.
-  Column sets: Overview, Valuation, Profitability, Dividends, Analysts, Shariah.
-- **Company pages** (click any row): candlestick chart with analyst targets, key statistics, full
-  income statement, balance sheet and cash flow (annual and quarterly), ~60 ratios across 9 categories with
-  charts, analyst targets, rating history and estimates, dividend history, and a Shariah breakdown with
-  purification. ETF pages show holdings with each holding's status, plus sector weights.
+- **Screener** for stocks and ETFs. Shows Shariah status, the reason for any non-compliance, sector, market
+  cap, last close, P/E, dividend yield, analyst price target and upside, rating and ex-dividend date.
+- **Filters:** Shariah status, minimum dividend yield, minimum analyst upside, maximum P/E, sector,
+  industry, market cap, analyst rating, number of analysts, exchange, and dividend payers only. ETFs add
+  category, fund family, expense ratio and AUM.
+- **Sorting:** a primary and a secondary sort key, or click any column header.
+- **Company pages** (click any company):
+  - *Overview:* candlestick chart with analyst targets, key statistics, key ratios vs industry and sector
+    medians, business description, profile and key executives.
+  - *Financial statements:* income statement, balance sheet and cash flow, annual and quarterly, with charts.
+  - *Ratios:* ~60 ratios across 9 categories (profitability, liquidity, leverage, efficiency, cash flow,
+    per share, growth, valuation, Shariah) with history charts.
+  - *Relative valuation:* industry or sector peers (closest by market cap, optionally compliant only);
+    premium/discount and percentile vs peer, industry and sector medians across 30+ metrics; share prices
+    implied by peer multiples; peer table, peer map and ranking chart. Click any peer to drill into it;
+    Back retraces the path.
+  - *Analysts:* price targets and upside, recommendation trend, rating changes, EPS and revenue estimates.
+  - *Ownership:* insider/institutional split, top institutional and fund holders, insider transactions.
+  - *Dividends:* per-share amounts, yield, ex-dividend and payment dates, full history.
+  - *Shariah compliance:* each AAOIFI test against its limit, interest income test, purification estimate,
+    and the compliance trend by year.
+- **ETF pages:** fund facts, holdings with each holding's Shariah status, sector weights, dividends.
 - **Live data:** every time the app is opened it pulls live quotes for the whole universe (~15 seconds,
   cached for 5 minutes). Company pages are fetched live (cached for 15 minutes).
 - Light and dark themes (follows the viewer's system; switch under the top-right menu, then Settings).
@@ -27,8 +38,11 @@ All data comes from Yahoo Finance via `yfinance`.
 |---|---|
 | `app.py` | Screener page, filters, sorting and routing |
 | `company.py` | Company and ETF drill-down pages (live data) |
+| `relative.py` / `peers.py` | Relative valuation page / peer selection and comparison logic |
+| `nav.py` | Page navigation and the Back history |
 | `ratios.py` | Ratio engine (profitability, liquidity, leverage, efficiency, cash flow, per share, growth, valuation, Shariah) |
 | `live.py` | Live quotes for all tickers on each visit |
+| `tests/` | Automated tests (`python -m pytest tests`) |
 | `screening.py` | AAOIFI rules for stocks and ETFs. Edit the industry lists and thresholds here |
 | `build_data.py` | Builds `data/` (universe, fundamentals, prices, screening) |
 | `data/` | Screened dataset the app reads |
@@ -51,6 +65,12 @@ then the stalest. It stops cleanly if Yahoo throttles it, and the next run conti
 pip install -r requirements.txt
 python build_data.py            # first full build takes 1-2 hours; later runs are incremental
 streamlit run app.py
+```
+
+After editing the rules in `screening.py`, re-screen the cached data without downloading anything:
+
+```bash
+python build_data.py --offline
 ```
 
 ## Deploy on Streamlit Community Cloud (free)
