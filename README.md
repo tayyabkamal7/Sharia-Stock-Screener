@@ -1,6 +1,6 @@
 # Sharia Stock Screener (US)
 
-Live app: https://halalstockscreener.streamlit.app
+Live app: https://shariahstockscreener.streamlit.app
 
 A Streamlit web app that screens **every US-listed stock and ETF** (~5,900 stocks and ~5,700 ETFs on NASDAQ,
 NYSE, NYSE American, NYSE Arca and Cboe) for Shariah compliance using the **AAOIFI** methodology.

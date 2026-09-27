@@ -16,7 +16,7 @@ from screening import COMPLIANT, NON_COMPLIANT, QUESTIONABLE, STATUSES
 
 DATA = Path(__file__).parent / "data"
 
-st.set_page_config(page_title="Halal Stock Screener", page_icon="☪", layout="wide",
+st.set_page_config(page_title="Shariah Stock Screener", page_icon="☪", layout="wide",
                    initial_sidebar_state="auto")  # open on desktop, closed on phones
 MOBILE = ui.is_mobile()
 ui.inject_css()
@@ -211,7 +211,7 @@ def reset_filters():
 # ------------------------------------------------------------------------------------------------
 h1, h2 = st.columns([5, 1], vertical_alignment="bottom")
 h1.markdown(
-    '<div class="hs-title">Halal Stock Screener</div>'
+    '<div class="hs-title">Shariah Stock Screener</div>'
     '<p class="hs-sub">Shariah screening of US-listed stocks and ETFs using the AAOIFI methodology · '
     f'Fundamentals updated {meta.get("updated", "—")}</p>'
     + ui.price_stamp(market_state, quotes_as_of,
@@ -392,7 +392,7 @@ if picked is not None:
     st.rerun()
 
 st.download_button("Download results (CSV)", view[cols].to_csv(index=False),
-                   f"halal_{asset.lower()}.csv", "text/csv")
+                   f"shariah_{asset.lower()}.csv", "text/csv")
 
 st.divider()
 m1, m2 = st.columns([4, 1], vertical_alignment="center")
