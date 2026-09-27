@@ -1,4 +1,5 @@
 import json
+import time
 from pathlib import Path
 
 import numpy as np
@@ -75,6 +76,17 @@ if len(stocks):
     stocks = peers.add_derived(stocks)
 stock_status = dict(zip(stocks["ticker"], stocks["status"])) if len(stocks) else {}
 
+# Optional auto-refresh: a timer fragment re-runs the whole page about once a minute, which picks up the
+# next live-quote fetch (quotes are cached for 60 seconds and shared by all visitors).
+st.session_state["last_full_run"] = time.time()
+if st.session_state.get("f_autorefresh"):
+    @st.fragment(run_every=60)
+    def _auto_refresh():
+        if time.time() - st.session_state.get("last_full_run", 0) > 50:
+            st.rerun(scope="app")
+
+    _auto_refresh()
+
 
 # ------------------------------------------------------------------------------------------------
 # Company page (routed with ?ticker=XYZ so pages can be bookmarked and shared)
@@ -101,22 +113,22 @@ if ticker:
 # Screener configuration
 # ------------------------------------------------------------------------------------------------
 # The home page keeps to a few headline figures; every other ratio lives on the company page.
-STOCK_COLUMNS = ["sector", "market_cap", "last_close", "pe", "dividend_yield", "target_mean", "upside", "rating",
-                 "ex_div_date", "reason"]
-ETF_COLUMNS = ["category", "aum", "expense_ratio", "last_close", "dividend_yield", "return_1y", "ex_div_date",
-               "reason"]
+STOCK_COLUMNS = ["sector", "market_cap", "price", "day_change", "last_close", "pe", "dividend_yield", "target_mean",
+                 "upside", "rating", "ex_div_date", "reason"]
+ETF_COLUMNS = ["category", "aum", "expense_ratio", "price", "day_change", "dividend_yield", "return_1y",
+               "ex_div_date", "reason"]
 STOCK_SORTS = {
-    "Market cap": "market_cap", "Dividend yield": "dividend_yield", "P/E ratio": "pe",
+    "Market cap": "market_cap", "Day change": "day_change", "Dividend yield": "dividend_yield", "P/E ratio": "pe",
     "Analyst upside": "upside", "Analyst rating": "rating_strength", "Mean price target": "target_mean",
-    "Last close": "last_close", "Ex-dividend date": "ex_div_date", "Shariah status": "status_rank",
+    "Price": "price", "Ex-dividend date": "ex_div_date", "Shariah status": "status_rank",
     "Company name": "name", "Ticker": "ticker",
 }
 ETF_SORTS = {
-    "Assets under management": "aum", "Dividend yield": "dividend_yield", "Expense ratio": "expense_ratio",
-    "1-year return": "return_1y", "Last close": "last_close", "Ex-dividend date": "ex_div_date",
-    "Shariah status": "status_rank", "Fund name": "name", "Ticker": "ticker",
+    "Assets under management": "aum", "Day change": "day_change", "Dividend yield": "dividend_yield",
+    "Expense ratio": "expense_ratio", "1-year return": "return_1y", "Price": "price",
+    "Ex-dividend date": "ex_div_date", "Shariah status": "status_rank", "Fund name": "name", "Ticker": "ticker",
 }
-PCT_COLS = {"upside", "dividend_yield", "roe", "roa", "gross_margin", "operating_margin", "net_margin",
+PCT_COLS = {"upside", "day_change", "dividend_yield", "roe", "roa", "gross_margin", "operating_margin", "net_margin",
             "revenue_growth", "earnings_growth", "return_1y", "debt_ratio", "cash_ratio", "payout_ratio",
             "expense_ratio", "ytd_return", "return_3y", "return_5y", "yield", "financials_weight",
             "noncompliant_weight"}
@@ -130,8 +142,8 @@ def _f(spec):
 FORMATS = {
     "market_cap": _f("{:,.2f}"), "aum": _f("{:,.2f}"), "num_analysts": _f("{:,.0f}"),
     "rating_score": _f("{:.2f}"), "last_div": _f("${:,.4f}"), "upside": _f("{:+.1f}%"),
-    "expense_ratio": _f("{:.2f}%"),
-    **{c: _f("${:,.2f}") for c in ("last_close", "target_mean", "target_median", "target_low", "target_high",
+    "expense_ratio": _f("{:.2f}%"), "day_change": _f("{:+.2f}%"),
+    **{c: _f("${:,.2f}") for c in ("price", "last_close", "target_mean", "target_median", "target_low", "target_high",
                                    "div_per_share", "low_52w", "high_52w")},
     **{c: _f("{:,.2f}") for c in ("peg", "ps", "pb", "current_ratio", "debt_to_equity", "beta")},
     **{c: _f("{:,.1f}") for c in ("pe", "forward_pe", "ev_ebitda")},
@@ -148,7 +160,8 @@ def column_config():
         "sector": "Sector", "industry": "Industry", "category": "Category", "fund_family": "Fund family",
         "business_status": "Business activity",
         "market_cap": nc("Market cap ($B)", format="%.2f"), "aum": nc("AUM ($B)", format="%.2f"),
-        "last_close": nc("Last close", format="$%.2f"),
+        "last_close": nc("Last close", format="$%.2f", help="Upside is measured from this close"),
+        "price": nc("Price", format="$%.2f", help="Live during market hours, refreshed every minute"),
         "target_mean": nc("Mean target", format="$%.2f"), "target_median": nc("Median target", format="$%.2f"),
         "target_low": nc("Low target", format="$%.2f"), "target_high": nc("High target", format="$%.2f"),
         "rating": "Analyst rating", "rating_score": nc("Rating score", format="%.2f",
@@ -174,6 +187,7 @@ def column_config():
     cfg["debt_ratio"] = nc("Debt / mkt cap", format="%.1f%%", help="AAOIFI limit: 30% of 12-month average market cap")
     cfg["cash_ratio"] = nc("Cash / mkt cap", format="%.1f%%", help="AAOIFI limit: 30% of 12-month average market cap")
     cfg["upside"] = nc("Upside", format="%+.1f%%", help="Mean analyst target vs last close")
+    cfg["day_change"] = nc("Day change", format="%+.2f%%", help="Change vs the previous close")
     return cfg
 
 
@@ -190,7 +204,10 @@ def reset_filters():
 # Header
 # ------------------------------------------------------------------------------------------------
 h1, h2 = st.columns([5, 1], vertical_alignment="bottom")
-live_note = (f"Live quotes as of {live.format_as_of(quotes_as_of)}" if quotes_as_of is not None
+live_note = (f"Live quotes as of {live.format_as_of(quotes_as_of)}"
+             + (" · auto-refreshing every minute" if st.session_state.get("f_autorefresh")
+                else " · at most a minute old when loaded")
+             if quotes_as_of is not None
              else f"Live quotes temporarily unavailable (Yahoo Finance is busy); showing {meta.get('prices_as_of', '—')} "
                   "closing prices")
 h1.markdown(
@@ -254,6 +271,8 @@ with st.sidebar:
     payers = st.toggle("Dividend payers only", key=p + "payers")
     st.button("Reset filters", on_click=reset_filters)
     st.divider()
+    st.toggle("Auto-refresh prices every minute", key=ui.remember("f_autorefresh", False),
+              help="Keeps prices, day change and upside current while the page is open (US market hours)")
     st.caption("Switch between light and dark themes from the ⋮ menu (top right) → Settings.")
 
 view = df

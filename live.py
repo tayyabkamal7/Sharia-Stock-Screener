@@ -16,7 +16,7 @@ from yfinance.data import YfData
 
 QUOTE_URL = "https://query1.finance.yahoo.com/v7/finance/quote"
 BATCH = 250
-LIVE_TTL = 300  # seconds
+LIVE_TTL = 60  # seconds; one shared fetch per minute however many people are viewing
 
 RATING_KEYS = [(1.5, "strong_buy"), (2.5, "buy"), (3.5, "hold"), (4.5, "underperform"), (9, "sell")]
 

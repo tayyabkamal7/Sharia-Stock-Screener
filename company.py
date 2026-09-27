@@ -18,19 +18,21 @@ from screening import (CASH_LIMIT, COMPLIANT, DEBT_LIMIT, INTEREST_INCOME_LIMIT,
                        QUESTIONABLE, screen_stock)
 
 TTL = 6 * 3600          # statements, analyst detail
-LIVE_TTL = 15 * 60      # quote, price history, dividends
+LIVE_TTL = 15 * 60      # dividends, calendar
+QUOTE_TTL = 60          # company quote (price, day change)
+CHART_TTL = 5 * 60      # price history
 UP, DOWN, NEUTRAL = "#16A34A", "#DC2626", "#3B82F6"
 
 
 # ------------------------------------------------------------------------------------------------
 # Cached data access (each piece separately, so one failure doesn't break the page)
 # ------------------------------------------------------------------------------------------------
-@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
+@st.cache_data(ttl=QUOTE_TTL, show_spinner=False)
 def get_info(t):
     return yf.Ticker(t).info or {}
 
 
-@st.cache_data(ttl=LIVE_TTL, show_spinner=False)
+@st.cache_data(ttl=CHART_TTL, show_spinner=False)
 def get_history(t, period="max"):
     h = yf.Ticker(t).history(period=period, auto_adjust=False)
     if len(h):
@@ -234,6 +236,17 @@ def _next_ex_div(info, divs):
     return max(cands) if cands else None
 
 
+def _price_metric(col, info, last_close, last_date, day_chg):
+    """Live price while the market is open (upside elsewhere stays measured from the last close)."""
+    price, chg = info.get("regularMarketPrice"), info.get("regularMarketChangePercent")
+    if info.get("marketState") == "REGULAR" and price:
+        col.metric("Price · live", ui.money(price), f"{chg:+.2f}% today" if chg is not None else None,
+                   help=f"Last close {ui.money(last_close)} ({last_date}). Refreshes every minute.", border=True)
+    else:
+        col.metric(f"Close ({last_date})", ui.money(last_close),
+                   ui.pct(day_chg, 2, sign=True) if day_chg is not None else None, border=True)
+
+
 def _stock_metrics(info, row, last_close, last_date, day_chg, divs):
     target = info.get("targetMeanPrice")
     upside = target / last_close - 1 if target and last_close else None
@@ -241,8 +254,7 @@ def _stock_metrics(info, row, last_close, last_date, day_chg, divs):
     ex = _next_ex_div(info, divs)
     n = info.get("numberOfAnalystOpinions")
     c = st.columns(7)
-    c[0].metric(f"Close ({last_date})", ui.money(last_close),
-                ui.pct(day_chg, 2, sign=True) if day_chg is not None else None, border=True)
+    _price_metric(c[0], info, last_close, last_date, day_chg)
     c[1].metric("Mean target", ui.money(target), help="Mean 12-month analyst price target", border=True)
     c[2].metric("Upside", ui.pct(upside, 1, sign=True), help="Mean target vs last close", border=True)
     c[3].metric("Consensus", ui.rating_label(info.get("recommendationKey")),
@@ -259,8 +271,7 @@ def _etf_metrics(info, row, last_close, last_date, day_chg, divs):
     er = info.get("netExpenseRatio")
     ytd = info.get("ytdReturn")
     c = st.columns(7)
-    c[0].metric(f"Close ({last_date})", ui.money(last_close),
-                ui.pct(day_chg, 2, sign=True) if day_chg is not None else None, border=True)
+    _price_metric(c[0], info, last_close, last_date, day_chg)
     c[1].metric("AUM", ui.big(info.get("totalAssets")), help="Assets under management", border=True)
     c[2].metric("Expense ratio", ui.pct(er / 100, 2) if er is not None else "—", border=True)
     c[3].metric("Yield", ui.pct(info.get("yield"), 2), help="Distribution yield", border=True)
