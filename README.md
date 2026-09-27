@@ -1,4 +1,6 @@
-# Halal Stock Screener (US)
+# Sharia Stock Screener (US)
+
+Live app: https://halalstockscreener.streamlit.app
 
 A Streamlit web app that screens **every US-listed stock and ETF** (~5,900 stocks and ~5,700 ETFs on NASDAQ,
 NYSE, NYSE American, NYSE Arca and Cboe) for Shariah compliance using the **AAOIFI** methodology.
@@ -75,7 +77,7 @@ python build_data.py --offline
 
 ## Deploy on Streamlit Community Cloud (free)
 
-1. Create a **public** GitHub repository (for example `halal-screener`) and upload every file in this
+1. Create a **public** GitHub repository (for example `Sharia-Stock-Screener`) and upload every file in this
    folder, including the `data/`, `.streamlit/` and `.github/` folders.
 2. Go to https://share.streamlit.io, sign in with GitHub, click **Create app**, and choose the repo,
    branch `main` and file `app.py`. Under **Advanced settings**, pick Python 3.12. Click **Deploy**.
