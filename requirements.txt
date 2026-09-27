@@ -1,9 +1,11 @@
-# Pinned to the versions the app was tested with (Streamlit Cloud and GitHub Actions install these).
+# Pinned to tested versions. numpy differs by Python version so every supported Python gets a
+# pre-built wheel (numpy 2.0 has none for Python 3.13+, and compiling it from source stalls deployments).
 streamlit==1.50.0
 yfinance==1.2.0
 curl_cffi==0.13.0
 pandas==2.3.3
-numpy==2.0.2
+numpy==2.0.2; python_version < "3.11"
+numpy>=2.2,<2.4; python_version >= "3.11"
 plotly==7.1.0
 requests==2.32.5
 lxml==6.1.3
