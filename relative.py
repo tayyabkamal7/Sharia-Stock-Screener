@@ -46,6 +46,25 @@ def _assessment_color(text):
             "Worse than peers": f"color:{DOWN}"}.get(text, "")
 
 
+def _with_live_fields(company, info):
+    """Fill gaps in the screened row with the company's live figures (the row may predate newer fields)."""
+    mc = info.get("marketCap") or company.get("market_cap")
+    live_vals = {
+        "ev_revenue": info.get("enterpriseToRevenue"),
+        "fcf_yield": info["freeCashflow"] / mc if info.get("freeCashflow") and mc else None,
+        "ebitda_margin": info.get("ebitdaMargins"),
+        "quick_ratio": info.get("quickRatio"),
+        "earnings_q_growth": info.get("earningsQuarterlyGrowth"),
+        "employees": info.get("fullTimeEmployees"),
+        "div_yield_5y": info["fiveYearAvgDividendYield"] / 100 if info.get("fiveYearAvgDividendYield") else None,
+        "peg": info.get("trailingPegRatio"),
+    }
+    for k, v in live_vals.items():
+        if v is not None and pd.isna(company.get(k)):
+            company[k] = v
+    return company
+
+
 def render(ticker, info, row, stocks, last_close):
     if row is None or stocks is None or stocks.empty:
         st.info("Relative valuation is available for companies in the screened dataset.")
@@ -67,7 +86,7 @@ def render(ticker, info, row, stocks, last_close):
         return
     industry = stocks[(stocks["industry"] == row.get("industry")) & (stocks["ticker"] != ticker)]
     sector = stocks[(stocks["sector"] == row.get("sector")) & (stocks["ticker"] != ticker)]
-    company = row.to_dict()
+    company = _with_live_fields(row.to_dict(), info)
     st.caption(f"Comparing with **{len(peers)}** {'Shariah-compliant ' if compliant_only else ''}peers in "
                f"**{row.get(col)}** ({by.lower()}). Peer, industry and sector figures are medians; negative "
                "valuation multiples are excluded. Click any peer in the table or charts to open it.")
