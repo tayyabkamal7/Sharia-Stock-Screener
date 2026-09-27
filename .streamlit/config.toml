@@ -1,0 +1,11 @@
+# No [theme] section on purpose: Streamlit then follows each viewer's system light/dark setting,
+# and viewers can switch between Light and Dark from the menu (top right) -> Settings.
+
+[client]
+toolbarMode = "viewer"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
