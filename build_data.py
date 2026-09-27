@@ -164,17 +164,25 @@ def fetch_one(ticker, kind, retries=3):
     return None  # not cached, so it's retried on the next run
 
 
-def update_fundamentals(universe, minutes, workers, limit):
+def build_queue(universe, cache, max_age_hours):
+    """Tickers to fetch: never-fetched first, then those older than max_age_hours, stalest first."""
+    queue = universe[["ticker", "type"]].merge(cache[["ticker", "fetched_at"]], on="ticker", how="left")
+    age = pd.Timestamp.now(tz="UTC") - pd.to_datetime(queue["fetched_at"], utc=True)
+    queue = queue[queue["fetched_at"].isna() | (age > pd.Timedelta(hours=max_age_hours))]
+    return queue.sort_values("fetched_at", na_position="first")
+
+
+def update_fundamentals(universe, minutes, workers, limit, max_age_hours=20):
     path = DATA / "fundamentals.csv"
     cache = pd.read_csv(path) if path.exists() else pd.DataFrame(columns=["ticker", "fetched_at"])
     cache = cache[cache["ticker"].isin(universe["ticker"])]
 
-    queue = universe[["ticker", "type"]].merge(cache[["ticker", "fetched_at"]], on="ticker", how="left")
-    queue = queue.sort_values("fetched_at", na_position="first")  # new tickers first, then stalest
+    queue = build_queue(universe, cache, max_age_hours)
     if limit:
         queue = queue.head(limit)
     todo = list(queue.itertuples(index=False))
-    print(f"Fundamentals: {queue['fetched_at'].isna().sum()} new, {len(cache)} cached; budget {minutes} min")
+    print(f"Fundamentals: {queue['fetched_at'].isna().sum()} new, {queue['fetched_at'].notna().sum()} stale, "
+          f"{len(cache)} cached; budget {minutes} min")
 
     deadline = time.time() + minutes * 60
     rows, done = [], 0
@@ -301,6 +309,8 @@ def main():
     p.add_argument("--minutes", type=float, default=150, help="time budget for fundamentals")
     p.add_argument("--workers", type=int, default=3)
     p.add_argument("--limit", type=int, default=0, help="only process N tickers (testing)")
+    p.add_argument("--max-age-hours", type=float, default=20,
+                   help="re-fetch fundamentals older than this (0 = re-fetch everything)")
     args = p.parse_args()
 
     DATA.mkdir(exist_ok=True)
@@ -309,7 +319,7 @@ def main():
     if args.limit:
         universe = universe.sample(args.limit, random_state=1)
 
-    fundamentals = update_fundamentals(universe, args.minutes, args.workers, args.limit)
+    fundamentals = update_fundamentals(universe, args.minutes, args.workers, args.limit, args.max_age_hours)
     have = universe[universe["ticker"].isin(fundamentals.loc[fundamentals["fetch_ok"].astype(bool), "ticker"])]
     prices = fetch_prices(have["ticker"].tolist())
     stocks, etfs = assemble(universe, fundamentals, prices)

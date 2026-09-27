@@ -397,8 +397,9 @@ The company page also checks **interest income against revenue (5% limit)** and 
 funds are Non-Compliant. Other equity funds are Non-Compliant when more than 5% is in financials or in
 non-compliant top holdings, and Questionable otherwise.
 
-Data comes from Yahoo Finance. Fundamentals refresh on a rolling basis (every few days per company); prices,
-dividends and price targets are updated each trading day.
+Data comes from Yahoo Finance. Prices, last close, upside, dividend yield and consensus ratings are pulled live
+each time the app is opened. Balance sheets, Shariah ratios and analyst price targets refresh every weekday
+after the US market close. Company pages load their financials live.
 
 *For information and education only. Not a fatwa and not investment advice. Verify with a qualified scholar
 or a certified Shariah screening service before investing.*
