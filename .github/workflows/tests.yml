@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.12", "3.13"]  # Streamlit Cloud may run either
+        python-version: ["3.12", "3.13", "3.14"]  # Streamlit Cloud defaults to the newest Python
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
