@@ -10,7 +10,9 @@ import streamlit as st
 import yfinance as yf
 from plotly.subplots import make_subplots
 
+import relative
 import ui
+from peers import METRICS, clean
 from ratios import CATEGORIES, compute_ratios, format_value
 from screening import (CASH_LIMIT, COMPLIANT, DEBT_LIMIT, INTEREST_INCOME_LIMIT, NON_COMPLIANT,
                        QUESTIONABLE, screen_stock)
@@ -85,6 +87,18 @@ def get_fund(t):
     return out
 
 
+@st.cache_data(ttl=TTL, show_spinner=False)
+def get_ownership(t):
+    tk = yf.Ticker(t)
+    out = {}
+    for name in ("major_holders", "institutional_holders", "mutualfund_holders", "insider_transactions"):
+        try:
+            out[name] = getattr(tk, name)
+        except Exception:
+            out[name] = None
+    return out
+
+
 def _safe(fn, *args, default=None):
     try:
         return fn(*args)
@@ -95,8 +109,9 @@ def _safe(fn, *args, default=None):
 # ------------------------------------------------------------------------------------------------
 # Page
 # ------------------------------------------------------------------------------------------------
-def render(ticker, row, stock_status):
-    """row: the screener row for this ticker (pd.Series) or None for tickers outside the dataset."""
+def render(ticker, row, stock_status, stocks=None):
+    """row: the screener row for this ticker (pd.Series) or None for tickers outside the dataset.
+    stocks: the full (live-updated) stock table, used for industry/sector comparisons."""
     with st.spinner(f"Loading {ticker}..."):
         info = _safe(get_info, ticker, default={}) or {}
         hist = _safe(get_history, ticker, default=pd.DataFrame())
@@ -154,19 +169,23 @@ def render(ticker, row, stock_status):
             _shariah_etf(ticker, row, status, reason, stock_status)
     else:
         _stock_metrics(info, row, last_close, last_date, day_chg, divs)
-        tabs = st.tabs(["Overview", "Financial statements", "Ratios", "Analysts", "Dividends",
-                        "Shariah compliance"])
+        tabs = st.tabs(["Overview", "Financial statements", "Ratios", "Relative valuation", "Analysts",
+                        "Ownership", "Dividends", "Shariah compliance"])
         with tabs[0]:
-            _overview(ticker, info, hist, is_etf=False)
+            _overview(ticker, info, hist, is_etf=False, row=row, stocks=stocks)
         with tabs[1]:
             _financials(ticker)
         with tabs[2]:
             _ratios(ticker, closes)
         with tabs[3]:
-            _analysts(ticker, info, last_close)
+            relative.render(ticker, info, row, stocks, last_close)
         with tabs[4]:
-            _dividends(info, divs, last_close, is_etf=False)
+            _analysts(ticker, info, last_close)
         with tabs[5]:
+            _ownership(ticker, info)
+        with tabs[6]:
+            _dividends(info, divs, last_close, is_etf=False)
+        with tabs[7]:
             _shariah_stock(ticker, info, row, status, reason, closes, divs)
 
 
@@ -292,7 +311,7 @@ def _price_chart(hist, info, rng, show_targets):
     return fig
 
 
-def _overview(ticker, info, hist, is_etf):
+def _overview(ticker, info, hist, is_etf, row=None, stocks=None):
     left, right = st.columns([2.2, 1], gap="large")
     with left:
         c1, c2 = st.columns([3, 1.3])
@@ -334,24 +353,88 @@ def _overview(ticker, info, hist, is_etf):
             ui.kv_rows([
                 ("Market cap", ui.big(info.get("marketCap"))),
                 ("Enterprise value", ui.big(info.get("enterpriseValue"))),
-                ("P/E (TTM)", ui.mult(info.get("trailingPE"))),
-                ("Forward P/E", ui.mult(info.get("forwardPE"))),
-                ("PEG ratio", ui.mult(info.get("trailingPegRatio"))),
-                ("Price / sales", ui.mult(info.get("priceToSalesTrailing12Months"))),
-                ("Price / book", ui.mult(info.get("priceToBook"))),
-                ("EV / EBITDA", ui.mult(info.get("enterpriseToEbitda"))),
+                ("Revenue (TTM)", ui.big(info.get("totalRevenue"))),
+                ("EBITDA", ui.big(info.get("ebitda"))),
                 ("EPS (TTM)", ui.money(info.get("trailingEps"))),
+                ("Forward EPS", ui.money(info.get("forwardEps"))),
+                ("Book value per share", ui.money(info.get("bookValue"))),
+                ("Shares outstanding", f"{info['sharesOutstanding'] / 1e6:,.1f}M" if info.get("sharesOutstanding")
+                 else "—"),
+                ("Short interest (% of float)", ui.pct(info.get("shortPercentOfFloat"), 2)),
                 ("Beta", ui.num(info.get("beta"))),
                 ("52-week range", f"{ui.money(info.get('fiftyTwoWeekLow'))} – {ui.money(info.get('fiftyTwoWeekHigh'))}"),
                 ("Next earnings", earn),
-                ("Employees", f"{info['fullTimeEmployees']:,}" if info.get("fullTimeEmployees") else "—"),
             ])
+    if not is_etf:
+        _vs_industry(ticker, info, row, stocks)
+    _about(info, is_etf)
+
+
+# yfinance info field for each comparison metric (the company side comes from live data)
+INFO_KEYS = {"pe": "trailingPE", "forward_pe": "forwardPE", "peg": "trailingPegRatio",
+             "ps": "priceToSalesTrailing12Months", "pb": "priceToBook", "ev_ebitda": "enterpriseToEbitda",
+             "ev_revenue": "enterpriseToRevenue", "gross_margin": "grossMargins",
+             "operating_margin": "operatingMargins", "net_margin": "profitMargins", "roe": "returnOnEquity",
+             "roa": "returnOnAssets", "revenue_growth": "revenueGrowth", "earnings_growth": "earningsGrowth",
+             "current_ratio": "currentRatio", "beta": "beta", "payout_ratio": "payoutRatio"}
+OVERVIEW_METRICS = ["pe", "forward_pe", "peg", "ps", "pb", "ev_ebitda", "gross_margin", "operating_margin",
+                    "net_margin", "roe", "roa", "revenue_growth", "earnings_growth", "current_ratio",
+                    "debt_to_equity", "dividend_yield", "payout_ratio", "beta"]
+
+
+def _vs_industry(ticker, info, row, stocks):
+    if stocks is None or stocks.empty or row is None:
+        return
+    industry = stocks[(stocks["industry"] == row.get("industry")) & (stocks["ticker"] != ticker)]
+    sector = stocks[(stocks["sector"] == row.get("sector")) & (stocks["ticker"] != ticker)]
+    ui.section(f"Key ratios vs industry ({len(industry)} companies) and sector ({len(sector)} companies)")
+    rows = []
+    for k in OVERVIEW_METRICS:
+        label, kind = METRICS[k][0], METRICS[k][1]
+        v = info.get(INFO_KEYS[k]) if k in INFO_KEYS else None
+        if v is None:
+            v = row.get(k)
+        v = clean(pd.Series([v]), k).iloc[0]
+        ind = clean(industry[k], k).median() if k in industry else np.nan
+        sec = clean(sector[k], k).median() if k in sector else np.nan
+        rows.append({"Metric": label, "Company": relative.fmt(v, kind), "Industry median": relative.fmt(ind, kind),
+                     "Sector median": relative.fmt(sec, kind),
+                     "vs industry": "—" if pd.isna(v) or pd.isna(ind) or ind == 0 else f"{v / ind - 1:+.0%}"})
+    half = (len(rows) + 1) // 2
+    c1, c2 = st.columns(2, gap="large")
+    c1.dataframe(pd.DataFrame(rows[:half]), hide_index=True)
+    c2.dataframe(pd.DataFrame(rows[half:]), hide_index=True)
+    st.caption("Medians exclude the company itself; negative valuation multiples are left out. "
+               "See Relative valuation for a full peer comparison.")
+
+
+def _about(info, is_etf):
     summary = info.get("longBusinessSummary")
-    if summary:
-        with st.expander("Business description"):
-            st.write(summary)
-            if info.get("website"):
-                st.markdown(f"[{info['website']}]({info['website']})")
+    if not summary:
+        return
+    ui.section("About the fund" if is_etf else "About the company")
+    left, right = st.columns([1.7, 1], gap="large")
+    with left:
+        st.write(summary)
+        officers = info.get("companyOfficers") or []
+        if officers:
+            ui.section("Key executives")
+            st.dataframe(pd.DataFrame([{
+                "Name": o.get("name", "—"), "Title": o.get("title", "—"),
+                "Age": str(o["age"]) if o.get("age") else "—",
+                "Total pay": ui.big(o["totalPay"]) if o.get("totalPay") else "—",
+            } for o in officers[:8]]), hide_index=True)
+    with right:
+        hq = ", ".join(filter(None, [info.get("city"), info.get("state"), info.get("country")]))
+        rows = [("Headquarters", hq or "—")]
+        if not is_etf:
+            rows += [("Sector", info.get("sectorDisp") or info.get("sector") or "—"),
+                     ("Industry", info.get("industryDisp") or info.get("industry") or "—"),
+                     ("Employees", f"{info['fullTimeEmployees']:,}" if info.get("fullTimeEmployees") else "—")]
+        rows += [("Exchange", info.get("fullExchangeName") or "—"), ("Phone", info.get("phone") or "—")]
+        ui.kv_rows(rows)
+        if info.get("website"):
+            st.markdown(f"[{info['website']}]({info['website']})")
 
 
 # ------------------------------------------------------------------------------------------------
@@ -578,6 +661,83 @@ def _analysts(ticker, info, last_close):
             if "numberOfAnalysts" in e:
                 out["Analysts"] = e["numberOfAnalysts"].map(lambda v: "—" if pd.isna(v) else f"{int(v)}")
             st.dataframe(out)
+
+
+# ------------------------------------------------------------------------------------------------
+# Ownership
+# ------------------------------------------------------------------------------------------------
+def _holders_table(df):
+    d = df.copy()
+    out = pd.DataFrame({
+        "Holder": d["Holder"],
+        "% of shares": d["pctHeld"].map(lambda v: ui.pct(v, 2)),
+        "Shares": d["Shares"].map(lambda v: f"{v / 1e6:,.2f}M" if pd.notna(v) else "—"),
+        "Value": d["Value"].map(ui.big),
+        "Change": d["pctChange"].map(lambda v: ui.pct(v, 1, sign=True)) if "pctChange" in d else "—",
+        "Reported": pd.to_datetime(d["Date Reported"]).dt.strftime("%b %d, %Y"),
+    })
+    return out
+
+
+def _ownership(ticker, info):
+    o = _safe(get_ownership, ticker, default={}) or {}
+    mh = o.get("major_holders")
+    vals = {}
+    if isinstance(mh, pd.DataFrame) and not mh.empty:
+        vals = mh.iloc[:, 0].to_dict()
+    insiders = vals.get("insidersPercentHeld", info.get("heldPercentInsiders"))
+    inst = vals.get("institutionsPercentHeld", info.get("heldPercentInstitutions"))
+    if insiders is None and inst is None:
+        st.info("Ownership data isn't available for this company.")
+        return
+
+    left, right = st.columns([1, 1.4], gap="large")
+    with left:
+        ui.section("Shareholding breakdown")
+        ins, ins_t = float(insiders or 0), float(inst or 0)
+        public = max(0.0, 1 - ins - ins_t)
+        fig = go.Figure(go.Pie(labels=["Institutions", "Insiders", "Public and other"],
+                               values=[ins_t, ins, public], hole=0.62, sort=False,
+                               marker=dict(colors=["#14B8A6", "#8B5CF6", "#94A3B8"]),
+                               texttemplate="%{percent:.1%}", textposition="inside"))
+        fig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10), showlegend=True,
+                          legend=dict(orientation="h", y=-0.05))
+        st.plotly_chart(fig, key=f"own_{ticker}")
+    with right:
+        ui.section("Ownership details")
+        ui.kv_rows([
+            ("Held by insiders", ui.pct(insiders, 2)),
+            ("Held by institutions", ui.pct(inst, 2)),
+            ("Institutional share of float", ui.pct(vals.get("institutionsFloatPercentHeld"), 2)),
+            ("Number of institutions", f"{int(vals['institutionsCount']):,}" if vals.get("institutionsCount")
+             else "—"),
+            ("Shares outstanding", f"{info['sharesOutstanding'] / 1e6:,.1f}M" if info.get("sharesOutstanding")
+             else "—"),
+            ("Float", f"{info['floatShares'] / 1e6:,.1f}M" if info.get("floatShares") else "—"),
+            ("Shares sold short", f"{info['sharesShort'] / 1e6:,.2f}M" if info.get("sharesShort") else "—"),
+            ("Short interest (% of float)", ui.pct(info.get("shortPercentOfFloat"), 2)),
+        ])
+
+    for key, title in (("institutional_holders", "Top institutional holders"),
+                       ("mutualfund_holders", "Top mutual fund and ETF holders")):
+        d = o.get(key)
+        if isinstance(d, pd.DataFrame) and not d.empty and "Holder" in d:
+            ui.section(title)
+            st.dataframe(_holders_table(d), hide_index=True)
+
+    it = o.get("insider_transactions")
+    if isinstance(it, pd.DataFrame) and not it.empty:
+        ui.section("Recent insider transactions")
+        t = it.head(25)
+        st.dataframe(pd.DataFrame({
+            "Date": pd.to_datetime(t["Start Date"]).dt.strftime("%b %d, %Y"),
+            "Insider": t["Insider"].str.title(),
+            "Position": t["Position"],
+            "Transaction": t["Text"].replace("", "—"),
+            "Shares": t["Shares"].map(lambda v: f"{v:,.0f}" if pd.notna(v) else "—"),
+            "Value": t["Value"].map(lambda v: ui.big(v) if pd.notna(v) and v else "—"),
+        }), hide_index=True, height=min(36 * (len(t) + 1) + 4, 520))
+        st.caption("Transactions reported to the SEC (Form 4). Option exercises and gifts are included.")
 
 
 # ------------------------------------------------------------------------------------------------

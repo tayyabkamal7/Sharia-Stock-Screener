@@ -62,6 +62,13 @@ STOCK_FIELDS = {
     "targetMedianPrice": "target_median", "targetHighPrice": "target_high", "targetLowPrice": "target_low",
     "dividendRate": "dividend_rate", "exDividendDate": "ex_div_ts", "payoutRatio": "payout_ratio",
     "fiftyTwoWeekHigh": "high_52w", "fiftyTwoWeekLow": "low_52w",
+    # extra fields for relative valuation and peer comparison
+    "enterpriseValue": "enterprise_value", "enterpriseToRevenue": "ev_revenue", "ebitda": "ebitda",
+    "freeCashflow": "fcf", "operatingCashflow": "ocf", "trailingEps": "eps", "forwardEps": "forward_eps",
+    "bookValue": "bvps", "quickRatio": "quick_ratio", "ebitdaMargins": "ebitda_margin",
+    "heldPercentInsiders": "insiders_pct", "heldPercentInstitutions": "institutions_pct",
+    "fullTimeEmployees": "employees", "fiveYearAvgDividendYield": "div_yield_5y",
+    "earningsQuarterlyGrowth": "earnings_q_growth",
 }
 ETF_FIELDS = {
     "longName": "name", "category": "category", "fundFamily": "fund_family", "totalAssets": "aum",

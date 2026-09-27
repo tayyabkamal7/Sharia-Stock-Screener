@@ -7,6 +7,8 @@ import streamlit as st
 
 import company
 import live
+import nav
+import peers
 import ui
 from screening import COMPLIANT, NON_COMPLIANT, QUESTIONABLE, STATUSES
 
@@ -20,7 +22,6 @@ ui.inject_css()
 for k in list(st.session_state.keys()):
     if isinstance(k, str) and k.startswith("f_"):
         st.session_state[k] = st.session_state[k]
-st.session_state.setdefault("grid_nonce", 0)
 
 
 # ------------------------------------------------------------------------------------------------
@@ -40,6 +41,8 @@ def load(_version):
     if len(stocks):
         stocks["num_analysts"] = stocks["num_analysts"].fillna(0).astype(int)
         stocks["debt_to_equity"] = stocks["debt_to_equity"] / 100  # Yahoo reports this in percent
+        if "div_yield_5y" in stocks:
+            stocks["div_yield_5y"] = stocks["div_yield_5y"] / 100  # also in percent
     if len(etfs):
         etfs["expense_ratio"] = etfs["expense_ratio"] / 100      # Yahoo reports these two in percent
         etfs["ytd_return"] = etfs["ytd_return"] / 100
@@ -68,6 +71,7 @@ etfs = live.apply_quotes(etfs, quotes, is_stock=False)
 if len(stocks):
     stocks["rating"] = stocks["rating_key"].map(ui.rating_label)
     stocks["rating_strength"] = 6 - stocks["rating_score"]  # higher = more bullish
+    stocks = peers.add_derived(stocks)
 stock_status = dict(zip(stocks["ticker"], stocks["status"])) if len(stocks) else {}
 
 
@@ -77,17 +81,16 @@ stock_status = dict(zip(stocks["ticker"], stocks["status"])) if len(stocks) else
 ticker = st.query_params.get("ticker")
 if ticker:
     ticker = ticker.upper()
-
-    def back():
-        st.query_params.clear()
-        st.session_state.grid_nonce += 1  # fresh table selection when returning
-
-    st.button("← Back to screener", on_click=back, type="tertiary")
+    prev = nav.back_target()
+    b1, b2, _ = st.columns([1.3, 1.3, 6])
+    b1.button(f"← Back to {prev}" if prev else "← Back to screener", on_click=nav.go_back, type="tertiary")
+    if prev:
+        b2.button("Screener", on_click=nav.go_home, type="tertiary", icon=":material/home:")
     row = None
     for d in (stocks, etfs):
         if len(d) and ticker in set(d["ticker"]):
             row = d[d["ticker"] == ticker].iloc[0]
-    company.render(ticker, row, stock_status)
+    company.render(ticker, row, stock_status, stocks)
     st.divider()
     st.caption("For information and education only. Not a fatwa and not investment advice.")
     st.stop()
@@ -96,44 +99,21 @@ if ticker:
 # ------------------------------------------------------------------------------------------------
 # Screener configuration
 # ------------------------------------------------------------------------------------------------
-# label -> (column, better-is-higher default for "Descending")
+# The home page keeps to a few headline figures; every other ratio lives on the company page.
+STOCK_COLUMNS = ["sector", "market_cap", "last_close", "pe", "dividend_yield", "target_mean", "upside", "rating",
+                 "ex_div_date", "reason"]
+ETF_COLUMNS = ["category", "aum", "expense_ratio", "last_close", "dividend_yield", "return_1y", "ex_div_date",
+               "reason"]
 STOCK_SORTS = {
-    "Market cap": "market_cap", "Company name": "name", "Ticker": "ticker", "Shariah status": "status_rank",
-    "Last close": "last_close", "Analyst upside": "upside", "Mean price target": "target_mean",
-    "Analyst rating": "rating_strength", "Number of analysts": "num_analysts",
-    "Dividend yield": "dividend_yield", "Dividend per share": "div_per_share", "Ex-dividend date": "ex_div_date",
-    "P/E ratio": "pe", "Forward P/E": "forward_pe", "Price to book": "pb", "Price to sales": "ps",
-    "EV / EBITDA": "ev_ebitda", "Return on equity": "roe", "Net margin": "net_margin",
-    "Revenue growth": "revenue_growth", "1-year return": "return_1y",
-    "Debt / market cap": "debt_ratio", "Cash / market cap": "cash_ratio",
+    "Market cap": "market_cap", "Dividend yield": "dividend_yield", "P/E ratio": "pe",
+    "Analyst upside": "upside", "Analyst rating": "rating_strength", "Mean price target": "target_mean",
+    "Last close": "last_close", "Ex-dividend date": "ex_div_date", "Shariah status": "status_rank",
+    "Company name": "name", "Ticker": "ticker",
 }
 ETF_SORTS = {
-    "Assets under management": "aum", "Fund name": "name", "Ticker": "ticker", "Shariah status": "status_rank",
-    "Last close": "last_close", "Expense ratio": "expense_ratio", "Dividend yield": "dividend_yield",
-    "Dividend per share": "div_per_share", "Ex-dividend date": "ex_div_date", "YTD return": "ytd_return",
-    "1-year return": "return_1y", "3-year avg return": "return_3y", "5-year avg return": "return_5y",
-}
-
-STOCK_VIEWS = {
-    "Overview": ["sector", "market_cap", "last_close", "target_mean", "upside", "rating", "dividend_yield",
-                 "ex_div_date", "reason"],
-    "Valuation": ["sector", "market_cap", "last_close", "pe", "forward_pe", "peg", "ps", "pb", "ev_ebitda",
-                  "return_1y"],
-    "Profitability": ["sector", "gross_margin", "operating_margin", "net_margin", "roe", "roa",
-                      "revenue_growth", "earnings_growth", "current_ratio", "debt_to_equity"],
-    "Dividends": ["sector", "last_close", "div_per_share", "dividend_yield", "payout_ratio", "last_div",
-                  "ex_div_date"],
-    "Analysts": ["last_close", "rating", "rating_score", "num_analysts", "target_low", "target_median",
-                 "target_mean", "target_high", "upside"],
-    "Shariah": ["sector", "industry", "business_status", "debt_ratio", "cash_ratio", "reason"],
-}
-ETF_VIEWS = {
-    "Overview": ["category", "fund_family", "aum", "expense_ratio", "last_close", "return_1y", "dividend_yield",
-                 "ex_div_date", "reason"],
-    "Performance": ["category", "last_close", "ytd_return", "return_1y", "return_3y", "return_5y", "beta",
-                    "low_52w", "high_52w"],
-    "Dividends": ["category", "last_close", "div_per_share", "dividend_yield", "yield", "last_div", "ex_div_date"],
-    "Shariah": ["category", "financials_weight", "noncompliant_weight", "reason"],
+    "Assets under management": "aum", "Dividend yield": "dividend_yield", "Expense ratio": "expense_ratio",
+    "1-year return": "return_1y", "Last close": "last_close", "Ex-dividend date": "ex_div_date",
+    "Shariah status": "status_rank", "Fund name": "name", "Ticker": "ticker",
 }
 PCT_COLS = {"upside", "dividend_yield", "roe", "roa", "gross_margin", "operating_margin", "net_margin",
             "revenue_growth", "earnings_growth", "return_1y", "debt_ratio", "cash_ratio", "payout_ratio",
@@ -150,7 +130,6 @@ FORMATS = {
     "market_cap": _f("{:,.2f}"), "aum": _f("{:,.2f}"), "num_analysts": _f("{:,.0f}"),
     "rating_score": _f("{:.2f}"), "last_div": _f("${:,.4f}"), "upside": _f("{:+.1f}%"),
     "expense_ratio": _f("{:.2f}%"),
-    "ex_div_date": lambda d: "—" if pd.isna(d) else d.strftime("%b %d, %Y"),
     **{c: _f("${:,.2f}") for c in ("last_close", "target_mean", "target_median", "target_low", "target_high",
                                    "div_per_share", "low_52w", "high_52w")},
     **{c: _f("{:,.2f}") for c in ("peg", "ps", "pb", "current_ratio", "debt_to_equity", "beta")},
@@ -161,7 +140,8 @@ FORMATS = {
 def column_config():
     nc = st.column_config.NumberColumn
     cfg = {
-        "ticker": st.column_config.TextColumn("Ticker", pinned=True, width="small"),
+        "ticker": st.column_config.LinkColumn("Ticker", pinned=True, width="small", display_text=r"\?ticker=(.*)$",
+                                              help="Click to open the company page"),
         "name": st.column_config.TextColumn("Name", pinned=True, width="medium"),
         "status": st.column_config.TextColumn("Shariah status", width=115),
         "reason": st.column_config.TextColumn("Reason", width="large"),
@@ -175,7 +155,7 @@ def column_config():
                                                         help="1 = Strong Buy, 5 = Strong Sell"),
         "num_analysts": nc("Analysts", format="%d"),
         "div_per_share": nc("Dividend / share", format="$%.2f"), "last_div": nc("Last dividend", format="$%.4f"),
-        "ex_div_date": st.column_config.DateColumn("Ex-dividend date", format="MMM D, YYYY"),
+        "ex_div_date": st.column_config.TextColumn("Ex-dividend date"),
         "pe": nc("P/E", format="%.1f"), "forward_pe": nc("Forward P/E", format="%.1f"),
         "peg": nc("PEG", format="%.2f"), "ps": nc("P/S", format="%.2f"), "pb": nc("P/B", format="%.2f"),
         "ev_ebitda": nc("EV/EBITDA", format="%.1f"), "current_ratio": nc("Current ratio", format="%.2f"),
@@ -227,7 +207,7 @@ def refresh():
 h2.button("Refresh data", on_click=refresh, icon=":material/refresh:", width="stretch")
 st.write("")
 
-asset = st.segmented_control("Asset type", ["Stocks", "ETFs"], default="Stocks", key="f_asset",
+asset = st.segmented_control("Asset type", ["Stocks", "ETFs"], key=ui.remember("f_asset", "Stocks"),
                              label_visibility="collapsed") or "Stocks"
 is_stock = asset == "Stocks"
 df = stocks if is_stock else etfs
@@ -240,11 +220,11 @@ with st.sidebar:
     p = "f_s_" if is_stock else "f_e_"
     search = st.text_input("Search", placeholder="Ticker or name", key=p + "search")
     statuses = st.multiselect("Shariah status", STATUSES, key=p + "status", placeholder="All statuses")
-    min_yield = st.number_input("Minimum dividend yield (%)", min_value=0.0, max_value=50.0, value=None,
-                                step=0.5, placeholder="Any", key=p + "yield")
+    min_yield = st.number_input("Minimum dividend yield (%)", min_value=0.0, max_value=50.0,
+                                step=0.5, placeholder="Any", key=ui.remember(p + "yield", None))
     if is_stock:
-        min_upside = st.number_input("Minimum analyst upside (%)", min_value=-100.0, max_value=500.0, value=None,
-                                     step=5.0, placeholder="Any", key=p + "upside",
+        min_upside = st.number_input("Minimum analyst upside (%)", min_value=-100.0, max_value=500.0,
+                                     step=5.0, placeholder="Any", key=ui.remember(p + "upside", None),
                                      help="Mean analyst price target vs last close")
         st.divider()
         sectors = st.multiselect("Sector", sorted(df["sector"].dropna().unique()), key=p + "sector",
@@ -253,16 +233,20 @@ with st.sidebar:
         industries = st.multiselect("Industry", sorted(pool["industry"].dropna().unique()), key=p + "industry",
                                     placeholder="All industries")
         caps = st.multiselect("Market cap", list(CAP_BANDS), key=p + "cap", placeholder="All sizes")
+        max_pe = st.number_input("Maximum P/E", min_value=1.0, max_value=1000.0, step=5.0, placeholder="Any",
+                                 key=ui.remember(p + "pe", None), help="Excludes companies with negative earnings")
         ratings = st.multiselect("Analyst rating", [r for r in ui.RATING_LABELS.values() if r in set(df["rating"])]
                                  + ["No coverage"], key=p + "rating", placeholder="All ratings")
-        min_analysts = st.number_input("Minimum number of analysts", 0, 60, 0, key=p + "analysts")
+        min_analysts = st.number_input("Minimum number of analysts", min_value=0, max_value=60,
+                                       key=ui.remember(p + "analysts", 0))
     else:
         st.divider()
         cats = st.multiselect("Category", sorted(df["category"].dropna().unique()), key=p + "category",
                               placeholder="All categories")
         fams = st.multiselect("Fund family", sorted(df["fund_family"].dropna().unique()), key=p + "family",
                               placeholder="All fund families")
-        max_er = st.number_input("Maximum expense ratio (%)", 0.0, 5.0, 5.0, step=0.05, key=p + "er")
+        max_er = st.number_input("Maximum expense ratio (%)", min_value=0.0, max_value=5.0, step=0.05,
+                                 key=ui.remember(p + "er", 5.0))
         min_aum = st.selectbox("Minimum AUM", ["Any", "$100M", "$1B", "$10B"], key=p + "aum")
     exchanges = st.multiselect("Exchange", sorted(df["exchange"].dropna().unique()), key=p + "exchange",
                                placeholder="All exchanges")
@@ -301,6 +285,8 @@ if is_stock:
         view = view[view["num_analysts"] >= min_analysts]
     if min_upside is not None:
         view = view[view["upside"] >= min_upside / 100]
+    if max_pe is not None:
+        view = view[view["pe"].between(0, max_pe, inclusive="right")]
 else:
     if cats:
         view = view[view["category"].isin(cats)]
@@ -326,15 +312,12 @@ for col, s in zip(m[1:], STATUSES):
 # Sort and column controls
 # ------------------------------------------------------------------------------------------------
 sorts = STOCK_SORTS if is_stock else ETF_SORTS
-views = STOCK_VIEWS if is_stock else ETF_VIEWS
 p = "f_s_" if is_stock else "f_e_"
 st.write("")
 c1, c2, c3, _ = st.columns([1.4, 1, 1.4, 2.2])
 sort_by = c1.selectbox("Sort by", list(sorts), key=p + "sort")
 order = c2.selectbox("Order", ["Descending", "Ascending"], key=p + "order")
 then_by = c3.selectbox("Then by", ["None"] + [s for s in sorts if s != sort_by], key=p + "then")
-col_view = st.segmented_control("Column set", list(views), default="Overview", key=p + "view",
-                                label_visibility="collapsed") or "Overview"
 
 keys = [sorts[sort_by]] + ([sorts[then_by]] if then_by != "None" else [])
 asc = [order == "Ascending"] + ([order == "Ascending"] if then_by != "None" else [])
@@ -344,19 +327,25 @@ view = view.sort_values(keys, ascending=asc, na_position="last",
 # ------------------------------------------------------------------------------------------------
 # Results table
 # ------------------------------------------------------------------------------------------------
-cols = ["ticker", "name", "status"] + views[col_view]
+cols = ["ticker", "name", "status"] + (STOCK_COLUMNS if is_stock else ETF_COLUMNS)
 table = view[cols].copy()
+table["ticker"] = "?ticker=" + table["ticker"]  # clickable link to the company page
 for c in cols:
     if c in PCT_COLS:
         table[c] = table[c] * 100
 for c in ("market_cap", "aum"):
     if c in table:
         table[c] = table[c] / 1e9
+if "dividend_yield" in table:
+    table["dividend_yield"] = table["dividend_yield"].fillna(0)  # non-payers yield 0%
 if "ex_div_date" in table:
-    table["ex_div_date"] = pd.to_datetime(table["ex_div_date"], errors="coerce")
+    # ISO text keeps header-click sorting chronological and lets missing dates read "—" instead of "None"
+    table["ex_div_date"] = pd.to_datetime(table["ex_div_date"], errors="coerce").dt.strftime("%Y-%m-%d") \
+        .fillna("—")
 
-st.caption(f"Showing **{len(view):,}** of {total:,} {asset.lower()} · "
-           "Select a row to open the full profile, financials and ratios. Click a column header to re-sort.")
+st.caption(f"Showing **{len(view):,}** of {total:,} {asset.lower()} · Click a ticker (opens a new tab) or tick "
+           "the box at the left of a row to open the full profile, financials, ratios and peer comparison. "
+           "Click a column header to re-sort.")
 
 
 def color_status(v):
@@ -371,10 +360,10 @@ event = st.dataframe(
     column_config=column_config(),
     on_select="rerun",
     selection_mode="single-row",
-    key=f"grid_{asset}_{st.session_state.grid_nonce}",
+    key=f"grid_{asset}_{nav.selection_nonce()}",
 )
 if event.selection.rows:
-    st.query_params["ticker"] = table.iloc[event.selection.rows[0]]["ticker"]
+    nav.open_company(view.iloc[event.selection.rows[0]]["ticker"])
     st.rerun()
 
 st.download_button("Download results (CSV)", view[cols].to_csv(index=False),

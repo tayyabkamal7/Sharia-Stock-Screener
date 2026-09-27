@@ -48,8 +48,19 @@ span[data-baseweb="tag"] {background-color: #0F766E !important;}
 [data-testid="stTabs"] [aria-selected="true"] p {color: #14B8A6;}
 [data-baseweb="tab-highlight"] {background-color: #14B8A6 !important;}
 [data-testid="stToggle"] [aria-checked="true"] {background-color: #0F766E !important;}
+[data-testid="stSlider"] [role="slider"] {background-color: #14B8A6 !important; box-shadow: none !important;}
+[data-testid="stSliderThumbValue"] {color: #14B8A6 !important;}
 </style>
 """
+
+
+def remember(key, default):
+    """Seed a persistent widget setting once and return its key.
+
+    Settings keyed "f_*" are carried across pages (see app.py), so widgets using them must not also pass a
+    default/value/index argument, otherwise the display and the stored value can disagree."""
+    st.session_state.setdefault(key, default)
+    return key
 
 
 def inject_css():
