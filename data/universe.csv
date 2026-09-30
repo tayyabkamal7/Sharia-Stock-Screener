@@ -2055,6 +2055,7 @@ ICHR,Ichor Holdings - Ordinary Shares,Stock,NASDAQ
 ICLN,iShares Global Clean Energy ETF,ETF,NASDAQ
 ICLR,ICON plc - Ordinary Shares,Stock,NASDAQ
 ICMB,"Investcorp Credit Management BDC, Inc. - Common Stock",Stock,NASDAQ
+ICMO,Symmetry Panoramic International Country Momentum ETF,ETF,NASDAQ
 ICON,Icon Energy Corp. - Common stock,Stock,NASDAQ
 ICOP,iShares Copper and Metals Mining ETF,ETF,NASDAQ
 ICU,SeaStar Medical Holding Corporation - Common Stock,Stock,NASDAQ
@@ -2755,6 +2756,7 @@ MUD,Direxion Daily MU Bear 1X ETF,ETF,NASDAQ
 MULL,GraniteShares 2x Long MU Daily ETF,ETF,NASDAQ
 MULT,Franklin Multisector Income ETF,ETF,NASDAQ
 MUU,Direxion Daily MU Bull 2X ETF,ETF,NASDAQ
+MUY,YieldMax MU Option Income Strategy ETF,ETF,NASDAQ
 MUYY,GraniteShares YieldBOOST MU ETF,ETF,NASDAQ
 MUZE,Muzero Acquisition Corp - Class A Ordinary Shares,Stock,NASDAQ
 MVBF,MVB Financial Corp. - Common Stock,Stock,NASDAQ
@@ -3661,6 +3663,7 @@ RYET,Ruanyun Edai Technology Inc. - Ordinary shares,Stock,NASDAQ
 RYM,"RYTHM, Inc. - Common Stock",Stock,NASDAQ
 RYOJ,"rYojbaba Co., Ltd. - Common Shares",Stock,NASDAQ
 RYTM,"Rhythm Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
+RZAI,Roze AI Inc. - Common Shares,Stock,NASDAQ
 RZLT,"Rezolute, Inc. - Common Stock (NV)",Stock,NASDAQ
 RZLV,Rezolve AI PLC - Ordinary Shares,Stock,NASDAQ
 SAAQ,Space Asset Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
@@ -4147,7 +4150,7 @@ TOMZ,"TOMI Environmental Solutions, Inc. - Common Stock",Stock,NASDAQ
 TONX,TON Strategy Company - Common Stock,Stock,NASDAQ
 TOP,TOP Financial Group Limited - Class A Ordinary Shares,Stock,NASDAQ
 TORK,KraneShares Actuator ETF,ETF,NASDAQ
-TORO,Toro Corp. - Common stock,Stock,NASDAQ
+TORO,Toro Corp. - Common Shares,Stock,NASDAQ
 TOUR,Tuniu Corporation - American Depositary Shares,Stock,NASDAQ
 TOWN,Towne Bank - Common Stock,Stock,NASDAQ
 TOYO,"TOYO Co., Ltd - Ordinary Shares",Stock,NASDAQ
@@ -7183,7 +7186,6 @@ GBIL,Goldman Sachs Access Treasury 0-1 Year ETF,ETF,NYSE Arca
 GBND,Goldman Sachs Core Bond ETF,ETF,NYSE Arca
 GBR,"New Concept Energy, Inc Common Stock",Stock,NYSE American
 GBTC,Grayscale Bitcoin Trust (BTC),ETF,NYSE Arca
-GBTG,"Global Business Travel Group, Inc. Class A Common Stock",Stock,NYSE
 GBX,"Greenbrier Companies, Inc. (The) Common Stock",Stock,NYSE
 GCAD,Gabelli Commercial Aerospace and Defense ETF,ETF,NYSE Arca
 GCAL,Goldman Sachs Dynamic California Municipal Income ETF,ETF,NYSE Arca
@@ -8348,7 +8350,6 @@ LBRT,Liberty Energy Inc. Class A common stock,Stock,NYSE
 LCAP,Principal Capital Appreciation Select ETF,ETF,Cboe BZX
 LCF,Touchstone US Large Cap Focused ETF,ETF,Cboe BZX
 LCII,LCI Industries,Stock,NYSE
-LCIV,Logan Capital International ETF,ETF,NYSE
 LCLG,Logan Capital Large Cap Growth ETF,ETF,NYSE Arca
 LCLN,"Lincoln International, Inc. Class A Common Stock",Stock,NYSE
 LCO,LOGIQ Contrarian Opportunities ETF,ETF,NYSE Arca
@@ -8488,6 +8489,7 @@ LUCK,Lucky Strike Entertainment Corporation Class A Common Stock,Stock,NYSE
 LUD,Luda Technology Group Limited Ordinary Shares,Stock,NYSE American
 LUMA,KraneShares Photonic and Optical ETF,ETF,NYSE Arca
 LUMN,"Lumen Technologies, Inc. Common Stock",Stock,NYSE
+LUNC,Longnook Uncommon Compounders ETF,ETF,NYSE Arca
 LUNL,Defiance Daily Target 2X Long LUNR ETF,ETF,Cboe BZX
 LUV,Southwest Airlines Company Common Stock,Stock,NYSE
 LUXE,"LuxExperience B.V. American Depositary Shares, each representing one Ordinary Share",Stock,NYSE
@@ -9037,6 +9039,7 @@ NRGV,"Energy Vault Holdings, Inc. Common Stock",Stock,NYSE
 NRK,Nuveen New York AMT-Free Quality Municipal Income Fund ,Stock,NYSE
 NRO,Neuberger Real Estate Securities Income Fund Inc. Common Stock,Stock,NYSE American
 NRP,Natural Resource Partners LP Limited Partnership,Stock,NYSE
+NRR,Common Shares of Beneficial Interest of Bitwise NEAR ETF,ETF,NYSE Arca
 NRSH,Aztlan North America Nearshoring Stock Selection ETF,ETF,NYSE Arca
 NRT,North European Oil Royality Trust Common Stock,Stock,NYSE
 NRXS,"Neuraxis, Inc. Common Stock",Stock,NYSE American
