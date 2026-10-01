@@ -42,6 +42,7 @@ ACB,Aurora Cannabis Inc. - Common Shares,Stock,NASDAQ
 ACBE,Pacer Metaurus Enhanced Core Income Autocallable ETF,ETF,NASDAQ
 ACBH,Pacer Metaurus High Income Autocallable ETF,ETF,NASDAQ
 ACCL,Acco Group Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
+ACCV,Accelevation Holdings Corp. - Class A ordinary shares,Stock,NASDAQ
 ACDC,ProFrac Holding Corp. - Class A Common Stock,Stock,NASDAQ
 ACEP,ARS Core Equity Portfolio ETF,ETF,NASDAQ
 ACET,"Adicet Bio, Inc. - Common Stock",Stock,NASDAQ
@@ -167,7 +168,6 @@ AIRS,"AirSculpt Technologies, Inc. - Common Stock",Stock,NASDAQ
 AIRT,"Air T, Inc. - Common Stock",Stock,NASDAQ
 AISP,"Airship AI Holdings, Inc - Class A Common Stock",Stock,NASDAQ
 AIX,Defiance US 100 Tech AI Moat ETF,ETF,NASDAQ
-AIXC,"AIxCrypto Holdings, Inc. - Common Stock",Stock,NASDAQ
 AIXI,XIAO-I Corporation - American Depositary Shares,Stock,NASDAQ
 AKAM,"Akamai Technologies, Inc. - Common Stock",Stock,NASDAQ
 AKAN,Akanda Corp. - Common Shares,Stock,NASDAQ
@@ -586,7 +586,7 @@ BMRA,"Biomerica, Inc. - Common Stock",Stock,NASDAQ
 BMRC,Bank of Marin Bancorp - Common Stock,Stock,NASDAQ
 BMRN,BioMarin Pharmaceutical Inc. - Common Stock,Stock,NASDAQ
 BNAI,Brand Engagement Network Inc. - Common Stock,Stock,NASDAQ
-BNC,CEA Industries Inc. - Common Stock,Stock,NASDAQ
+BNC,BNB Standard Corporation - Common Stock,Stock,NASDAQ
 BND,Vanguard Total Bond Market ETF,ETF,NASDAQ
 BNDP,Vanguard Core-Plus Bond Index ETF,ETF,NASDAQ
 BNDW,Vanguard Total World Bond ETF,ETF,NASDAQ
@@ -1333,6 +1333,7 @@ EMXF,iShares ESG Advanced MSCI EM ETF,ETF,NASDAQ
 ENDW,Cambria Endowment Style ETF,ETF,NASDAQ
 ENGN,enGene Therapeutics Inc. - Common Stock,Stock,NASDAQ
 ENGS,Energys Group Limited - Ordinary Shares,Stock,NASDAQ
+ENHE,iShares Enhanced Emerging Markets Active ETF,ETF,NASDAQ
 ENHI,iShares Enhanced International Active ETF,ETF,NASDAQ
 ENHU,iShares Enhanced Large Cap Core Active ETF,ETF,NASDAQ
 ENLT,Enlight Renewable Energy Ltd. - Ordinary Shares,Stock,NASDAQ
@@ -1502,6 +1503,7 @@ FFAI,Faraday Future Intelligent Electric Inc. - Class A Common Stock,Stock,NASDA
 FFBC,First Financial Bancorp. - Common Stock,Stock,NASDAQ
 FFIN,"First Financial Bankshares, Inc. - Common Stock",Stock,NASDAQ
 FFIV,"F5, Inc. - Common Stock",Stock,NASDAQ
+FFR,FF EAI Robotics Ecosystem Inc. - Common Stock,Stock,NASDAQ
 FFUT,Fidelity Managed Futures ETF,ETF,NASDAQ
 FGBI,"First Guaranty Bancshares, Inc. - Common Stock",Stock,NASDAQ
 FGC,FG Communities Holdings Inc. - Common Stock,Stock,NASDAQ
@@ -4774,6 +4776,7 @@ ACH,"Accendra Health, Inc. Common Stock",Stock,NYSE
 ACHR,Archer Aviation Inc. Class A Common Stock,Stock,NYSE
 ACHX,Corgi ACHR 2x Daily ETF,ETF,Cboe BZX
 ACI,"Albertsons Companies, Inc. Class A Common Stock",Stock,NYSE
+ACIG,Hartford Alpha Capture International Growth ETF,ETF,Cboe BZX
 ACII,Innovator Index Autocallable Income Strategy ETF,ETF,NYSE Arca
 ACIO,Aptus Collared Investment Opportunity ETF,ETF,Cboe BZX
 ACKY,VistaShares Target 15 ACKtivist Distribution ETF,ETF,NYSE Arca
@@ -4789,6 +4792,7 @@ ACR,ACRES Commercial Realty Corp. Common Stock,Stock,NYSE
 ACRE,Ares Commercial Real Estate Corporation Common Stock,Stock,NYSE
 ACSG,American Century Small Cap Growth Insights ETF,ETF,Cboe BZX
 ACSI,American Customer Satisfaction ETF,ETF,Cboe BZX
+ACSM,Hartford Alpha Capture SMID Cap ETF,ETF,Cboe BZX
 ACSV,American Century Small Cap Value Insights ETF,ETF,Cboe BZX
 ACTS,FIS Tactical Equity ETF,ETF,NYSE Arca
 ACU,Acme United Corporation. Common Stock,Stock,NYSE American
@@ -4973,7 +4977,6 @@ AMTM,"Amentum Holdings, Inc. Common Stock",Stock,NYSE
 AMUB,"ETRACS Alerian MLP Index ETN Series B due July 18, 2042",Stock,NYSE Arca
 AMWL,American Well Corporation Class A Common Stock,Stock,NYSE
 AMZA,InfraCap MLP ETF,ETF,NYSE Arca
-AMZE,"Amaze Holdings, Inc. Common Stock",Stock,NYSE American
 AMZG,Leverage Shares 2X Long AMZN Daily ETF,ETF,Cboe BZX
 AMZO,Tradr 2X Short AMZN Daily ETF,ETF,Cboe BZX
 AMZP,Kurv Yield Premium Strategy Amazon (AMZN) ETF,ETF,Cboe BZX
@@ -5164,6 +5167,7 @@ AVMA,Avantis Moderate Allocation ETF,ETF,NYSE Arca
 AVMC,Avantis U.S. Mid Cap Equity ETF,ETF,NYSE Arca
 AVMU,Avantis Core Municipal Fixed Income ETF,ETF,NYSE Arca
 AVMV,Avantis U.S. Mid Cap Value ETF,ETF,NYSE Arca
+AVNC,Avantis All International Core Equity ETF,ETF,NYSE Arca
 AVNM,Avantis All International Markets Equity ETF,ETF,NYSE Arca
 AVNT,Avient Corporation Common Stock,Stock,NYSE
 AVNV,Avantis All International Markets Value ETF,ETF,NYSE Arca
@@ -6119,6 +6123,7 @@ DAUG,FT Vest U.S. Equity Deep Buffer ETF - August,ETF,Cboe BZX
 DAVA,Endava plc American Depositary Shares (each representing one Class A Ordinary Share),Stock,NYSE
 DB,Deutsche Bank AG Common Stock,Stock,NYSE
 DBA,Invesco DB Agriculture Fund,ETF,NYSE Arca
+DBAR,IMGP DBI Absolute Return ETF,ETF,NYSE Arca
 DBAW,Xtrackers MSCI All World ex US Hedged Equity ETF,ETF,NYSE Arca
 DBB,Invesco DB Base Metals Fund,ETF,NYSE Arca
 DBC,Invesco DB Commodity Index Tracking Fund,ETF,NYSE Arca
@@ -6135,7 +6140,6 @@ DBMF,iMGP DBi Managed Futures Strategy ETF,ETF,NYSE Arca
 DBND,DoubleLine Opportunistic Core Bond ETF,ETF,NYSE Arca
 DBO,Invesco DB Oil Fund,ETF,NYSE Arca
 DBP,Invesco DB Precious Metals Fund,ETF,NYSE Arca
-DBRG,"DigitalBridge Group, Inc.",Stock,NYSE
 DC,Dakota Gold Corp. Common Stock,Stock,NYSE American
 DCH,Dauch Corporation Common Stock,Stock,NYSE
 DCI,"Donaldson Company, Inc. Common Stock",Stock,NYSE
@@ -7234,7 +7238,6 @@ GENM,Genter Capital Municipal Quality Intermediate ETF,ETF,NYSE Arca
 GENT,Genter Capital Taxable Quality Intermediate ETF,ETF,NYSE Arca
 GENW,Genter Capital International Dividend ETF,ETF,NYSE Arca
 GEO,Geo Group Inc (The) REIT,Stock,NYSE
-GETY,"Getty Images Holdings, Inc. Class A Common Stock",Stock,NYSE
 GEV,GE Vernova Inc. Common Stock,Stock,NYSE
 GEVC,Corgi GEV 2x Daily ETF,ETF,Cboe BZX
 GEVX,Tradr 2X Long GEV Daily ETF,ETF,Cboe BZX
@@ -7966,6 +7969,7 @@ ITRG,Integra Resources Corp. Common Shares,Stock,NYSE American
 ITT,ITT Inc. Common Stock ,Stock,NYSE
 ITW,Illinois Tool Works Inc. Common Stock,Stock,NYSE
 ITWO,ProShares Russell 2000 High Income ETF,ETF,Cboe BZX
+IVAI,Ives Ultra AI Opportunities Inc. Common Stock,Stock,NYSE
 IVE,iShares S&P 500 Value ETF,ETF,NYSE Arca
 IVEP,Dan IVES Wedbush AI Power & Infrastructure ETF,ETF,NYSE Arca
 IVES,Dan IVES Wedbush AI Revolution ETF,ETF,NYSE Arca
@@ -8154,6 +8158,7 @@ JPSV,JPMorgan Active Small Cap Value ETF,ETF,NYSE Arca
 JPUS,JPMorgan Diversified Return U.S. Equity ETF,ETF,NYSE Arca
 JPXN,iShares JPX-Nikkei 400 ETF,ETF,NYSE Arca
 JQC,Nuveen Credit Strategies Income Fund Shares of Beneficial Interest,Stock,NYSE
+JQTY,Jensen U.S. Quality Index ETF,ETF,NYSE Arca
 JQUA,JPMorgan U.S. Quality Factor ETF,ETF,NYSE Arca
 JRI,Nuveen Real Asset Income and Growth Fund Common Shares of Beneficial Interest,Stock,NYSE
 JRS,Nuveen Real Estate Income Fund Common Shares of Beneficial Interest,Stock,NYSE
@@ -8350,6 +8355,7 @@ LBRT,Liberty Energy Inc. Class A common stock,Stock,NYSE
 LCAP,Principal Capital Appreciation Select ETF,ETF,Cboe BZX
 LCF,Touchstone US Large Cap Focused ETF,ETF,Cboe BZX
 LCII,LCI Industries,Stock,NYSE
+LCIV,Logan Capital International ETF,ETF,NYSE
 LCLG,Logan Capital Large Cap Growth ETF,ETF,NYSE Arca
 LCLN,"Lincoln International, Inc. Class A Common Stock",Stock,NYSE
 LCO,LOGIQ Contrarian Opportunities ETF,ETF,NYSE Arca
@@ -10565,7 +10571,7 @@ TCBX,"Third Coast Bancshares, Inc. Common Stock",Stock,NYSE
 TCHP,T. Rowe Price Blue Chip Growth ETF,ETF,NYSE Arca
 TCI,"Transcontinental Realty Investors, Inc. Common Stock",Stock,NYSE
 TCPB,Thrivent Core Plus Bond ETF,ETF,NYSE Arca
-TCV,Towle Value ETF,ETF,NYSE Arca
+TCV,Towle Small-Cap Value ETF,ETF,NYSE Arca
 TD,Toronto Dominion Bank (The) Common Stock,Stock,NYSE
 TDAQ,TappAlpha Innovation 100 Growth & Daily Income ETF,ETF,Cboe BZX
 TDAX,TDAQ Lift ETF,ETF,Cboe BZX
