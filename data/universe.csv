@@ -967,7 +967,6 @@ COHU,"Cohu, Inc. - Common Stock",Stock,NASDAQ
 COIG,Leverage Shares 2X Long COIN Daily ETF,ETF,NASDAQ
 COIN,"Coinbase Global, Inc. - Class A Common Stock",Stock,NASDAQ
 COKE,"Coca-Cola Consolidated, Inc. - Common Stock",Stock,NASDAQ
-COLA,Columbus Acquisition Corp - Ordinary Shares,Stock,NASDAQ
 COLB,"Columbia Banking System, Inc. - Common Stock",Stock,NASDAQ
 COLL,"Collegium Pharmaceutical, Inc. - Common Stock",Stock,NASDAQ
 COLM,Columbia Sportswear Company - Common Stock,Stock,NASDAQ
@@ -1614,7 +1613,6 @@ FRWD,Nomura Transformational Technologies ETF,ETF,NASDAQ
 FSBC,Five Star Bancorp - Common Stock,Stock,NASDAQ
 FSBW,"FS Bancorp, Inc. - Common Stock",Stock,NASDAQ
 FSCS,First Trust SMID Capital Strength ETF,ETF,NASDAQ
-FSEA,"First Seacoast Bancorp, Inc. - Common Stock",Stock,NASDAQ
 FSGS,First Trust SMID Growth Strength ETF,ETF,NASDAQ
 FSHP,Flag Ship Acquisition Corp. - Ordinary Shares,Stock,NASDAQ
 FSLR,"First Solar, Inc. - Common Stock",Stock,NASDAQ
@@ -2924,7 +2922,6 @@ NSIT,"Insight Enterprises, Inc. - Common Stock",Stock,NASDAQ
 NSLR,Neostellar Capital Corp. - Closed End Fund,Stock,NASDAQ
 NSPR,InspireMD Inc. - Common Stock,Stock,NASDAQ
 NSSC,"NAPCO Security Technologies, Inc. - Common Stock",Stock,NASDAQ
-NSTS,"NSTS Bancorp, Inc. - Common Stock",Stock,NASDAQ
 NSYS,Nortech Systems Incorporated - Common Stock,Stock,NASDAQ
 NTAL,GraniteShares 2x Long NTAP Daily ETF,ETF,NASDAQ
 NTAP,"NetApp, Inc. - Common Stock",Stock,NASDAQ
@@ -3382,7 +3379,7 @@ PUL,GraniteShares 2x Long P Daily ETF,ETF,NASDAQ
 PULM,"Pulmatrix, Inc. - Common Stock",Stock,NASDAQ
 PUR,Defiance Daily Target 2X Long PURR ETF,ETF,NASDAQ
 PURR,Hyperliquid Strategies Inc - Common Stock,Stock,NASDAQ
-PUSA,Aureus Greenway Holdings Inc. - Common Stock,Stock,NASDAQ
+PUSA,Powerus Corporation - Common Stock,Stock,NASDAQ
 PVLA,"Palvella Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 PWCM,"PowerCompute, Inc. - Common Stock",Stock,NASDAQ
 PWP,Perella Weinberg Partners - Class A Common Stock,Stock,NASDAQ
@@ -3680,6 +3677,7 @@ SAIA,"Saia, Inc. - Common Stock",Stock,NASDAQ
 SAIC,Science Applications International Corporation - Common Stock,Stock,NASDAQ
 SAIH,SAIHEAT Limited - Class A Ordinary Shares,Stock,NASDAQ
 SAIL,"SailPoint, Inc. - Common Stock",Stock,NASDAQ
+SAIQ,WISeSat.Space Holdings Corp. - Ordinary Shares,Stock,NASDAQ
 SAMG,Silvercrest Asset Management Group Inc. - Common Stock,Stock,NASDAQ
 SANA,"Sana Biotechnology, Inc. - Common Stock",Stock,NASDAQ
 SANG,Sangoma Technologies Corporation - Common Shares,Stock,NASDAQ
@@ -4098,7 +4096,6 @@ THFF,First Financial Corporation  - Common Stock,Stock,NASDAQ
 THH,TryHard Holdings Limited - Ordinary Shares,Stock,NASDAQ
 THMZ,Lazard Equity Megatrends ETF,ETF,NASDAQ
 THRM,Gentherm Inc - Common Stock,Stock,NASDAQ
-THRMV,Gentherm Inc - Gentherm Inc Common Stock When-Issued,Stock,NASDAQ
 THRV,Prospera Income ETF,ETF,NASDAQ
 THRY,"Thryv Holdings, Inc. - Common Stock",Stock,NASDAQ
 THYM,T. Rowe Price High Income Municipal ETF,ETF,NASDAQ
@@ -5302,6 +5299,7 @@ BCI,abrdn Bloomberg All Commodity Strategy K-1 Free ETF,ETF,NYSE Arca
 BCIL,Bancreek International Large Cap ETF,ETF,NYSE Arca
 BCKT,LifeX 2030 Income Bucket ETF,ETF,Cboe BZX
 BCO,Brinks Company (The) Common Stock,Stock,NYSE
+BCOM,Rareview Bloomberg Commodity Index ETF,ETF,Cboe BZX
 BCOR,Grayscale Bitcoin Adopters ETF,ETF,NYSE Arca
 BCPL,BNY Mellon Core Plus ETF,ETF,NYSE Arca
 BCS,Barclays PLC Common Stock,Stock,NYSE
@@ -8726,6 +8724,7 @@ MMSD,NYLIM MacKay Muni Short Duration ETF,ETF,NYSE Arca
 MMT,Aberdeen Multi-Market Income Fund Common Shares of Beneficial Interest,Stock,NYSE
 MMTM,State Street SPDR S&P 1500 Momentum Tilt ETF,ETF,NYSE Arca
 MMU,"Western Asset Managed Municipals Fund, Inc. Common Stock",Stock,NYSE
+MN,Corgi MANGOS ETF,ETF,Cboe BZX
 MNA,NYLIM Merger Arbitrage ETF,ETF,NYSE Arca
 MNBD,ALPS BBH Intermediate Municipal Bond ETF,ETF,NYSE Arca
 MNGB,Yorkville America 2X Inverse MANGOS Plus Daily Target ETF,ETF,NYSE Arca
@@ -9061,6 +9060,7 @@ NSIG,North Square Growth Opportunities ETF,ETF,NYSE Arca
 NSIV,North Square Disciplined Value ETF,ETF,NYSE Arca
 NSP,"Insperity, Inc. Common Stock",Stock,NYSE
 NSRX,Nasus Pharma Ltd. Ordinary Shares,Stock,NYSE American
+NSTR,"NorthStar Earth & Space Enterprises, Inc. Common Shares",Stock,NYSE American
 NTB,Bank of N.T. Butterfield & Son Limited (The) Voting Ordinary Shares,Stock,NYSE
 NTIP,"Network-1 Technologies, Inc. Common Stock",Stock,NYSE American
 NTR,Nutrien Ltd. Common Shares,Stock,NYSE
@@ -11057,7 +11057,6 @@ UYM,ProShares Ultra Materials,ETF,NYSE Arca
 V,Visa Inc.,Stock,NYSE
 VABS,Virtus Newfleet ABS/MBS ETF,ETF,NYSE Arca
 VAC,Marriott Vacations Worldwide Corporation Common Stock,Stock,NYSE
-VACI,Viking Acquisition Corp. I Class A Ordinary Shares,Stock,NYSE
 VAIC,VegaShares US Equity Autocallable Conservative Income ETF,ETF,NYSE Arca
 VAIE,VegaShares US Equity Autocallable Income ETF,ETF,NYSE Arca
 VAL,Valaris Limited Common Shares,Stock,NYSE
