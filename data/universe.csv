@@ -1193,7 +1193,6 @@ DOYU,DouYu International Holdings Limited - American Depositary Shares,Stock,NAS
 DPRO,Draganfly Inc. - Common Shares,Stock,NASDAQ
 DPU,Top KingWin Ltd - Class A Ordinary Shares,Stock,NASDAQ
 DPZ,Domino's Pizza Inc - Common Stock,Stock,NASDAQ
-DRCT,"Direct Digital Holdings, Inc. - Class A Common Stock",Stock,NASDAQ
 DRDB,Roman DBDR Acquisition Corp. II - Ordinary shares,Stock,NASDAQ
 DRH,Diamondrock Hospitality Company - Common Stock,Stock,NASDAQ
 DRIO,DarioHealth Corp. - Common Stock,Stock,NASDAQ
@@ -2177,6 +2176,7 @@ IPDN,"Professional Diversity Network, Inc. - Common Stock",Stock,NASDAQ
 IPFX,Inflection Point Acquisition Corp. VI - Class A Ordinary Shares,Stock,NASDAQ
 IPGP,IPG Photonics Corporation - Common Stock,Stock,NASDAQ
 IPHA,Innate Pharma S.A. - American Depositary Shares,Stock,NASDAQ
+IPHX,Inflection Point Acquisition Corp. VIII - Class A Ordinary Shares,Stock,NASDAQ
 IPKW,Invesco International BuyBack Achievers ETF,ETF,NASDAQ
 IPM,Intelligent Protection Management Corp.  - Common Stock,Stock,NASDAQ
 IPSC,"Century Therapeutics, Inc. - Common Stock",Stock,NASDAQ
@@ -4036,6 +4036,7 @@ TAXT,Northern Trust Tax-Exempt Bond ETF,ETF,NASDAQ
 TAYD,"Taylor Devices, Inc. - Common Stock",Stock,NASDAQ
 TBBK,"The Bancorp, Inc. - Common Stock",Stock,NASDAQ
 TBCH,Turtle Beach Corporation - Common Stock,Stock,NASDAQ
+TBCV,"Thunder Bridge Capital Partners V, Ltd. - Class A Ordinary Shares",Stock,NASDAQ
 TBIL,F/m US Treasury 3 Month Bill Fund,ETF,NASDAQ
 TBLA,Taboola.com Ltd. - Ordinary Shares,Stock,NASDAQ
 TBLD,Thornburg Income Builder Opportunities Trust - Closed End Fund,Stock,NASDAQ
@@ -4500,7 +4501,6 @@ WABF,Western Asset Bond ETF,ETF,NASDAQ
 WAFD,"WaFd, Inc. - Common Stock",Stock,NASDAQ
 WAFDP,"WaFd, Inc. - Depositary Shares",Stock,NASDAQ
 WAFU,Wah Fu Education Group Limited - Ordinary Shares,Stock,NASDAQ
-WALD,Waldencast plc - Class A Ordinary Share,Stock,NASDAQ
 WAMA,WisdomTree US Adaptive Moving Average Fund,ETF,NASDAQ
 WARP,VanEck Space ETF,ETF,NASDAQ
 WASH,"Washington Trust Bancorp, Inc. - Common Stock",Stock,NASDAQ
@@ -4543,7 +4543,6 @@ WINA,Winmark Corporation - Common Stock,Stock,NASDAQ
 WING,Wingstop Inc. - Common Stock,Stock,NASDAQ
 WISE,Themes Generative Artificial Intelligence ETF,ETF,NASDAQ
 WIX,Wix.com Ltd. - Ordinary Shares,Stock,NASDAQ
-WKEY,WISeKey International Holding Ltd - American Depositary Shares,Stock,NASDAQ
 WKHS,"Workhorse Group, Inc. - Common Stock",Stock,NASDAQ
 WKSP,"Worksport, Ltd. - Common Stock",Stock,NASDAQ
 WLCO,Wilco 63 Corporation - Class A Ordinary Shares,Stock,NASDAQ
@@ -4560,6 +4559,7 @@ WOK,WORK Medical Technology Group LTD - Class A Ordinary Shares,Stock,NASDAQ
 WOOD,iShares Global Timber & Forestry ETF,ETF,NASDAQ
 WOOF,"Petco Health and Wellness Company, Inc. - Class A Common Stock",Stock,NASDAQ
 WPRT,Westport Fuel Systems Inc - Common Shares,Stock,NASDAQ
+WQEY,WISeQey Corp - Ordinary Shares,Stock,NASDAQ
 WRAP,"Wrap Technologies, Inc. - Common Stock",Stock,NASDAQ
 WRD,WeRide Inc. - American Depositary Shares,Stock,NASDAQ
 WRLD,World Acceptance Corporation - Common Stock,Stock,NASDAQ
@@ -4838,7 +4838,6 @@ AESG,Harbor AlphaEdge Small Cap Growth ETF,ETF,NYSE Arca
 AESI,Atlas Energy Solutions Inc. Common Stock,Stock,NYSE
 AESL,Harbor AlphaEdge Small Cap Value ETF,ETF,NYSE Arca
 AESR,Anfield U.S. Equity Sector Rotation ETF,ETF,Cboe BZX
-AETH,Bitwise Trendwise Ether and Treasuries Rotation Strategy ETF,ETF,NYSE Arca
 AEXA,American Exceptionalism Acquisition Corp. A Class A Ordinary Shares,Stock,NYSE
 AFB,AllianceBernstein National Municipal Income Fund Inc,Stock,NYSE
 AFG,"American Financial Group, Inc. Common Stock",Stock,NYSE
@@ -6169,9 +6168,9 @@ DDL,Dingdong (Cayman) Limited American Depositary Shares (each two representing 
 DDLS,WisdomTree Dynamic International SmallCap Equity Fund,ETF,Cboe BZX
 DDM,ProShares Ultra Dow30,ETF,NYSE Arca
 DDNQ,Innovator Growth-100 Dual Directional 5 Buffer ETF - Quarterly,ETF,Cboe BZX
-DDS,"Dillard's, Inc. Common Stock",Stock,NYSE
+DDS,"Dillard's, Inc. Common Stock",Stock,Other
 DDSQ,Innovator Equity Dual Directional 5 Buffer ETF - Quarterly,ETF,Cboe BZX
-DDT,Dillard's Capital Trust I,Stock,NYSE
+DDT,Dillard's Capital Trust I,Stock,Other
 DDTA,Innovator Equity Dual Directional 10 Buffer ETF - April,ETF,Cboe BZX
 DDTD,Innovator Equity Dual Directional 10 Buffer ETF - December,ETF,Cboe BZX
 DDTF,Innovator Equity Dual Directional 10 Buffer ETF - February,ETF,Cboe BZX
@@ -6213,13 +6212,13 @@ DESK,VanEck Office and Commercial REIT ETF,ETF,NYSE Arca
 DEUS,Xtrackers Russell US Multifactor ETF,ETF,NYSE Arca
 DEW,WisdomTree Global High Dividend Fund,ETF,NYSE Arca
 DEXC,Dimensional Emerging Markets ex China Core Equity ETF,ETF,NYSE Arca
-DFAC,Dimensional U.S. Core Equity 2 ETF,ETF,NYSE Arca
+DFAC,U.S. Core Equity 2 Portfolio ETF Class Shares,ETF,NYSE Arca
 DFAE,Dimensional Emerging Core Equity Market ETF,ETF,NYSE Arca
 DFAI,Dimensional International Core Equity Market ETF,ETF,NYSE Arca
 DFAL,Dimensional US Large Cap Core Equity Market ETF,ETF,Cboe BZX
 DFAR,DFA Real Estate Securities Portfolio ETF Class Shares,ETF,NYSE Arca
-DFAS,Dimensional U.S. Small Cap ETF,ETF,NYSE Arca
-DFAT,Dimensional U.S. Targeted Value ETF,ETF,NYSE Arca
+DFAS,U.S. Small Cap Portfolio: ETF Class Shares,ETF,NYSE Arca
+DFAT,U.S. Targeted Value Portfolio ETF Class Shares,ETF,NYSE Arca
 DFAU,Dimensional US Core Equity Market ETF,ETF,NYSE Arca
 DFAW,Dimensional World Equity ETF,ETF,NYSE Arca
 DFAX,Dimensional World ex U.S. Core Equity 2 ETF,ETF,NYSE Arca
@@ -7448,7 +7447,6 @@ GVI,iShares Intermediate Government/Credit Bond ETF,ETF,Cboe BZX
 GVIP,Goldman Sachs Hedge Industry VIP ETF,ETF,NYSE Arca
 GVLU,Gotham 1000 Value ETF,ETF,NYSE Arca
 GVUS,Goldman Sachs MarketBeta Russell 1000 Value Equity ETF,ETF,NYSE Arca
-GWH,"ESS Tech, Inc. Common Stock",Stock,NYSE
 GWRE,"Guidewire Software, Inc. Common Stock",Stock,NYSE
 GWW,"W.W. Grainger, Inc. Common Stock",Stock,NYSE
 GWX,State Street SPDR S&P International Small Cap ETF,ETF,NYSE Arca
@@ -7831,7 +7829,6 @@ IJR,iShares Core S&P Small-Cap ETF,ETF,NYSE Arca
 IJS,iShares S&P SmallCap 600 Value ETF,ETF,NYSE Arca
 IJUL,Innovator International Developed Power Buffer ETF  July,ETF,NYSE Arca
 IJUN,Innovator International Developed Power Buffer ETF June,ETF,NYSE Arca
-ILCB,iShares Morningstar Large-Cap ETF,ETF,NYSE Arca
 ILCG,iShares Morningstar Large-Cap Growth ETF,ETF,NYSE Arca
 ILCV,iShares Morningstar Large-Cap  Value ETF,ETF,NYSE Arca
 ILDR,First Trust Innovation Leaders ETF,ETF,NYSE Arca
@@ -7934,7 +7931,6 @@ IRT,"Independence Realty Trust, Inc. Common Stock",Stock,NYSE
 IRTR,iShares LifePath Retirement ETF,ETF,NYSE Arca
 IRVH,Global X Interest Rate Volatility & Inflation Hedge ETF,ETF,NYSE Arca
 ISBG,IncomeSTKd 1x Bitcoin & 1x Gold Premium ETF,ETF,Cboe BZX
-ISCB,iShares Morningstar Small-Cap ETF,ETF,NYSE Arca
 ISCF,iShares International Small-Cap Equity Factor ETF,ETF,NYSE Arca
 ISCG,iShares Morningstar Small-Cap Growth ETF,ETF,NYSE Arca
 ISCV,iShares Morningstar Small-Cap Value ETF,ETF,NYSE Arca
@@ -8702,6 +8698,7 @@ MLPI,NEOS MLP & Energy Infrastructure High Income ETF,ETF,Cboe BZX
 MLPR,ETRACS Quarterly Pay 1.5X Leveraged Alerian MLP Index ETN,ETF,NYSE Arca
 MLPX,Global X MLP & Energy Infrastructure ETF,ETF,NYSE Arca
 MLR,"Miller Industries, Inc. Common Stock",Stock,NYSE
+MLRG,iShares MSCI USA ETF,ETF,NYSE Arca
 MLSS,"Milestone Scientific, Inc. Common Stock",Stock,NYSE American
 MMA,Mixed Martial Arts Group Limited Ordinary Shares,Stock,NYSE American
 MMAR,Pacer Swan SOS Moderate March ETF,ETF,Cboe BZX
@@ -8794,6 +8791,7 @@ MSIF,"MSC Income Fund, Inc. Common Stock",Stock,NYSE
 MSIX,Corgi MSI 2x Daily ETF,ETF,Cboe BZX
 MSLC,Morgan Stanley Pathway Large Cap Equity ETF,ETF,NYSE Arca
 MSM,"MSC Industrial Direct Company, Inc. Common Stock",Stock,NYSE
+MSML,iShares MSCI USA Small-Cap ETF,ETF,NYSE Arca
 MSMR,McElhenny Sheffield Managed Risk ETF,ETF,Cboe BZX
 MSN,Emerson Radio Corporation Common Stock,Stock,NYSE American
 MSOL,Morgan Stanley Solana Trust,ETF,NYSE Arca
@@ -11139,6 +11137,7 @@ VIST,"Vista Energy S.A.B. de C.V. American Depositary Shares, each representing 
 VIV,Telefonica Brasil S.A. American Depositary Shares (Each representing One Common Share),Stock,NYSE
 VIXM,VIX Mid-Term Futures ETF,ETF,Cboe BZX
 VIXY,VIX Short-Term Futures ETF,ETF,Cboe BZX
+VJET,"Flyte Aviation, Inc. Common Stock",Stock,NYSE American
 VKI,Invesco Advantage Municipal Income Trust II Common Shares of Beneficial Interest (DE),Stock,NYSE American
 VKQ,Invesco Municipal Trust Common Stock,Stock,NYSE
 VLN,Valens Semiconductor Ltd. Ordinary Shares,Stock,NYSE
@@ -11196,7 +11195,6 @@ VST,Vistra Corp. Common Stock,Stock,NYSE
 VSTS,Vestis Corporation Common Stock,Stock,NYSE
 VSXY,Victorias Secret & Co. Common Stock ,Stock,NYSE
 VT,Vanguard Total World Stock Index ETF,ETF,NYSE Arca
-VTAK,"Catheter Precision, Inc. Common Stock",Stock,NYSE American
 VTEB,Vanguard Tax-Exempt Bond ETF,ETF,NYSE Arca
 VTEC,Vanguard California Tax-Exempt Bond ETF,ETF,Cboe BZX
 VTEI,Vanguard Tax-Managed Funds Vanguard Intermediate-Term Tax-Exempt Bond ETF,ETF,Cboe BZX
@@ -11375,7 +11373,6 @@ XBI,State Street SPDR S&P Biotech ETF,ETF,NYSE Arca
 XBIX,Corgi U.S. Biotech 2x Daily ETF,ETF,Cboe BZX
 XBJA,Innovator U.S. Equity Accelerated 9 Buffer ETF - January,ETF,Cboe BZX
 XBJL,Innovator U.S. Equity Accelerated 9 Buffer ETF - July,ETF,Cboe BZX
-XBNB,Teucrium xETFs 2x Long Daily BNB ETF,ETF,NYSE Arca
 XBOC,Innovator U.S. Equity Accelerated 9 Buffer ETF - October,ETF,Cboe BZX
 XBOX,Roundhill Ultra Short Duration No Dividend Target ETF,ETF,Cboe BZX
 XC,WisdomTree True Emerging Markets Fund,ETF,NYSE Arca
@@ -11630,7 +11627,6 @@ ZOCT,Innovator Equity Defined Protection ETF - 1 Yr October,ETF,Cboe BZX
 ZONE,Zone Frontier Inc. Class B Common Stock,Stock,NYSE American
 ZROZ,PIMCO 25  Year Zero Coupon U.S. Treasury Index Exchange-Traded Fund,ETF,NYSE Arca
 ZSB,USCF Sustainable Battery Metals Strategy Fund,ETF,NYSE Arca
-ZSC,USCF Sustainable Commodity Strategy Fund,ETF,NYSE Arca
 ZSEP,Innovator Equity Defined Protection ETF - 1 Yr September,ETF,Cboe BZX
 ZSL,ProShares UltraShort Silver,ETF,NYSE Arca
 ZTAX,X-Square Municipal Income ETF,ETF,NYSE Arca
