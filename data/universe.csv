@@ -2419,7 +2419,6 @@ LEGN,Legend Biotech Corporation - American Depositary Shares,Stock,NASDAQ
 LEGR,First Trust Indxx Innovative Transaction & Process ETF,ETF,NASDAQ
 LEND,SEI High Yield Bond & Alternative Credit ETF,ETF,NASDAQ
 LENZ,"LENZ Therapeutics, Inc. - Common Stock",Stock,NASDAQ
-LESL,"Leslie's, Inc. - Common Stock",Stock,NASDAQ
 LEXI,Alexis Practical Tactical ETF,ETF,NASDAQ
 LEXX,Lexaria Bioscience Corp. - Common Stock,Stock,NASDAQ
 LFAC,Leapfrog Acquisition Corporation - Class A Ordinary Shares,Stock,NASDAQ
@@ -2526,6 +2525,7 @@ LUCD,Lucid Diagnostics Inc. - Common Stock,Stock,NASDAQ
 LUCY,"Innovative Eyewear, Inc. - Common Stock",Stock,NASDAQ
 LULG,Leverage Shares 2X Long LULU Daily ETF,ETF,NASDAQ
 LULU,lululemon athletica inc. - Common Stock,Stock,NASDAQ
+LUMN,"Lumen Technologies, Inc.  - Common Stock",Stock,NASDAQ
 LUNG,Pulmonx Corporation - Common Stock,Stock,NASDAQ
 LUNR,"Intuitive Machines, Inc. - Class A Common Stock",Stock,NASDAQ
 LVDS,JPMorgan Fundamental Data Science Large Value ETF,ETF,NASDAQ
@@ -3349,7 +3349,6 @@ PSET,Principal Quality ETF,ETF,NASDAQ
 PSHG,Performance Shipping Inc. - Common Shares,Stock,NASDAQ
 PSIG,PS International Group Ltd. - Ordinary Shares,Stock,NASDAQ
 PSIX,"Power Solutions International, Inc. - Common Stock",Stock,NASDAQ
-PSKY,Paramount Skydance Corporation - Class B Common Stock,Stock,NASDAQ
 PSL,Invesco Dorsey Wright Consumer Staples Momentum ETF,ETF,NASDAQ
 PSMT,"PriceSmart, Inc. - Common Stock",Stock,NASDAQ
 PSNL,"Personalis, Inc. - Common Stock",Stock,NASDAQ
@@ -3465,7 +3464,6 @@ QQXL,ProShares Ultra QQQ Top 30,ETF,NASDAQ
 QQXT,First Trust NASDAQ-100 Ex-Technology Sector Index Fund,ETF,NASDAQ
 QRHC,Quest Resource Holding Corporation - Common Stock,Stock,NASDAQ
 QRMI,Global X NASDAQ 100 Risk Managed Income ETF,ETF,NASDAQ
-QRVO,"Qorvo, Inc. - Common Stock",Stock,NASDAQ
 QS,QuantumScape Corporation - Common Stock,Stock,NASDAQ
 QSEA,Quartzsea Acquisition Corporation - Ordinary Shares,Stock,NASDAQ
 QSI,Quantum-Si Incorporated - Class A Common Stock,Stock,NASDAQ
@@ -7314,6 +7312,7 @@ GLW,Corning Incorporated Common Stock,Stock,NYSE
 GLX,Corgi GLXY 2x Daily ETF,ETF,Cboe BZX
 GLXU,T-REX 2X Long GLXY Daily Target ETF,ETF,Cboe BZX
 GM,General Motors Company Common Stock,Stock,NYSE
+GMAC,Simplify Brookwood Global Macro ETF,ETF,NYSE Arca
 GMAR,FT Vest U.S. Equity Moderate Buffer ETF - March,ETF,Cboe BZX
 GMAY,FT Vest U.S. Equity Moderate Buffer ETF - May,ETF,Cboe BZX
 GME,GameStop Corporation Common Stock,Stock,NYSE
@@ -7527,6 +7526,7 @@ HF,DGA Core Plus Absolute Return ETF,ETF,NYSE
 HFEQ,Unlimited HFEQ Equity Long/Short ETF,ETF,NYSE
 HFGM,Unlimited HFGM Global Macro ETF,ETF,NYSE
 HFGO,Hartford Large Cap Growth ETF,ETF,Cboe BZX
+HFIX,Nomura High Yield Total Return ETF,ETF,NYSE Arca
 HFMF,Unlimited HFMF Managed Futures ETF,ETF,NYSE
 HFND,Unlimited HFND Multi-Strategy Return Tracker ETF,ETF,NYSE
 HFRO,Highland Opportunities and Income Fund Common Shares of Beneficial Interest,Stock,NYSE
@@ -8492,7 +8492,6 @@ LU,"Lufax Holding Ltd American Depositary Shares, each representing two (2) Ordi
 LUCK,Lucky Strike Entertainment Corporation Class A Common Stock,Stock,NYSE
 LUD,Luda Technology Group Limited Ordinary Shares,Stock,NYSE American
 LUMA,KraneShares Photonic and Optical ETF,ETF,NYSE Arca
-LUMN,"Lumen Technologies, Inc. Common Stock",Stock,NYSE
 LUNC,Longnook Uncommon Compounders ETF,ETF,NYSE Arca
 LUNL,Defiance Daily Target 2X Long LUNR ETF,ETF,Cboe BZX
 LUV,Southwest Airlines Company Common Stock,Stock,NYSE
@@ -10213,6 +10212,7 @@ SKIL,Skillsoft Corp. Class A Common Stock,Stock,NYSE
 SKM,"SK Telecom Co., Ltd. Common Stock",Stock,NYSE
 SKT,Tanger Inc. Common Stock,Stock,NYSE
 SKY,"Champion Homes, Inc. Common Stock",Stock,NYSE
+SKYD,Skydance Corporation Class B Common Stock,Stock,NYSE
 SKYH,Sky Harbour Group Corporation Class A Common Stock,Stock,NYSE
 SLB,SLB Limited Common Shares,Stock,NYSE
 SLDR,Global X Short-Term Treasury Ladder ETF,ETF,NYSE Arca
@@ -10897,6 +10897,7 @@ UAUG,Innovator U.S. Equity Ultra Buffer ETF - August,ETF,Cboe BZX
 UAVS,"AgEagle Aerial Systems, Inc. Common Stock",Stock,NYSE American
 UBER,"Uber Technologies, Inc. Common Stock",Stock,NYSE
 UBEW,Roundhill UBER WeeklyPay ETF,ETF,Cboe BZX
+UBIQ,AAM Ubiquitous ETF,ETF,NYSE Arca
 UBOT,"Direxion Daily Robotics, Artificial Intelligence & Automation Index Bull 2X ETF",ETF,NYSE Arca
 UBR,ProShares Ultra MSCI Brazil Capped,ETF,NYSE Arca
 UBS,UBS Group AG Registered Ordinary Shares,Stock,NYSE
