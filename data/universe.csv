@@ -3693,6 +3693,7 @@ SBRA,"Sabra Health Care REIT, Inc. - Common Stock",Stock,NASDAQ
 SBUX,Starbucks Corporation - Common Stock,Stock,NASDAQ
 SCA,GraniteShares Autocallable SMCI ETF,ETF,NASDAQ
 SCAG,Scage Future - American Depositary Shares,Stock,NASDAQ
+SCAT,Southern Cross Acquisition II Corp. - Ordinary Shares,Stock,NASDAQ
 SCDS,JPMorgan Fundamental Data Science Small Core ETF,ETF,NASDAQ
 SCHL,Scholastic Corporation - Common Stock,Stock,NASDAQ
 SCII,SC II Acquisition Corp. - Class A ordinary share,Stock,NASDAQ
@@ -4037,7 +4038,6 @@ TBLA,Taboola.com Ltd. - Ordinary Shares,Stock,NASDAQ
 TBLD,Thornburg Income Builder Opportunities Trust - Closed End Fund,Stock,NASDAQ
 TC,Token Cat Limited - American Depositary Shares,Stock,NASDAQ
 TCAN,21Shares Canton Network ETF,ETF,NASDAQ
-TCBI,"Texas Capital Bancshares, Inc. - Common Stock",Stock,NASDAQ
 TCBK,TriCo Bancshares - Common Stock,Stock,NASDAQ
 TCBS,"Texas Community Bancshares, Inc. - Common Stock",Stock,NASDAQ
 TCGX,TCGX Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
@@ -10576,6 +10576,7 @@ TBXU,Direxion Daily Biotech Top 5 Bull 2X ETF,ETF,NYSE Arca
 TCAF,T. Rowe Price Capital Appreciation Equity ETF,ETF,NYSE Arca
 TCAI,Tortoise AI Infrastructure ETF,ETF,NYSE
 TCAL,T. Rowe Price Capital Appreciation Premium Income ETF,ETF,NYSE Arca
+TCBI,"Texas Capital Bancshares, Inc. Common Stock",Stock,Other
 TCBX,"Third Coast Bancshares, Inc. Common Stock",Stock,NYSE
 TCHP,T. Rowe Price Blue Chip Growth ETF,ETF,NYSE Arca
 TCI,"Transcontinental Realty Investors, Inc. Common Stock",Stock,NYSE
@@ -11331,6 +11332,7 @@ WRBY,Warby Parker Inc. Class A Common Stock,Stock,NYSE
 WRN,Western Copper and Gold Corporation Common Stock,Stock,NYSE American
 WS,"Worthington Steel, Inc. Common Shares",Stock,NYSE
 WSDB,Weitz Short Duration Bond ETF,ETF,NYSE Arca
+WSLS,WisdomTree Efficient Long/Short U.S. SmallCap Equity Fund,ETF,Other
 WSM,"Williams-Sonoma, Inc. Common Stock (DE)",Stock,NYSE
 WSMD,Wasatch Small/Mid Cap ETF,ETF,NYSE Arca
 WSO,"Watsco, Inc. Common Stock",Stock,NYSE
@@ -11338,6 +11340,7 @@ WSO-B,"Watsco, Inc. Class B Common Stock",Stock,NYSE
 WST,"West Pharmaceutical Services, Inc. Common Stock",Stock,NYSE
 WT,"WisdomTree, Inc. Common Stock",Stock,NYSE
 WTAI,WisdomTree Artificial Intelligence and Innovation Fund,ETF,Cboe BZX
+WTAL,WisdomTree Global Alpha Fund,ETF,Other
 WTI,"W&T Offshore, Inc. Common Stock",Stock,NYSE
 WTIB,USCF Oil Plus Bitcoin Strategy Fund,ETF,NYSE Arca
 WTID,MicroSectors Energy 3X Inverse Leveraged ETNs,ETF,NYSE Arca
