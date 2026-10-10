@@ -153,6 +153,7 @@ AIMD,"Ainos, Inc. - Common Stock",Stock,NASDAQ
 AIMG,Defiance AI Magnificent 10 ETF,ETF,NASDAQ
 AIMS,Acuitas Small Cap Active ETF,ETF,NASDAQ
 AINF,Defiance Inference AI Chip ETF,ETF,NASDAQ
+AIOK,AI OKTO CORP. - Common Stock,Stock,NASDAQ
 AIOS,AIOS Tech Inc. - Class A Common Shares,Stock,NASDAQ
 AIOT,"PowerFleet, Inc. - Common Stock",Stock,NASDAQ
 AIP,"Arteris, Inc.  - Common Stock",Stock,NASDAQ
@@ -482,6 +483,7 @@ BCRX,"BioCryst Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
 BCTK,Baron Technology ETF,ETF,NASDAQ
 BCTX,BriaCell Therapeutics Corp. - Common Shares,Stock,NASDAQ
 BCYC,Bicycle Therapeutics plc - American Depositary Shares,Stock,NASDAQ
+BDAI,"Biddance AI Systems, Inc. - Class A Ordinary Share",Stock,NASDAQ
 BDCI,BTC Development Corp. - Class A Ordinary Shares,Stock,NASDAQ
 BDGS,Bridges Capital Tactical ETF,ETF,NASDAQ
 BDMD,Baird Medical Investment Holdings Ltd - Ordinary Share,Stock,NASDAQ
@@ -1191,7 +1193,7 @@ DORM,"Dorman Products, Inc. - Common Stock",Stock,NASDAQ
 DOX,Amdocs Limited - Ordinary Shares,Stock,NASDAQ
 DOYU,DouYu International Holdings Limited - American Depositary Shares,Stock,NASDAQ
 DPRO,Draganfly Inc. - Common Shares,Stock,NASDAQ
-DPU,Top KingWin Ltd - Class A Ordinary Shares,Stock,NASDAQ
+DPU,Nexpu Ltd. - Class A Ordinary Shares,Stock,NASDAQ
 DPZ,Domino's Pizza Inc - Common Stock,Stock,NASDAQ
 DRDB,Roman DBDR Acquisition Corp. II - Ordinary shares,Stock,NASDAQ
 DRH,Diamondrock Hospitality Company - Common Stock,Stock,NASDAQ
@@ -1919,7 +1921,6 @@ HISF,First Trust High Income Strategic Focus ETF,ETF,NASDAQ
 HIT,"Health In Tech, Inc. - Class A Common Stock",Stock,NASDAQ
 HITI,High Tide Inc. - Common Shares,Stock,NASDAQ
 HIVE,HIVE Digital Technologies Ltd - Common Shares,Stock,NASDAQ
-HKIT,Hitek Global Inc. - Class A Ordinary Share,Stock,NASDAQ
 HKPD,"Cellyan Biotechnology Co., Ltd  - Class A Ordinary Shares",Stock,NASDAQ
 HLAL,Wahed FTSE USA Shariah ETF,ETF,NASDAQ
 HLIT,Harmonic Inc. - Common Stock,Stock,NASDAQ
@@ -2550,7 +2551,6 @@ MACI,Melar Acquisition Corp. I - Class A Ordinary Shares,Stock,NASDAQ
 MAGH,Magnitude International Ltd - Ordinary Shares,Stock,NASDAQ
 MAKO,Mako Mining Corp - Common Stock,Stock,NASDAQ
 MAMA,"Mama's Creations, Inc. - Common Stock",Stock,NASDAQ
-MAMK,MaxsMaking Inc. - Class A Ordinary Shares,Stock,NASDAQ
 MAMO,Massimo Group - Common Stock,Stock,NASDAQ
 MANH,"Manhattan Associates, Inc. - Common Stock",Stock,NASDAQ
 MAR,Marriott International - Class A Common Stock,Stock,NASDAQ
@@ -2961,7 +2961,6 @@ NVDS,Tradr 1.5X Short NVDA Daily ETF,ETF,NASDAQ
 NVDU,Direxion Daily NVDA Bull 2X ETF,ETF,NASDAQ
 NVEC,NVE Corporation - Common Stock,Stock,NASDAQ
 NVMI,Nova Ltd. - Ordinary Shares,Stock,NASDAQ
-NVNI,Nvni Group Limited - Ordinary Shares,Stock,NASDAQ
 NVNO,enVVeno Medical Corporation - Common Stock,Stock,NASDAQ
 NVPS,PurePlay Nvidia Ecosystem Picks & Shovels Index ETF,ETF,NASDAQ
 NVTS,Navitas Semiconductor Corporation - Common Stock,Stock,NASDAQ
@@ -3638,6 +3637,7 @@ RSVR,"Reservoir Media, Inc.. - Common Stock",Stock,NASDAQ
 RTAC,Renatus Tactical Acquisition Corp I - Class A Ordinary Shares,Stock,NASDAQ
 RTB,"RTB Digital, Inc. - Common Stock",Stock,NASDAQ
 RTH,VanEck Retail ETF,ETF,NASDAQ
+RTSN,"Retension Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
 RTXG,Leverage Shares 2X Long RTX Daily ETF,ETF,NASDAQ
 RTYY,GraniteShares YieldBoost RIOT ETF,ETF,NASDAQ
 RUBI,Rubico Inc. - Common Stock,Stock,NASDAQ
@@ -4196,6 +4196,7 @@ TRUT,VanEck Technology TruSector ETF,ETF,NASDAQ
 TRUU,VanEck Utilities TruSector ETF,ETF,NASDAQ
 TRVG,trivago N.V. - American Depositary Shares,Stock,NASDAQ
 TRVI,"Trevi Therapeutics, Inc. - Common Stock",Stock,NASDAQ
+TRXB,"TRex Bio, Inc. - Common stock",Stock,NASDAQ
 TSAT,Telesat Corporation - Class A Common Shares and Class B Variable Voting Shares,Stock,NASDAQ
 TSBK,"Timberland Bancorp, Inc. - Common Stock",Stock,NASDAQ
 TSCM,TimesSquare Quality Mid Cap Growth ETF,ETF,NASDAQ
@@ -8656,7 +8657,7 @@ MI,NFT Limited Class A Ordinary Share,Stock,NYSE American
 MIAX,"Miami International Holdings, Inc. Common Stock",Stock,NYSE
 MIC,Corgi MU 2x Daily ETF,ETF,Cboe BZX
 MICC,The Magnum Ice Cream Company N.V. Ordinary Shares,Stock,NYSE
-MID,American Century Mid Cap Growth Impact ETF,ETF,NYSE Arca
+MID,American Century Mid Cap Growth Insights ETF,ETF,NYSE Arca
 MIDE,Xtrackers S&P MidCap 400 Scored & Screened ETF,ETF,NYSE Arca
 MIDU,Direxion Mid Cap Bull 3X ETF,ETF,NYSE Arca
 MIG,VanEck Moody's Analytics IG Corporate Bond ETF,ETF,Cboe BZX
@@ -9242,6 +9243,7 @@ OPLN,"OPENLANE, Inc. Common Stock",Stock,NYSE
 OPP,"RiverNorth/DoubleLine Strategic Opportunity Fund, Inc. Common Stock",Stock,NYSE
 OPPE,WisdomTree European Opportunities Fund,ETF,NYSE Arca
 OPPG,WisdomTree GeoAlpha Opportunities Fund,ETF,NYSE Arca
+OPTO,Tuttle Capital Photonics Income Blast ETF,ETF,Cboe BZX
 OPTT,"Ocean Power Technologies, Inc. Common Stock",Stock,NYSE American
 OPTU,"Optimum Communications, Inc. Class A common stock",Stock,NYSE
 OPY,"Oppenheimer Holdings, Inc. Class A Common Stock (DE)",Stock,NYSE
@@ -11121,6 +11123,7 @@ VGMS,Vanguard Multi-Sector Income Bond ETF,ETF,Cboe BZX
 VGNT,Versigent PLC Ordinary Shares,Stock,NYSE
 VGRO,Virtus Silvant Growth Opportunities ETF,ETF,NYSE Arca
 VGT,Vanguard Information Tech ETF,ETF,NYSE Arca
+VGTX,XFUNDS Technology Income ETF,ETF,NYSE Arca
 VGVT,Vanguard Government Securities Active ETF,ETF,NYSE Arca
 VGZ,Vista Gold Corp Common Stock,Stock,NYSE American
 VHI,"Valhi, Inc. Common Stock",Stock,NYSE
@@ -11547,7 +11550,9 @@ XW,Corgi Ex-U.S. Equities 2x Daily ETF,ETF,Cboe BZX
 XWNG,Amplify Top 10 Space ETF,ETF,NYSE Arca
 XX,"Roundhill S&P 500 Target 10,000 2030 ETF",ETF,Cboe BZX
 XXI,"Twenty One Capital, Inc. Class A Common Stock",Stock,NYSE
+XXQQ,Subversive Growth 100 Redacted ETF,ETF,Cboe BZX
 XXRP,Teucrium 2x Long Daily XRP ETF,ETF,NYSE Arca
+XXSP,Subversive S&P 500 Redacted ETF,ETF,Cboe BZX
 XXV,Simplify Ancorato Target 25 Distribution ETF,ETF,NYSE Arca
 XYF,"X Financial American Depositary Shares, each representing six Class A Ordinary Shares",Stock,NYSE
 XYL,Xylem Inc. Common Stock New,Stock,NYSE
