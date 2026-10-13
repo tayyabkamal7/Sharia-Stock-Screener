@@ -2198,6 +2198,7 @@ IREG,Leverage Shares 2X Long IREN Daily ETF,ETF,NASDAQ
 IREN,IREN Limited - Ordinary Shares,Stock,NASDAQ
 IRHO,Iron Horse Acquisitions II Corp. - Common Stock,Stock,NASDAQ
 IRIX,IRIDEX Corporation - Common Stock,Stock,NASDAQ
+IRLA,IRulya Therapeutics Inc. - Common Stock,Stock,NASDAQ
 IRMD,iRadimed Corporation - Common Stock,Stock,NASDAQ
 IRON,"Disc Medicine, Inc. - Common Stock",Stock,NASDAQ
 IRTC,"iRhythm Holdings, Inc.  - Common Stock",Stock,NASDAQ
@@ -3425,7 +3426,6 @@ QMID,WisdomTree U.S. MidCap Quality Growth Fund,ETF,NASDAQ
 QMLS,"QumulusAI, Inc. - Common Stock",Stock,NASDAQ
 QMOM,Alpha Architect U.S. Quantitative Momentum ETF,ETF,NASDAQ
 QNBC,QNB Corp. - Common Stock,Stock,NASDAQ
-QNCX,"Quince Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 QNDX,State Street SPDR Portfolio Nasdaq 100 ETF,ETF,NASDAQ
 QNME,"Quanome Technologies, Inc. - Common Stock",Stock,NASDAQ
 QNRX,"Quoin Pharmaceuticals, Ltd. - American Depositary Shares",Stock,NASDAQ
@@ -4496,7 +4496,7 @@ WABC,Westamerica Bancorporation - Common Stock,Stock,NASDAQ
 WABF,Western Asset Bond ETF,ETF,NASDAQ
 WAFD,"WaFd, Inc. - Common Stock",Stock,NASDAQ
 WAFDP,"WaFd, Inc. - Depositary Shares",Stock,NASDAQ
-WAFU,Wah Fu Education Group Limited - Ordinary Shares,Stock,NASDAQ
+WAFU,Wah Fu Education & Technology Group Ltd. - Ordinary Shares,Stock,NASDAQ
 WAMA,WisdomTree US Adaptive Moving Average Fund,ETF,NASDAQ
 WARP,VanEck Space ETF,ETF,NASDAQ
 WASH,"Washington Trust Bancorp, Inc. - Common Stock",Stock,NASDAQ
@@ -4634,7 +4634,7 @@ XQQI,NEOS Boosted Nasdaq-100 High Income ETF,ETF,NASDAQ
 XRAY,DENTSPLY SIRONA Inc. - Common Stock,Stock,NASDAQ
 XRPC,Canary XRP ETF,ETF,NASDAQ
 XRPI,Volatility Shares Trust XRP ETF,ETF,NASDAQ
-XRPN,Armada Acquisition Corp. II - Class A Ordinary Shares,Stock,NASDAQ
+XRPN,Evernorth Holdings Inc. - Class A Ordinary Shares,Stock,NASDAQ
 XRPT,Volatility Shares Trust XRP 2X ETF,ETF,NASDAQ
 XRTX,XORTX Therapeutics Inc. - Common Shares,Stock,NASDAQ
 XRX,Xerox Holdings Corporation - Common Stock,Stock,NASDAQ
@@ -4779,6 +4779,7 @@ ACLC,American Century Large Cap Equity ETF,ETF,NYSE Arca
 ACLO,TCW AAA CLO ETF,ETF,NYSE
 ACLZ,Corgi ACLS 2x Daily ETF,ETF,Cboe BZX
 ACM,AECOM Common Stock,Stock,NYSE
+ACMG,American Century Mid Cap Growth Insights ETF,ETF,Cboe BZX
 ACMM,Corgi ACMR 2x Daily ETF,ETF,Cboe BZX
 ACN,Accenture plc Class A Ordinary Shares (Ireland),Stock,NYSE
 ACOM,Harbor Active Commodity ETF,ETF,NYSE Arca
@@ -8657,7 +8658,6 @@ MI,NFT Limited Class A Ordinary Share,Stock,NYSE American
 MIAX,"Miami International Holdings, Inc. Common Stock",Stock,NYSE
 MIC,Corgi MU 2x Daily ETF,ETF,Cboe BZX
 MICC,The Magnum Ice Cream Company N.V. Ordinary Shares,Stock,NYSE
-MID,American Century Mid Cap Growth Insights ETF,ETF,NYSE Arca
 MIDE,Xtrackers S&P MidCap 400 Scored & Screened ETF,ETF,NYSE Arca
 MIDU,Direxion Mid Cap Bull 3X ETF,ETF,NYSE Arca
 MIG,VanEck Moody's Analytics IG Corporate Bond ETF,ETF,Cboe BZX
