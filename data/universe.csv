@@ -427,6 +427,7 @@ AWRE,"Aware, Inc. - Common Stock",Stock,NASDAQ
 AXG,Solowin Holdings - Class A Ordinary Share,Stock,NASDAQ
 AXGN,"Axogen, Inc. - Common Stock",Stock,NASDAQ
 AXIN,Axiom Intelligence Acquisition Corp 1 - Class A Ordinary Shares,Stock,NASDAQ
+AXNX,Axonex AI Group Limited - Class A Ordinary Shares,Stock,NASDAQ
 AXON,"Axon Enterprise, Inc. - Common Stock",Stock,NASDAQ
 AXSM,"Axsome Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 AXTI,AXT Inc - Common Stock,Stock,NASDAQ
@@ -2648,7 +2649,6 @@ MGYR,"Magyar Bancorp, Inc. - Common Stock",Stock,NASDAQ
 MIAC,Meridian3 Industrials Acquisition Corp - Class A Ordinary Shares,Stock,NASDAQ
 MIDD,The Middleby Corporation - Common Stock,Stock,NASDAQ
 MILN,Global X Millennial Consumer ETF,ETF,NASDAQ
-MIMI,Mint Incorporation Limited - Class A Ordinary Shares,Stock,NASDAQ
 MIND,"MIND Technology, Inc. - Common Stock",Stock,NASDAQ
 MIRA,"MIRA Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
 MIRM,"Mirum Pharmaceuticals, Inc. - common stock",Stock,NASDAQ
@@ -3607,6 +3607,7 @@ RNGT,Range Capital Acquisition Corp II - Class A Ordinary Shares,Stock,NASDAQ
 RNIN,Bushido Capital US SMID Cap Equity ETF,ETF,NASDAQ
 RNRG,Global X Renewable Energy Producers ETF,ETF,NASDAQ
 RNTX,"Rein Therapeutics, Inc. - Common Stock",Stock,NASDAQ
+RNTZ,Rantizo - Class A Ordinary Shares,Stock,NASDAQ
 RNW,ReNew Energy Global plc - Class A Shares,Stock,NASDAQ
 RNXT,"RenovoRx, Inc. - Common Stock",Stock,NASDAQ
 ROAD,"Construction Partners, Inc. - Common Stock",Stock,NASDAQ
@@ -3798,7 +3799,6 @@ SJLD,SanJac Alpha Low Duration ETF,ETF,NASDAQ
 SKDD,GraniteShares 2x Short SK Hynix Daily ETF,ETF,NASDAQ
 SKHY,SK hynix Inc. - American Depositary Shares,Stock,NASDAQ
 SKIN,SkinHealth Systems Inc. - Class A Common Stock,Stock,NASDAQ
-SKK,SKK Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
 SKOR,Northern Trust Credit-Scored US Corporate Bond ETF,ETF,NASDAQ
 SKRE,Tuttle Capital Daily 2X Inverse Regional Banks ETF,ETF,NASDAQ
 SKUU,GraniteShares 2x Long SK Hynix Daily ETF,ETF,NASDAQ
@@ -4275,7 +4275,6 @@ UCFI,CN Healthy Food Tech Group Corp. - Common Stock,Stock,NASDAQ
 UCL,uCloudlink Group Inc. - American Depositary Shares,Stock,NASDAQ
 UCRD,VictoryShares Corporate Bond ETF,ETF,NASDAQ
 UCTT,"Ultra Clean Holdings, Inc. - Common Stock",Stock,NASDAQ
-UCYB,ProShares Ultra Nasdaq Cybersecurity,ETF,NASDAQ
 UECG,Leverage Shares 2x Long UEC Daily ETF,ETF,NASDAQ
 UEIC,Universal Electronics Inc. - Common Stock,Stock,NASDAQ
 UEVM,VictoryShares Emerging Markets Value Momentum ETF,ETF,NASDAQ
@@ -4981,7 +4980,6 @@ AMZY,YieldMax AMZN Option Income Strategy ETF,ETF,NYSE Arca
 AN,"AutoNation, Inc. Common Stock",Stock,NYSE
 ANDG,Andersen Group Inc. Class A Common Stock,Stock,NYSE
 ANET,"Arista Networks, Inc. Common Stock",Stock,NYSE
-ANEW,ProShares MSCI Transformational Changes ETF,ETF,NYSE Arca
 ANF,Abercrombie & Fitch Company Common Stock,Stock,NYSE
 ANGX,"Angel Studios, Inc. Class A Common Stock",Stock,NYSE
 ANRO,"Alto Neuroscience, Inc. Common Stock",Stock,NYSE
@@ -5843,7 +5841,6 @@ CLF,Cleveland-Cliffs Inc. Common Stock,Stock,NYSE
 CLH,"Clean Harbors, Inc. Common Stock",Stock,NYSE
 CLIM,Climate Global - Climate Resilient REIT Index ETF,ETF,NYSE Arca
 CLIP,Global X 1-3 Month T-Bill ETF,ETF,NYSE Arca
-CLIX,ProShares Long Online/Short Stores ETF,ETF,NYSE Arca
 CLM,"Cornerstone Strategic Investment Fund, Inc. Common Shares",Stock,NYSE American
 CLNK,Common Shares of Beneficial Interest of Bitwise Chainlink ETF,ETF,NYSE Arca
 CLOB,VanEck AA-BB CLO ETF,ETF,NYSE Arca
@@ -6042,7 +6039,6 @@ CTAP,Simplify US Equity PLUS Managed Futures Strategy ETF,ETF,NYSE Arca
 CTAU,Corgi U.S. Equities 30% Structured Buffer ETF - August Series,ETF,Cboe BZX
 CTEF,Castellan Targeted Equity ETF,ETF,Cboe BZX
 CTEV,Claritev Corporation Class A Common Stock,Stock,NYSE
-CTEX,ProShares S&P Kensho Cleantech ETF,ETF,NYSE Arca
 CTGO,Contango Silver & Gold Inc. Common Stock,Stock,NYSE American
 CTIF,Castellan Targeted Income ETF,ETF,Cboe BZX
 CTJL,Corgi U.S. Equities 30% Structured Buffer ETF - July Series,ETF,Cboe BZX
@@ -6116,7 +6112,6 @@ DAO,"Youdao, Inc. American Depositary Shares, each representing one Class A Ordi
 DAPR,FT Vest U.S. Equity Deep Buffer ETF - April,ETF,Cboe BZX
 DAR,Darling Ingredients Inc. Common Stock,Stock,NYSE
 DARP,Grizzle Growth ETF,ETF,NYSE Arca
-DAT,ProShares Big Data Refiners ETF,ETF,NYSE Arca
 DAUG,FT Vest U.S. Equity Deep Buffer ETF - August,ETF,Cboe BZX
 DAVA,Endava plc American Depositary Shares (each representing one Class A Ordinary Share),Stock,NYSE
 DB,Deutsche Bank AG Common Stock,Stock,NYSE
@@ -8529,7 +8524,6 @@ MAGY,Roundhill Magnificent Seven Covered Call ETF,ETF,Cboe BZX
 MAIA,"MAIA Biotechnology, Inc. Common Stock",Stock,NYSE American
 MAIN,Main Street Capital Corporation Common Stock,Stock,NYSE
 MAIR,Madison Air Solutions Corporation Class A Common Stock,Stock,NYSE
-MAKX,ProShares S&P Kensho Smart Factories ETF,ETF,NYSE Arca
 MAMB,Monarch Ambassador Income Index ETF,ETF,Cboe BZX
 MAN,ManpowerGroup Common Stock,Stock,NYSE
 MANE,"Veradermics, Incorporated Common Stock",Stock,NYSE
@@ -9158,7 +9152,7 @@ OARK,YieldMax Innovation Option Income Strategy ETF,ETF,NYSE Arca
 OASC,OneAscent Enhanced Small and Mid Cap ETF,ETF,NYSE Arca
 OBDC,Blue Owl Capital Corporation Common Stock,Stock,NYSE
 OBE,Obsidian Energy Ltd. Common Shares,Stock,NYSE American
-OBK,"Origin Bancorp, Inc. Common Stock",Stock,NYSE
+OBK,"Origin Bancorp, Inc. Common Stock",Stock,Other
 OBND,State Street Loomis Sayles Opportunistic Bond ETF,ETF,Cboe BZX
 OBOR,KraneShares MSCI One Belt One Road Index ETF,ETF,NYSE Arca
 OC,Owens Corning Inc Common Stock New,Stock,NYSE
@@ -9214,7 +9208,6 @@ OMC,Omnicom Group Inc. Common Stock,Stock,NYSE
 OMF,"OneMain Holdings, Inc. Common Stock",Stock,NYSE
 OMFL,Invesco Russell 1000 Dynamic Multifactor ETF,ETF,Cboe BZX
 OMFS,Invesco Russell 2000 Dynamic Multifactor ETF,ETF,Cboe BZX
-OND,ProShares On-Demand ETF,ETF,NYSE Arca
 ONDC,Corgi ONDS 2x Daily ETF,ETF,Cboe BZX
 ONDL,Defiance Daily Target 2X Long ONDS ETF,ETF,Cboe BZX
 ONDU,Tradr 2X Long ONDS Daily ETF,ETF,Cboe BZX
@@ -10507,7 +10500,6 @@ SUB,iShares Short-Term National Muni Bond ETF,ETF,NYSE Arca
 SUI,"Sun Communities, Inc. Common Stock",Stock,NYSE
 SUIL,2x Sui ETF,ETF,Cboe BZX
 SUNB,"Sunbelt Rentals Holdings, Inc. Common Stock",Stock,NYSE
-SUPL,ProShares Supply Chain Logistics ETF,ETF,NYSE Arca
 SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,Stock,NYSE
 SURE,AdvisorShares Insider Advantage ETF,ETF,NYSE Arca
 SURI,Simplify Propel Opportunities ETF,ETF,NYSE Arca
@@ -10680,7 +10672,6 @@ TILT,Northern Trust Morningstar US Market Factor Tilt ETF,ETF,Cboe BZX
 TIMB,TIM S.A. American Depositary Shares (Each representing 5 Common Shares) ,Stock,NYSE
 TIME,Clockwise U.S. Core Equity ETF,ETF,NYSE Arca
 TINS,Templeton International Insights ETF,ETF,NYSE Arca
-TINT,ProShares Smart Materials ETF,ETF,NYSE Arca
 TINY,ProShares Nanotechnology ETF,ETF,NYSE Arca
 TIP,iShares TIPS Bond ETF,ETF,NYSE Arca
 TIPA,Northern Trust 2030 Inflation-Linked Distributing Ladder ETF,ETF,NYSE Arca
@@ -11102,7 +11093,6 @@ VELL,Defiance Daily Target 2X Long VELO ETF,ETF,Cboe BZX
 VEM,Virtus Emerging Markets Dividend ETF,ETF,NYSE Arca
 VEMY,Virtus Stone Harbor Emerging Markets High Yield Bond ETF,ETF,NYSE Arca
 VENU,Venu Holding Corporation Common Stock,Stock,NYSE American
-VERS,ProShares Metaverse ETF,ETF,NYSE Arca
 VET,Vermilion Energy Inc. Common (Canada),Stock,NYSE
 VETZ,Academy Veteran Bond ETF,ETF,NYSE Arca
 VEU,Vanguard FTSE All World Ex US ETF,ETF,NYSE Arca
