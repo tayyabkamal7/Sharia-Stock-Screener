@@ -243,6 +243,7 @@ AMPG,"Amplitech Group, Inc. - Common Stock",Stock,NASDAQ
 AMPH,"Amphastar Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
 AMPL,"Amplitude, Inc. - Class A Common Stock",Stock,NASDAQ
 AMRN,Amarin Corporation plc - American Depositary Shares,Stock,NASDAQ
+AMRO,Amaero Inc. - Common Stock,Stock,NASDAQ
 AMRX,"Amneal Pharmaceuticals, Inc. - Class A Common Stock",Stock,NASDAQ
 AMSC,American Superconductor Corporation - Common Stock,Stock,NASDAQ
 AMSF,"AMERISAFE, Inc. - Common Stock",Stock,NASDAQ
@@ -583,6 +584,7 @@ BMEA,"Biomea Fusion, Inc. - Common Stock",Stock,NASDAQ
 BMGL,Basel Medical Group Ltd - ordinary shares,Stock,NASDAQ
 BMHL,Bluemount Holdings Limited - Class B Ordinary Shares,Stock,NASDAQ
 BMM,Blue Moon Metals Inc. - Common Shares,Stock,NASDAQ
+BMMX,Black Mammoth Metals Corporation - Common Shares,Stock,NASDAQ
 BMNG,Leverage Shares 2X Long BMNR Daily ETF,ETF,NASDAQ
 BMOP,BNY Mellon Municipal Opportunities ETF,ETF,NASDAQ
 BMR,Beamr Imaging Ltd. - Ordinary Share,Stock,NASDAQ
@@ -2020,6 +2022,7 @@ IA,"Innovative Solutions and Support, Inc. - Common Stock",Stock,NASDAQ
 IACO,Idea Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 IACQ,Irenic Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 IALT,iShares Systematic Alternatives Active ETF,ETF,NASDAQ
+IAM,"Iambic Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 IART,Integra LifeSciences Holdings Corporation - Common Stock,Stock,NASDAQ
 IBAC,IB Acquisition Corp. - Common Stock,Stock,NASDAQ
 IBAT,iShares Energy Storage & Materials ETF,ETF,NASDAQ
@@ -5179,6 +5182,7 @@ AVSF,Avantis Short-Term Fixed Income ETF,ETF,NYSE Arca
 AVSU,Avantis Responsible U.S. Equity ETF,ETF,NYSE Arca
 AVTM,Avantis Total Equity Markets ETF,ETF,NYSE Arca
 AVTR,"Avantor, Inc. Common Stock",Stock,NYSE
+AVUC,Avantis U.S. Core Equity ETF,ETF,NYSE Arca
 AVUS,Avantis U.S. Equity ETF,ETF,NYSE Arca
 AVUV,Avantis U.S. Small Cap Value ETF,ETF,NYSE Arca
 AVY,Avery Dennison Corporation Common Stock,Stock,NYSE
@@ -5629,7 +5633,6 @@ BWG,BrandywineGLOBAL Global Income Opportunities Fund Inc.,Stock,NYSE
 BWIV,Blue Water Acquisition Corp. IV Class A Ordinary Shares,Stock,NYSE
 BWLP,BW LPG Limited Common Shares,Stock,NYSE
 BWMX,"Betterware de Mexico, S.A.P.I. de C.V. Ordinary Shares",Stock,NYSE
-BWOW,Bitwise Dogecoin ETF,ETF,NYSE Arca
 BWQG,BWM Quality Growth ETF,ETF,Cboe BZX
 BWTG,Brendan Wood TopGun Index ETF,ETF,Cboe BZX
 BWX,State Street SPDR Bloomberg International Treasury Bond ETF,ETF,NYSE Arca
@@ -7173,6 +7176,7 @@ GAL,State Street Global Allocation ETF,ETF,NYSE Arca
 GALX,VistaShares Space Supercycle ETF,ETF,NYSE Arca
 GAM,"General American Investors, Inc. Common Stock",Stock,NYSE
 GAMR,Amplify Video Game Leaders ETF,ETF,NYSE Arca
+GANZ,Tuttle Capital Thematic ETF,ETF,Cboe BZX
 GAP,"Gap, Inc. (The) Common Stock",Stock,NYSE
 GAPR,FT Vest U.S. Equity Moderate Buffer ETF - April,ETF,Cboe BZX
 GARA,Guinness Atkinson Real Assets Income ETF,ETF,NYSE Arca
@@ -7650,7 +7654,7 @@ HYGH,iShares Interest Rate Hedged High Yield Bond ETF,ETF,NYSE Arca
 HYGM,Amplify HYG High Yield 10% Target Income ETF,ETF,Cboe BZX
 HYGU,MicroSectors 3x Long High Yield Corporate Bond (HYG) ETNs,ETF,Cboe BZX
 HYGV,Northern Trust High Yield Value-Scored Bond ETF,ETF,NYSE Arca
-HYGW,iShares High Yield Corporate Bond BuyWrite Strategy ETF,ETF,Cboe BZX
+HYGW,iShares HYG Premium Income+ ETF,ETF,Cboe BZX
 HYHG,ProShares High Yield Interest Rate Hedged,ETF,Cboe BZX
 HYI,Western Asset High Yield Opportunity Fund Inc. Common Stock,Stock,NYSE
 HYIN,WisdomTree Private Credit and Alternative Income Fund,ETF,Cboe BZX
@@ -7978,7 +7982,7 @@ IVT,InvenTrust Properties Corp. Common Stock,Stock,NYSE
 IVV,iShares Core S&P 500 ETF,ETF,NYSE Arca
 IVVB,iShares Large Cap Deep Quarterly Laddered ETF,ETF,Cboe BZX
 IVVM,iShares Large Cap Moderate Quarterly Laddered ETF,ETF,Cboe BZX
-IVVW,iShares S&P 500 BuyWrite ETF,ETF,Cboe BZX
+IVVW,iShares IVV Premium Income+ ETF,ETF,Cboe BZX
 IVW,iShares S&P 500 Growth ETF,ETF,NYSE Arca
 IVZ,Invesco Ltd Common Stock,Stock,NYSE
 IWB,iShares Russell 1000 ETF,ETF,NYSE Arca
@@ -7990,7 +7994,7 @@ IWL,iShares Russell Top 200 ETF,ETF,NYSE Arca
 IWLG,NYLIM Winslow Large Cap Growth ETF,ETF,NYSE Arca
 IWM,iShares Russell 2000 Index Fund,ETF,NYSE Arca
 IWMI,NEOS Russell 2000 High Income ETF,ETF,Cboe BZX
-IWMW,iShares Russell 2000 BuyWrite ETF,ETF,Cboe BZX
+IWMW,iShares IWM Premium Income+ ETF,ETF,Cboe BZX
 IWMY,Defiance R2000 Weekly Distribution ETF,ETF,NYSE Arca
 IWN,iShares Russell 2000 Value ETF,ETF,NYSE Arca
 IWO,iShares Russell 2000 Growth Fund,ETF,NYSE Arca
@@ -8458,7 +8462,7 @@ LQDH,iShares Interest Rate Hedged Corporate Bond ETF,ETF,NYSE Arca
 LQDI,iShares Inflation Hedged Corporate Bond ETF,ETF,Cboe BZX
 LQDM,Amplify LQD Investment Grade 12% Target Income ETF,ETF,Cboe BZX
 LQDU,MicroSectors 3x Long Investment Grade Corporate Bond (LQD) ETNs,ETF,Cboe BZX
-LQDW,iShares Investment Grade Corporate Bond BuyWrite Strategy ETF,ETF,Cboe BZX
+LQDW,iShares LQD Premium Income+ ETF,ETF,Cboe BZX
 LQID,Kurv Enhanced Short Maturity ETF,ETF,Cboe BZX
 LQTI,FT Vest Investment Grade & Target Income ETF,ETF,NYSE Arca
 LRCC,Corgi LRCX 2x Daily ETF,ETF,Cboe BZX
@@ -10273,6 +10277,7 @@ SMR,NuScale Power Corporation Class A Common Stock,Stock,NYSE
 SMRF,"ALPS Nautilus SMR, Nuclear & Technology ETF",ETF,NYSE Arca
 SMRT,"SmartRent, Inc. Class A Common Stock",Stock,NYSE
 SMRX,Corgi SMR 2x Daily ETF,ETF,Cboe BZX
+SMRZ,Global X Small Modular Reactor ETF,ETF,Cboe BZX
 SMTG,Leverage Shares 2X Long SMTC Daily ETF,ETF,Cboe BZX
 SMTH,ALPS Smith Core Plus Bond ETF,ETF,NYSE Arca
 SMTJ,Synera Funds Takumi+ ETF,ETF,NYSE Arca
@@ -10706,7 +10711,7 @@ TLTD,Northern Trust Morningstar Developed Markets ex-US Factor Tilt ETF,ETF,NYSE
 TLTE,Northern Trust Morningstar Emerging Markets Factor Tilt ETF,ETF,NYSE Arca
 TLTI,NEOS Enhanced Income 20+ Year Treasury Bond ETF,ETF,Cboe BZX
 TLTP,Amplify TLT U.S. Treasury 12% Option Income ETF,ETF,Cboe BZX
-TLTW,iShares 20+ Year Treasury Bond BuyWrite Strategy ETF,ETF,Cboe BZX
+TLTW,iShares TLT Premium Income+ ETF,ETF,Cboe BZX
 TLTX,Global X Treasury Bond Enhanced Income ETF,ETF,Cboe BZX
 TLYS,"Tilly's, Inc. Common Stock",Stock,NYSE
 TM,Toyota Motor Corporation Common Stock,Stock,NYSE
@@ -11239,7 +11244,9 @@ WANT,Direxion Daily Consumer Discretionary Bull 3X ETF,ETF,NYSE Arca
 WAR,U.S. Global Technology and Aerospace & Defense ETF,ETF,NYSE Arca
 WAT,Waters Corporation Common Stock,Stock,NYSE
 WATS,Corgi Battery Energy Storage Systems ETF,ETF,Cboe BZX
+WBEM,William Blair Emerging Markets Equity ETF,ETF,NYSE Arca
 WBI,WaterBridge Infrastructure LLC Class A Shares Representing Limited Liability Company Interests,Stock,NYSE
+WBIE,William Blair International Equity ETF,ETF,NYSE Arca
 WBIF,WBI BullBear Value 3000 ETF,ETF,NYSE Arca
 WBIG,WBI BullBear Yield 3000 ETF,ETF,NYSE Arca
 WBIL,WBI BullBear Quality 3000 ETF,ETF,NYSE Arca
