@@ -178,7 +178,6 @@ AKTS,"Aktis Oncology, Inc. - Common stock",Stock,NASDAQ
 AKTX,Akari Therapeutics Plc - American Depositary Shares,Stock,NASDAQ
 ALAB,"Astera Labs, Inc. - Common Stock",Stock,NASDAQ
 ALAR,Alarum Technologies Ltd. - American Depositary Shares,Stock,NASDAQ
-ALBG,Leverage Shares 2X Long ALB Daily ETF,ETF,NASDAQ
 ALCO,"Alico, Inc. - Common Stock",Stock,NASDAQ
 ALDF,Aldel Financial II Inc. - Class A Ordinary Shares,Stock,NASDAQ
 ALDX,"Aldeyra Therapeutics, Inc. - Common Stock",Stock,NASDAQ
@@ -573,7 +572,6 @@ BLNE,"Beeline Holdings, Inc. - Common Stock",Stock,NASDAQ
 BLNK,Blink Charging Co. - Common Stock,Stock,NASDAQ
 BLRK,Bluerock Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 BLRX,BioLineRx Ltd. - American Depositary Shares,Stock,NASDAQ
-BLSG,Leverage Shares 2X Long BLSH Daily ETF,ETF,NASDAQ
 BLSM,"BlossomHill Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 BLTE,"Belite Bio, Inc - American Depositary Shares",Stock,NASDAQ
 BLUW,Blue Water Acquisition Corp. III - Class A Ordinary Shares,Stock,NASDAQ
@@ -1028,7 +1026,6 @@ CRMD,CorMedix Inc. - Common Stock,Stock,NASDAQ
 CRMG,Leverage Shares 2X Long CRM Daily ETF,ETF,NASDAQ
 CRML,Critical Metals Corp. - Ordinary Shares,Stock,NASDAQ
 CRMT,"America's Car-Mart, Inc. - Common Stock",Stock,NASDAQ
-CRMU,Leverage Shares 2x Long CRML Daily ETF,ETF,NASDAQ
 CRNC,Cerence Inc. - Common Stock,Stock,NASDAQ
 CRNT,Ceragon Networks Ltd. - Ordinary Shares,Stock,NASDAQ
 CROB,Defiance China Robotics ETF,ETF,NASDAQ
@@ -1471,7 +1468,6 @@ FCNCA,"First Citizens BancShares, Inc. - Class A Common Stock",Stock,NASDAQ
 FCTE,SMI 3Fourteen Full-Cycle Trend ETF,ETF,NASDAQ
 FCUV,Focus Universal Inc. - Common Stock,Stock,NASDAQ
 FCVT,First Trust SSI Strategic Convertible Securities ETF,ETF,NASDAQ
-FCXG,Leverage Shares 2x Long FCX Daily ETF,ETF,NASDAQ
 FDBC,"Fidelity D & D Bancorp, Inc. - Common Stock",Stock,NASDAQ
 FDCF,Fidelity Disruptive Communications ETF,ETF,NASDAQ
 FDFF,Fidelity Disruptive Finance ETF,ETF,NASDAQ
@@ -1716,7 +1712,6 @@ GEG,"Great Elm Group, Inc.  - Common Stock",Stock,NASDAQ
 GEHC,GE HealthCare Technologies Inc. - Common Stock,Stock,NASDAQ
 GELS,Gelteq Limited - Ordinary Shares,Stock,NASDAQ
 GEME,Pacific North of South EM Equity Active ETF,ETF,NASDAQ
-GEMG,Leverage Shares 2X Long GEMI Daily ETF,ETF,NASDAQ
 GEMI,"Gemini Space Station, Inc. - Class A Common Stock",Stock,NASDAQ
 GEMQ,Goldman Sachs Data Enhanced Emerging Markets Equity ETF,ETF,NASDAQ
 GEN,Gen Digital Inc. - Common Stock,Stock,NASDAQ
@@ -1763,7 +1758,6 @@ GLCR,GlacierShares Nasdaq Iceland ETF,ETF,NASDAQ
 GLDB,IDX Alternative FIAT ETF,ETF,NASDAQ
 GLDI,"ETRACS Gold Shares Covered Call ETNs due February 2, 2033",ETF,NASDAQ
 GLE,Global Engine Group Holding Limited - Class A Ordinary Shares,Stock,NASDAQ
-GLGG,Leverage Shares 2X Long GLXY Daily ETF,ETF,NASDAQ
 GLIBA,Liberty Capital Corporation - Series A GCI Group Common Stock,Stock,NASDAQ
 GLIBK,Liberty Capital Corporation - Series C GCI Group Common Stock,Stock,NASDAQ
 GLND,Greenland Energy Company - Common Stock,Stock,NASDAQ
@@ -2753,6 +2747,7 @@ MTCH,"Match Group, Inc. - Common Stock",Stock,NASDAQ
 MTEK,Maris-Tech Ltd. - ordinary shares,Stock,NASDAQ
 MTEN,Mingteng International Corporation Inc. - Class A Ordinary Shares,Stock,NASDAQ
 MTEX,"Mannatech, Incorporated - Common Stock",Stock,NASDAQ
+MTGG,MayTech Global Growth ETF,ETF,NASDAQ
 MTLS,Materialise NV - American Depositary Shares,Stock,NASDAQ
 MTRX,Matrix Service Company - Common Stock,Stock,NASDAQ
 MTSI,"MACOM Technology Solutions Holdings, Inc. - Common Stock",Stock,NASDAQ
@@ -2852,7 +2847,6 @@ NDRA,ENDRA Life Sciences Inc. - Common Stock,Stock,NASDAQ
 NDSN,Nordson Corporation - Common Stock,Stock,NASDAQ
 NECB,"NorthEast Community Bancorp, Inc. - Common Stock",Stock,NASDAQ
 NEGG,"Newegg Commerce, Inc. - Common Shares",Stock,NASDAQ
-NEMG,Leverage Shares 2x Long NEM Daily ETF,ETF,NASDAQ
 NEO,"NeoGenomics, Inc. - Common Stock",Stock,NASDAQ
 NEOG,Neogen Corporation - Common Stock,Stock,NASDAQ
 NEON,Neonode Inc. - Common Stock,Stock,NASDAQ
@@ -2948,7 +2942,6 @@ NTWK,NETSOL Technologies Inc. - Common Stock,Stock,NASDAQ
 NTWO,Newbury Street II Acquisition Corp - Class A Ordinary Shares,Stock,NASDAQ
 NUAI,"New Era Energy & Digital, Inc. - Common Stock",Stock,NASDAQ
 NUCL,Eagle Nuclear Energy Corp. - Common stock,Stock,NASDAQ
-NUG,Leverage Shares 2X Long NU Daily ETF,ETF,NASDAQ
 NUGY,GraniteShares YieldBOOST Gold Miners ETF,ETF,NASDAQ
 NUIB,Nuveen Impact Bond ETF,ETF,NASDAQ
 NUIF,Nuveen US Infrastructure ETF,ETF,NASDAQ
@@ -3071,7 +3064,6 @@ OPAD,Offerpad Solutions Inc.  - Class A Common Stock,Stock,NASDAQ
 OPAL,OPAL Fuels Inc. - Class A Common Stock,Stock,NASDAQ
 OPBK,OP Bancorp - Common Stock,Stock,NASDAQ
 OPCH,"Option Care Health, Inc. - Common Stock",Stock,NASDAQ
-OPEG,Leverage Shares 2X Long OPEN Daily ETF,ETF,NASDAQ
 OPEN,Opendoor Technologies Inc  - Common Stock,Stock,NASDAQ
 OPI,Office Properties Income Trust - Common shares of beneficial interest,Stock,NASDAQ
 OPK,"Opko Health, Inc. - Common Stock",Stock,NASDAQ
@@ -3165,7 +3157,6 @@ PBM,Psyence Biomedical Ltd. - Common Shares,Stock,NASDAQ
 PBOG,Portfolio Building Block Integrated Oil and Gas and Exploration and Production Index ETF,ETF,NASDAQ
 PBPH,Portfolio Building Block World Pharma and Biotech Index ETF,ETF,NASDAQ
 PBQQ,PGIM Laddered Nasdaq-100 Buffer 12 ETF,ETF,NASDAQ
-PBRG,Leverage Shares 2X Long PBR Daily ETF,ETF,NASDAQ
 PBSC,Pacer Barings Secured Credit Flex ETF,ETF,NASDAQ
 PBUB,Portfolio Building Block US Banks ETF,ETF,NASDAQ
 PBWN,Portfolio Building Block World Ex US Industrials ETF,ETF,NASDAQ
@@ -3352,7 +3343,6 @@ PSCM,Invesco S&P SmallCap Materials ETF,ETF,NASDAQ
 PSCT,Invesco S&P SmallCap Information Technology ETF,ETF,NASDAQ
 PSCU,Invesco S&P SmallCap Utilities & Communication Services ETF,ETF,NASDAQ
 PSEC,Prospect Capital Corporation - Closed End Fund,Stock,NASDAQ
-PSET,Principal Quality ETF,ETF,NASDAQ
 PSHG,Performance Shipping Inc. - Common Shares,Stock,NASDAQ
 PSIG,PS International Group Ltd. - Ordinary Shares,Stock,NASDAQ
 PSIX,"Power Solutions International, Inc. - Common Stock",Stock,NASDAQ
@@ -4284,7 +4274,6 @@ UCFI,CN Healthy Food Tech Group Corp. - Common Stock,Stock,NASDAQ
 UCL,uCloudlink Group Inc. - American Depositary Shares,Stock,NASDAQ
 UCRD,VictoryShares Corporate Bond ETF,ETF,NASDAQ
 UCTT,"Ultra Clean Holdings, Inc. - Common Stock",Stock,NASDAQ
-UECG,Leverage Shares 2x Long UEC Daily ETF,ETF,NASDAQ
 UEIC,Universal Electronics Inc. - Common Stock,Stock,NASDAQ
 UEVM,VictoryShares Emerging Markets Value Momentum ETF,ETF,NASDAQ
 UFCS,"United Fire Group, Inc - Common Stock",Stock,NASDAQ
@@ -4365,7 +4354,6 @@ UYSC,UY Scuti Acquisition Corp. - Ordinary Shares,Stock,NASDAQ
 UZX,Linkage Global Inc - Class A Ordinary Shares,Stock,NASDAQ
 VABK,Virginia National Bankshares Corporation - Common Stock,Stock,NASDAQ
 VAI,Valor Energy Incorporated - Common Stock,Stock,NASDAQ
-VALG,Leverage Shares 2X Long VALE Daily ETF,ETF,NASDAQ
 VALN,Valneva SE - American Depositary Shares,Stock,NASDAQ
 VALU,"Value Line, Inc. - Common Stock",Stock,NASDAQ
 VANI,"Vivani Medical, Inc.  - Common Stock",Stock,NASDAQ
@@ -4890,6 +4878,7 @@ AI,"C3.ai, Inc. Class A Common Stock",Stock,NYSE
 AIB,AIB Data Centers Inc. Common Stock,Stock,NYSE American
 AIBD,Direxion Daily AI and Big Data Bear 2X ETF,ETF,NYSE Arca
 AIBF,iShares Future AI Beneficiaries ETF,ETF,NYSE Arca
+AIBN,Defiance AI Infrastructure Bond ETF,ETF,NYSE Arca
 AIBU,Direxion Daily AI and Big Data Bull 2X ETF,ETF,NYSE Arca
 AIED,Defiance LLM Catalyst Momentum ETF,ETF,NYSE Arca
 AIEQ,Amplify AI Powered Equity ETF,ETF,NYSE Arca
@@ -5650,7 +5639,6 @@ BY,"Byline Bancorp, Inc. Common Stock",Stock,NYSE
 BYD,Boyd Gaming Corporation Common Stock,Stock,NYSE
 BYLD,iShares Yield Optimized Bond ETF,ETF,NYSE Arca
 BYRE,Principal Real Estate Active Opportunities ETF,ETF,NYSE Arca
-BZH,"Beazer Homes USA, Inc. Common Stock",Stock,NYSE
 BZQ,ProShares UltraShort MSCI Brazil Capped,ETF,NYSE Arca
 BZZ,Corgi Drones & Urban Air Mobility ETF,ETF,Cboe BZX
 C,"Citigroup, Inc. Common Stock",Stock,NYSE
@@ -10322,7 +10310,7 @@ SNTQ,MRP SynthEquity Nasdaq 100 ETF,ETF,Cboe BZX
 SNX,TD SYNNEX Corporation Common Stock,Stock,NYSE
 SNXX,Tradr 2X Long SNDK Daily ETF,ETF,Cboe BZX
 SO,Southern Company (The) Common Stock,Stock,NYSE
-SOAR,"Volato Group, Inc. Class A Common Stock",Stock,NYSE American
+SOAR,"SOAR AI, Inc. Class A Common Stock",Stock,NYSE American
 SOBO,South Bow Corporation Common Shares,Stock,NYSE
 SOC,Sable Offshore Corp. Common Stock,Stock,NYSE
 SOEZ,Franklin Solana ETF,ETF,NYSE Arca
@@ -11657,7 +11645,6 @@ ZNOV,Innovator Equity Defined Protection ETF - 1 Yr November,ETF,Cboe BZX
 ZOCT,Innovator Equity Defined Protection ETF - 1 Yr October,ETF,Cboe BZX
 ZONE,Zone Frontier Inc. Class B Common Stock,Stock,NYSE American
 ZROZ,PIMCO 25  Year Zero Coupon U.S. Treasury Index Exchange-Traded Fund,ETF,NYSE Arca
-ZSB,USCF Sustainable Battery Metals Strategy Fund,ETF,NYSE Arca
 ZSEP,Innovator Equity Defined Protection ETF - 1 Yr September,ETF,Cboe BZX
 ZSL,ProShares UltraShort Silver,ETF,NYSE Arca
 ZTAX,X-Square Municipal Income ETF,ETF,NYSE Arca
