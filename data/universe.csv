@@ -373,7 +373,6 @@ ATEX,Anterix Inc. - Common Stock,Stock,NASDAQ
 ATGL,Alpha Technology Group Limited - Class A Ordinary Shares,Stock,NASDAQ
 ATHE,Alterity Therapeutics Limited - American Depositary Shares,Stock,NASDAQ
 ATHR,"Aether Holdings, Inc. - Common Stock",Stock,NASDAQ
-ATII,Archimedes Tech SPAC Partners II Co. - Ordinary Shares,Stock,NASDAQ
 ATLC,Atlanticus Holdings Corporation - Common Stock,Stock,NASDAQ
 ATLO,Ames National Corporation - Common Stock,Stock,NASDAQ
 ATLQ,JAB Acquisition Corp I - Class A Ordinary Shares,Stock,NASDAQ
@@ -1124,6 +1123,7 @@ DAPP,VanEck Digital Transformation ETF,ETF,NASDAQ
 DARE,"Dare Bioscience, Inc. - Common Stock",Stock,NASDAQ
 DASH,"DoorDash, Inc. - Common Stock",Stock,NASDAQ
 DAVE,Dave Inc.  - Class A Common Stock,Stock,NASDAQ
+DAVI,Davion Healthcare Plc - Ordinary Shares,Stock,NASDAQ
 DAX,Global X DAX Germany ETF,ETF,NASDAQ
 DBCA,D. Boral Acquisition I Corp. - Class A Ordinary Shares,Stock,NASDAQ
 DBGI,"Digital Brands Group, Inc. - Common Stock",Stock,NASDAQ
@@ -1321,6 +1321,7 @@ ELVA,Electrovaya Inc. - Common Shares,Stock,NASDAQ
 ELVN,"Enliven Therapeutics, Inc.  - Common Stock",Stock,NASDAQ
 ELVR,Elevra Lithium Limited - American Depository Shares,Stock,NASDAQ
 ELWT,"Elauwit Connection, Inc. - Common Stock",Stock,NASDAQ
+EMAG,Emerging Markets AI Mag 3 ETF,ETF,NASDAQ
 EMAT,Evolution Metals & Technologies Corp. - Common Stock,Stock,NASDAQ
 EMB,iShares J.P. Morgan USD Emerging Markets Bond ETF,ETF,NASDAQ
 EMBC,Embecta Corp. - Common Stock,Stock,NASDAQ
@@ -2810,6 +2811,7 @@ NAKA,Nakamoto Inc. - Common Stock,Stock,NASDAQ
 NAMI,Jinxin Technology Holding Company - American Depositary Shares,Stock,NASDAQ
 NAMM,Namib Minerals - Ordinary Shares,Stock,NASDAQ
 NAMS,NewAmsterdam Pharma Company N.V. - Ordinary Shares,Stock,NASDAQ
+NANO,Forge Nano Holdings Inc. - Common stock,Stock,NASDAQ
 NATH,"Nathan's Famous, Inc. - Common Stock",Stock,NASDAQ
 NATO,Themes Transatlantic Defense ETF,ETF,NASDAQ
 NATR,"Nature's Sunshine Products, Inc. - Common Stock",Stock,NASDAQ
@@ -6914,6 +6916,7 @@ FIAX,Nicholas Fixed Income Alternative ETF,ETF,NYSE Arca
 FICO,Fair Isaac Corporation Common Stock,Stock,NYSE
 FIDI,Fidelity International High Dividend ETF,ETF,NYSE Arca
 FIDU,Fidelity MSCI Industrials Index ETF,ETF,NYSE Arca
+FIFT,HCM Select 50 ETF,ETF,Other
 FIG,"Figma, Inc. Class A Common Stock",Stock,NYSE
 FIGB,Fidelity Investment Grade Bond ETF,ETF,NYSE Arca
 FIGS,"FIGS, Inc. Class A Common Stock",Stock,NYSE
@@ -7737,6 +7740,7 @@ ICE,Intercontinental Exchange Inc. Common Stock,Stock,NYSE
 ICF,iShares Select U.S. REIT ETF,ETF,Cboe BZX
 ICL,ICL Group Ltd. Ordinary Shares,Stock,NYSE
 ICLO,Invesco AAA CLO Floating Rate Note ETF,ETF,Cboe BZX
+ICOM,Tema Commodity Income ETF,ETF,Other
 ICOW,Pacer Developed Markets International Cash Cows 100 ETF,ETF,Cboe BZX
 ICPI,iShares 0-1 Year TIPS Bond ETF,ETF,NYSE Arca
 ICPY,"Tweedy, Browne International Insider + Value ETF",ETF,NYSE Arca
@@ -10668,6 +10672,7 @@ THO,"Thor Industries, Inc. Common Stock",Stock,NYSE
 THOR,Thornburg Premium Income Builder ETF,ETF,NYSE Arca
 THQ,abrdn Healthcare Opportunities Fund Shares of Beneficial Interest,Stock,NYSE
 THRO,iShares U.S. Thematic Rotation Active ETF,ETF,NYSE Arca
+THRU,Tema Commodity Infrastructure ETF,ETF,Other
 THTA,SoFi Enhanced Yield ETF,ETF,NYSE Arca
 THW,abrdn World Healthcare Fund Shares of Beneficial Interest,Stock,NYSE
 THY,Toews Agility Shares Dynamic Tactical Income ETF,ETF,NYSE Arca
