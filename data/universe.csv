@@ -299,6 +299,7 @@ APRE,"Aprea Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 APUR,Aperture AC - Class A Ordinary Shares,Stock,NASDAQ
 APVO,Aptevo Therapeutics Inc. - Common Stock,Stock,NASDAQ
 APWC,"Asia Pacific Wire & Cable Corporation Limited  - Common shares, Par value .01 per share",Stock,NASDAQ
+APXC,Apex Critical Metals Corp. - American Depositary Shares,Stock,NASDAQ
 APXT,Apex Treasury Corporation - Class A Ordinary Share,Stock,NASDAQ
 APYX,Apyx Medical Corporation - Common Stock,Stock,NASDAQ
 AQB,"AquaBounty Technologies, Inc. - Common Stock",Stock,NASDAQ
@@ -2543,6 +2544,7 @@ LX,LexinFintech Holdings Ltd. - American Depositary Shares,Stock,NASDAQ
 LXEH,"Lixiang Education Holding Co., Ltd. - American Depositary Shares",Stock,NASDAQ
 LXEO,"Lexeo Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 LXRX,"Lexicon Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
+LYCA,"Lycia Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 LYEL,"Lyell Immunopharma, Inc. - Common Stock",Stock,NASDAQ
 LYFT,"Lyft, Inc. - Class A Common Stock",Stock,NASDAQ
 LYTS,LSI Industries Inc. - Common Stock,Stock,NASDAQ
@@ -3145,6 +3147,7 @@ PATN,Pacer Nasdaq International Patent Leaders ETF,ETF,NASDAQ
 PAVM,PAVmed Inc. - Common Stock,Stock,NASDAQ
 PAVS,Paranovus Entertainment Technology Ltd. - Class A Ordinary Shares,Stock,NASDAQ
 PAX,Patria Investments Limited - Class A Common Shares,Stock,NASDAQ
+PAXG,Pine Tree Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 PAYO,Payoneer Global Inc. - Common Stock,Stock,NASDAQ
 PAYP,PayPay Corporation - American Depository Shares,Stock,NASDAQ
 PAYS,"Paysign, Inc. - Common Stock",Stock,NASDAQ
@@ -3716,7 +3719,6 @@ SDGR,"Schrodinger, Inc. - Common Stock",Stock,NASDAQ
 SDHI,Siddhi Acquisition Corp - Class A Common stock,Stock,NASDAQ
 SDOT,Sadot Group Inc. - Common Stock,Stock,NASDAQ
 SDSI,American Century Short Duration Strategic Income ETF,ETF,NASDAQ
-SDST,Stardust Power Inc. - Common Stock,Stock,NASDAQ
 SDTY,YieldMax S&P 500 0DTE Covered Call Strategy ETF,ETF,NASDAQ
 SDVY,First Trust SMID Cap Rising Dividend Achievers ETF,ETF,NASDAQ
 SEAT,Vivid Seats Inc. - Class A common stock,Stock,NASDAQ
@@ -3841,6 +3843,7 @@ SMHC,VanEck China Semiconductor ETF,ETF,NASDAQ
 SMHX,VanEck Fabless Semiconductor ETF,ETF,NASDAQ
 SMID,Smith-Midland Corporation - Common Stock,Stock,NASDAQ
 SMMT,Summit Therapeutics Inc.  - Common Stock,Stock,NASDAQ
+SMNG,xETFs Samsung Group ETF,ETF,NASDAQ
 SMOM,Symmetry Panoramic Sector Momentum ETF,ETF,NASDAQ
 SMPL,The Simply Good Foods Company - Common Stock,Stock,NASDAQ
 SMRI,Bushido Capital US Equity ETF,ETF,NASDAQ
@@ -8107,7 +8110,7 @@ JIG,JPMorgan International Growth ETF,ETF,NYSE Arca
 JIII,Janus Henderson Income ETF,ETF,NYSE Arca
 JILL,"J. Jill, Inc. Common Stock",Stock,NYSE
 JIRE,JPMorgan International Research Enhanced Equity ETF,ETF,NYSE Arca
-JKS,JinkoSolar Holding Company Limited American Depositary Shares (each representing 4 Common Shares),Stock,NYSE
+JKS,Jinko Holdings Limited American Depositary Shares (each representing 4 Ordinary Shares),Stock,NYSE
 JLCO,John Hancock Large Cap Opportunities ETF,ETF,NYSE Arca
 JLL,Jones Lang LaSalle Incorporated Common Stock,Stock,NYSE
 JLQD,Janus Henderson Corporate Bond ETF,ETF,NYSE Arca
@@ -8492,7 +8495,7 @@ LTL,ProShares Ultra Communication Services,ETF,NYSE Arca
 LTM,"LATAM Airlines Group S.A. American Depositary Shares (each representing two thousand (2,000) shares of Common Stock)",Stock,NYSE
 LTPZ,Pimco 15  Year U.S. TIPS Index Exchange-Traded Fund,ETF,NYSE Arca
 LTTI,FT Vest 20+ Year Treasury & Target Income ETF,ETF,NYSE Arca
-LU,"Lufax Holding Ltd American Depositary Shares, each representing two (2) Ordinary Shares",Stock,NYSE
+LU,Lufax Holding Ltd American Depositary Shares (each representing twenty (20) Ordinary Shares),Stock,NYSE
 LUCK,Lucky Strike Entertainment Corporation Class A Common Stock,Stock,NYSE
 LUD,Luda Technology Group Limited Ordinary Shares,Stock,NYSE American
 LUMA,KraneShares Photonic and Optical ETF,ETF,NYSE Arca
@@ -9278,6 +9281,7 @@ OVF,Overlay Shares Foreign Equity ETF,ETF,Cboe BZX
 OVL,Overlay Shares Large Cap Equity ETF,ETF,Cboe BZX
 OVLH,Overlay Shares Hedged Large Cap Equity ETF,ETF,Cboe BZX
 OVM,Overlay Shares Municipal Bond ETF,ETF,Cboe BZX
+OVQ,Overlay Shares Nasdaq 100 Income ETF,ETF,Cboe BZX
 OVS,Overlay Shares Small Cap Equity ETF,ETF,Cboe BZX
 OVT,Overlay Shares Short Term Bond ETF,ETF,Cboe BZX
 OVV,Ovintiv Inc. (DE),Stock,NYSE
@@ -9391,7 +9395,6 @@ PEMX,Putnam Emerging Markets ex-China ETF,ETF,NYSE Arca
 PEN,"Penumbra, Inc. Common Stock",Stock,NYSE
 PENU,T-REX 2X Long PENG Daily Target ETF,ETF,Cboe BZX
 PEO,"Adams Natural Resources Fund, Inc. Common Stock",Stock,NYSE
-PERF,Perfect Corp. Class A Ordinary Share,Stock,NYSE
 PEVC,Pacer PE/VC ETF,ETF,NYSE Arca
 PEW,GrabAGun Digital Holdings Inc. Common Stock,Stock,NYSE
 PEX,ProShares Global Listed Private Equity ETF,ETF,Cboe BZX
@@ -9698,6 +9701,7 @@ QNTU,Tradr 2X Long QNT Daily ETF,ETF,Cboe BZX
 QPX,AdvisorShares Q Dynamic Growth ETF,ETF,NYSE Arca
 QQAU,Corgi Growth & Technology 15% Structured Buffer ETF - August Series,ETF,Cboe BZX
 QQBF,FT Vest Nasdaq-100 Quarterly 15 Buffer ETF,ETF,Cboe BZX
+QQDH,Tuttle Capital Innovation 100 Income & Hedge ETF,ETF,Cboe BZX
 QQH,HCM Defender 100 Index ETF,ETF,NYSE Arca
 QQJL,Corgi Growth & Technology 15% Structured Buffer ETF - July Series,ETF,Cboe BZX
 QQJN,Corgi Growth & Technology 15% Structured Buffer ETF - June Series,ETF,Cboe BZX
