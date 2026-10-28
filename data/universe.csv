@@ -2306,8 +2306,6 @@ KARD,"Kardigan, Inc. - Common Stock",Stock,NASDAQ
 KARO,Karooooo Ltd. - Ordinary shares,Stock,NASDAQ
 KAT,Scharf ETF,ETF,NASDAQ
 KAZR,Skyline Builders Group Holding Limited - Class A Ordinary Shares,Stock,NASDAQ
-KBAB,KraneShares 2x Long BABA Daily ETF,ETF,NASDAQ
-KBDU,KraneShares 2x Long BIDU Daily ETF,ETF,NASDAQ
 KBON,Karbon Capital Partners Corp. - Class A Ordinary Shares,Stock,NASDAQ
 KBSX,FST Corp. - Ordinary Shares,Stock,NASDAQ
 KBWB,Invesco KBW Bank ETF,ETF,NASDAQ
@@ -2334,7 +2332,6 @@ KIDZ,KIDZ AI Inc. - Class B Common Stock,Stock,NASDAQ
 KINS,"Kingstone Companies, Inc - Common Stock",Stock,NASDAQ
 KIQQ,KraneShares InspereX Nasdaq Dynamic Buffered High Income Index ETF,ETF,NASDAQ
 KITT,"Nauticus Robotics, Inc. - Common stock",Stock,NASDAQ
-KJD,KraneShares 2x Long JD Daily ETF,ETF,NASDAQ
 KLAC,KLA Corporation  - Common Stock,Stock,NASDAQ
 KLAG,Leverage Shares 2x Long KLAC Daily ETF,ETF,NASDAQ
 KLIC,"Kulicke and Soffa Industries, Inc. - Common Stock",Stock,NASDAQ
@@ -2344,7 +2341,6 @@ KLTR,"Kaltura, Inc. - Common Stock",Stock,NASDAQ
 KLXE,"KLX Energy Services Holdings, Inc.  - Common Stock",Stock,NASDAQ
 KMB,Kimberly-Clark Corporation - Common Stock,Stock,NASDAQ
 KMDA,Kamada Ltd. - Ordinary Shares,Stock,NASDAQ
-KMLI,KraneShares 2x Long MELI Daily ETF,ETF,NASDAQ
 KMRK,K-Tech Solutions Company Limited - Class A Ordinary Shares,Stock,NASDAQ
 KMTS,"Kestra Medical Technologies, Ltd. - Common Stock",Stock,NASDAQ
 KNDI,"Kandi Technologies Group, Inc. - Ordinary Shares",Stock,NASDAQ
@@ -2355,7 +2351,6 @@ KOID,KraneShares Global Humanoid Robotics and Physical AI Index ETF,ETF,NASDAQ
 KOPN,Kopin Corporation - Common Stock,Stock,NASDAQ
 KOSS,Koss Corporation - Common Stock,Stock,NASDAQ
 KOYN,CSLM Digital Asset Acquisition Corp III - Class A Ordinary Shares,Stock,NASDAQ
-KPDD,KraneShares 2x Long PDD Daily ETF,ETF,NASDAQ
 KPLT,"Katapult Holdings, Inc. - Common Stock",Stock,NASDAQ
 KPRX,"Kiora Pharmaceuticals, Inc.  - Common Stock",Stock,NASDAQ
 KPTI,Karyopharm Therapeutics Inc. - Common Stock,Stock,NASDAQ
@@ -2815,7 +2810,6 @@ NAMI,Jinxin Technology Holding Company - American Depositary Shares,Stock,NASDAQ
 NAMM,Namib Minerals - Ordinary Shares,Stock,NASDAQ
 NAMS,NewAmsterdam Pharma Company N.V. - Ordinary Shares,Stock,NASDAQ
 NANO,Forge Nano Holdings Inc. - Common stock,Stock,NASDAQ
-NATH,"Nathan's Famous, Inc. - Common Stock",Stock,NASDAQ
 NATO,Themes Transatlantic Defense ETF,ETF,NASDAQ
 NATR,"Nature's Sunshine Products, Inc. - Common Stock",Stock,NASDAQ
 NAUT,"Nautilus Biotechnology, Inc. - Common Stock",Stock,NASDAQ
@@ -3139,7 +3133,7 @@ PAMT,PAMT CORP - Common Stock,Stock,NASDAQ
 PANG,Leverage Shares 2X Long PANW Daily ETF,ETF,NASDAQ
 PANL,Pangaea Logistics Solutions Ltd. - Common Stock,Stock,NASDAQ
 PANW,"Palo Alto Networks, Inc. - Common Stock",Stock,NASDAQ
-PARA,"Banzai International, Inc. - Class A Common Stock",Stock,NASDAQ
+PARA,"Parabolic Technologies, Inc. - Class A Common Stock",Stock,NASDAQ
 PARK,"Park Dental Partners, Inc. - Common Stock",Stock,NASDAQ
 PASG,"Passage Bio, Inc. - Common Stock",Stock,NASDAQ
 PASW,"Ping An Biomedical Co., Ltd. - Class A Ordinary Shares",Stock,NASDAQ
@@ -4682,6 +4676,7 @@ YQQQ,YieldMax Short N100 Option Income Strategy ETF,ETF,NASDAQ
 YRAM,YieldMax Memory and Storage Portfolio Option Income ETF,ETF,NASDAQ
 YSAG,Y'all Street Physical Silver ETF,ETF,NASDAQ
 YSAU,Y'all Street Physical Gold ETF,ETF,NASDAQ
+YSKH,YieldMax SKHY Option Income Strategy ETF,ETF,NASDAQ
 YSPY,GraniteShares YieldBOOST SPY ETF,ETF,NASDAQ
 YSWY,"Yesway, Inc. - Class A Common Stock",Stock,NASDAQ
 YSXT,"YSX Tech. Co., Ltd  - Class A Ordinary Shares",Stock,NASDAQ
@@ -8211,7 +8206,6 @@ KBFR,Innovator U.S. Small Cap Managed 10 Buffer ETF,ETF,NYSE Arca
 KBH,KB Home Common Stock,Stock,NYSE
 KBR,"KBR, Inc. Common Stock",Stock,NYSE
 KBUF,KraneShares 90% KWEB Defined Outcome January 2027 ETF,ETF,NYSE Arca
-KCAI,KraneShares China Alpha Index ETF,ETF,NYSE Arca
 KCCA,KraneShares California Carbon Allowance Strategy ETF,ETF,NYSE Arca
 KCE,State Street SPDR S&P Capital Markets ETF,ETF,NYSE Arca
 KCHP,KICK Korea Semiconductor Index ETF,ETF,NYSE Arca
@@ -8243,7 +8237,6 @@ KGRN,KraneShares MSCI China Clean Technology Index ETF,ETF,NYSE Arca
 KGS,"Kodiak Gas Services, Inc. Common Stock",Stock,NYSE
 KHC,The Kraft Heinz Company Common Stock,Stock,NYSE
 KHPI,Kensington Hedged Premium Income ETF,ETF,Cboe BZX
-KHYB,KraneShares Asia Pacific High Income USD Bond ETF,ETF,NYSE Arca
 KIE,State Street SPDR S&P Insurance ETF,ETF,NYSE Arca
 KIM,Kimco Realty Corporation (HC) Common Stock,Stock,NYSE
 KIO,KKR Income Opportunities Fund Common Shares,Stock,NYSE
@@ -8790,9 +8783,8 @@ MSFW,Roundhill MSFT WeeklyPay ETF,ETF,Cboe BZX
 MSFX,T-Rex 2X Long Microsoft Daily Target ETF,ETF,Cboe BZX
 MSFY,Kurv Yield Premium Strategy Microsoft (MSFT) ETF,ETF,Cboe BZX
 MSGE,Madison Square Garden Entertainment Corp. Class A Common Stock,Stock,NYSE
-MSGK-V,Madison Square Garden Sports Corp. Class A Common Stock When-Issued,Stock,NYSE
-MSGR-V,MSG Rangers Corp. Class A Common Stock When-Issued,Stock,NYSE
-MSGS,Madison Square Garden Sports Corp. Class A Common Stock (New),Stock,NYSE
+MSGK,MSG Knickerbockers Corp. Class A Common Stock,Stock,NYSE
+MSGR,MSG Rangers Corp. Class A Common Stock,Stock,NYSE
 MSI,"Motorola Solutions, Inc. Common Stock",Stock,NYSE
 MSIF,"MSC Income Fund, Inc. Common Stock",Stock,NYSE
 MSIX,Corgi MSI 2x Daily ETF,ETF,Cboe BZX
@@ -10773,7 +10765,6 @@ TOPT,iShares Top 20 U.S. Stocks ETF,ETF,NYSE Arca
 TOPW,Roundhill Top WeeklyPay ETF,ETF,Cboe BZX
 TOS,Twin Oak Strategic Solutions ETF,ETF,Cboe BZX
 TOST,"Toast, Inc. Class A Common Stock",Stock,NYSE
-TOT,LionShares U.S. Equity Total Return ETF,ETF,NYSE Arca
 TOTL,State Street DoubleLine Total Return Tactical ETF,ETF,NYSE Arca
 TOTR,T. Rowe Price Total Return ETF,ETF,NYSE Arca
 TOUS,T. Rowe Price International Equity ETF,ETF,NYSE Arca
@@ -11264,6 +11255,7 @@ WBIF,WBI BullBear Value 3000 ETF,ETF,NYSE Arca
 WBIG,WBI BullBear Yield 3000 ETF,ETF,NYSE Arca
 WBIL,WBI BullBear Quality 3000 ETF,ETF,NYSE Arca
 WBIY,WBI Power Factor High Dividend ETF,ETF,NYSE
+WBMO,VanEck Wealth Builder ETF,ETF,NYSE Arca
 WBX,Wallbox N.V. Class A Ordinary Shares,Stock,NYSE
 WCAP,WarCap Unconstrained Equity ETF,ETF,NYSE Arca
 WCC,"WESCO International, Inc. Common Stock",Stock,NYSE
