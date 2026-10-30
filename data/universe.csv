@@ -81,7 +81,6 @@ ADBT,"Advasa Holdings, Inc. - Common stock",Stock,NASDAQ
 ADEA,Adeia Inc.  - Common Stock,Stock,NASDAQ
 ADGM,"Adagio Medical Holdings, Inc - Common Stock",Stock,NASDAQ
 ADI,"Analog Devices, Inc. - Common Stock",Stock,NASDAQ
-ADIL,"Adial Pharmaceuticals, Inc - Common Stock",Stock,NASDAQ
 ADMA,ADMA Biologics Inc - Common Stock,Stock,NASDAQ
 ADP,"Automatic Data Processing, Inc. - Common Stock",Stock,NASDAQ
 ADPT,Adaptive Biotechnologies Corporation - Common Stock,Stock,NASDAQ
@@ -441,6 +440,7 @@ AYTU,"Aytu BioPharma, Inc.  - Common Stock",Stock,NASDAQ
 AZ,A2Z Cust2Mate Solutions Corp. - Common Shares,Stock,NASDAQ
 AZI,Autozi Internet Technology (Global) Ltd. - Class A Ordinary Shares,Stock,NASDAQ
 AZIO,"Azio AI Holdings, Inc. - Common stock",Stock,NASDAQ
+AZR,"Azora Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 AZTA,"Azenta, Inc. - Common Stock",Stock,NASDAQ
 AZYY,GraniteShares YieldBoost AMZN ETF,ETF,NASDAQ
 BABU,Direxion Daily BABA Bull 2X ETF,ETF,NASDAQ
@@ -1446,6 +1446,7 @@ FAST,Fastenal Company - Common Stock,Stock,NASDAQ
 FATE,"Fate Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 FATN,"FatPipe, Inc. - common stock",Stock,NASDAQ
 FBDT,First Breach Inc. - Common Stock,Stock,NASDAQ
+FBEQ,Franklin US Equity Bitcoin Drip Index ETF,ETF,NASDAQ
 FBGL,FBS Global Limited - Ordinary Shares,Stock,NASDAQ
 FBIO,"Fortress Biotech, Inc. - Common Stock",Stock,NASDAQ
 FBIZ,"First Business Financial Services, Inc. - Common Stock",Stock,NASDAQ
@@ -1520,6 +1521,7 @@ FGSI,FT Vest Growth Strength & Target Income ETF,ETF,NASDAQ
 FHB,"First Hawaiian, Inc. - Common Stock",Stock,NASDAQ
 FHTX,Foghorn Therapeutics Inc. - Common Stock,Stock,NASDAQ
 FIBK,"First Interstate BancSystem, Inc. - Common Stock",Stock,NASDAQ
+FIBT,Franklin US Innovation Bitcoin DRIP Index ETF,ETF,NASDAQ
 FICS,First Trust International Developed Capital Strength ETF,ETF,NASDAQ
 FID,First Trust S&P International Dividend Aristocrats ETF,ETF,NASDAQ
 FIEE,"FiEE, Inc - Common Stock",Stock,NASDAQ
@@ -1694,6 +1696,7 @@ GARY,Mango Growth ETF,ETF,NASDAQ
 GASS,"StealthGas, Inc. - common stock",Stock,NASDAQ
 GAUZ,Gauzy Ltd. - Ordinary Shares,Stock,NASDAQ
 GAVA,Grayscale Avalanche Staking ETF,ETF,NASDAQ
+GBC,"Georgia Banking Company, Inc. - Common Stock",Stock,NASDAQ
 GBDC,"Golub Capital BDC, Inc. - Closed End Fund",Stock,NASDAQ
 GBFH,GBank Financial Holdings Inc. - Common Stock,Stock,NASDAQ
 GBLI,"Global Indemnity Group, LLC - Class A Common Shares",Stock,NASDAQ
@@ -2810,7 +2813,7 @@ NANO,Forge Nano Holdings Inc. - Common stock,Stock,NASDAQ
 NATO,Themes Transatlantic Defense ETF,ETF,NASDAQ
 NATR,"Nature's Sunshine Products, Inc. - Common Stock",Stock,NASDAQ
 NAUT,"Nautilus Biotechnology, Inc. - Common Stock",Stock,NASDAQ
-NAVI,Navient Corporation - Common Stock,Stock,NASDAQ
+NAVI,"Navient Holdings, Inc. - Common Stock",Stock,NASDAQ
 NAVN,"Navan, Inc. - Class A Common Stock",Stock,NASDAQ
 NB,NioCorp Developments Ltd. - Common Stock,Stock,NASDAQ
 NBBK,"NB Bancorp, Inc. - Common Stock",Stock,NASDAQ
@@ -3814,7 +3817,7 @@ SLE,"Super League Enterprise, Inc. - Common Stock",Stock,NASDAQ
 SLGB,Smart Logistics Global Limited - Class A Ordinary Shares,Stock,NASDAQ
 SLGL,Sol-Gel Technologies Ltd. - Ordinary Shares,Stock,NASDAQ
 SLM,SLM Corporation - Common Stock,Stock,NASDAQ
-SLMT,Brera Holdings PLC - Class B Ordinary Shares,Stock,NASDAQ
+SLMT,Solmate Infrastructure Public Limited Company - Class B Ordinary Shares,Stock,NASDAQ
 SLN,Silence Therapeutics Plc - American Depository Share,Stock,NASDAQ
 SLNG,"Stabilis Solutions, Inc. - Common Stock",Stock,NASDAQ
 SLNH,"Soluna Holdings, Inc. - Common Stock",Stock,NASDAQ
@@ -5863,7 +5866,7 @@ CMCI,VanEck CMCI Commodity Strategy ETF,ETF,Cboe BZX
 CMCL,Caledonia Mining Corporation Plc Common Shares,Stock,NYSE American
 CMCM,"Cheetah Mobile Inc. American Depositary Shares, each representing fifty (50) Class A Ordinary Shares",Stock,NYSE
 CMDB,Costamare Bulkers Holdings Limited Common Stock,Stock,NYSE
-CMDT,PIMCO Commodity Strategy Active Exchange-Traded Fund,ETF,NYSE Arca
+CMDT,PIMCO Commodity and Bond Strategy Active Exchange-Traded Fund,ETF,NYSE Arca
 CMDY,iShares Bloomberg Roll Select Commodity Strategy ETF,ETF,NYSE Arca
 CMF,iShares California Muni Bond ETF,ETF,NYSE Arca
 CMG,"Chipotle Mexican Grill, Inc. Common Stock",Stock,NYSE
@@ -5927,7 +5930,7 @@ COR,"Cencora, Inc. Common Stock",Stock,NYSE
 CORB,AB Core Bond ETF,ETF,NYSE Arca
 CORD,T-REX 2X Inverse CRWV Daily Target ETF,ETF,Cboe BZX
 CORN,Teucrium Corn Fund ETV,ETF,NYSE Arca
-CORP,PIMCO Investment Grade Corporate Bond Index Exchange-Traded Fund,ETF,NYSE Arca
+CORP,PIMCO Investment Grade Corporate Bond Exchange-Traded Fund,ETF,NYSE Arca
 COSO,"CoastalSouth Bancshares, Inc. Common Stock",Stock,NYSE
 COSW,Roundhill COST WeeklyPay ETF,ETF,Cboe BZX
 COTY,Coty Inc. Class A Common Stock,Stock,NYSE
@@ -6542,6 +6545,7 @@ EL,"Estee Lauder Companies, Inc. (The) Common Stock",Stock,NYSE
 ELA,Envela Corporation Common Stock,Stock,NYSE American
 ELAN,Elanco Animal Health Incorporated Common Stock,Stock,NYSE
 ELC,"Entergy Louisiana, Inc. Collateral Trust Mortgage Bonds, 4.875 % Series due September 1, 2066",Stock,NYSE
+ELCF,Eventide Large Cap Focus ETF,ETF,NYSE Arca
 ELCV,Strategy Shares Eventide High Dividend ETF,ETF,NYSE Arca
 ELD,WisdomTree Emerging Markets Local Debt Fund,ETF,NYSE Arca
 ELF,"e.l.f. Beauty, Inc. Common Stock",Stock,NYSE
@@ -6579,7 +6583,7 @@ EMM,Global X Emerging Markets ex-China ETF,ETF,NYSE Arca
 EMMF,WisdomTree Emerging Markets Multifactor Fund,ETF,NYSE Arca
 EMMY,Corgi Emerging Markets Equities 15% Structured Buffer ETF - May Series,ETF,Cboe BZX
 EMN,Eastman Chemical Company Common Stock,Stock,NYSE
-EMNT,PIMCO Enhanced Short Maturity Active ESG Exchange-Traded Fund,ETF,NYSE Arca
+EMNT,PIMCO Enhanced Short Maturity Active ESG and Bond Exchange-Traded Fund,ETF,NYSE Arca
 EMO,ClearBridge Energy Midstream Opportunity Fund Inc. Common Stock,Stock,NYSE
 EMOP,AB Emerging Markets Opportunities ETF,ETF,NYSE Arca
 EMOT,First Trust S&P 500 Economic Moat ETF,ETF,NYSE Arca
@@ -6677,6 +6681,7 @@ ESUM,Eventide US Market ETF,ETF,NYSE Arca
 ETB,Eaton Vance Tax-Managed Buy-Write Income Fund Eaton Vance Tax-Managed Buy-Write Income Fund Common Shares of Beneficial Interest,Stock,NYSE
 ETCO,Grayscale Ethereum High Income ETF,ETF,NYSE Arca
 ETD,Ethan Allen Interiors Inc. Common Stock,Stock,NYSE
+ETDG,Eventide Dividend Growth ETF,ETF,NYSE Arca
 ETFT,Fundsmith Equity ETF,ETF,NYSE Arca
 ETG,Eaton Vance Tax-Advantaged Global Dividend Income Fund Common Shares of Beneficial Interest,Stock,NYSE
 ETH,Grayscale Ethereum Staking Mini ETF Shares,ETF,NYSE Arca
@@ -7655,7 +7660,7 @@ HYLB,Xtrackers USD High Yield Corporate Bond ETF,ETF,NYSE Arca
 HYLN,Hyliion Holdings Corp. Class A Common Stock,Stock,NYSE American
 HYMB,State Street SPDR Nuveen ICE High Yield Municipal Bond ETF,ETF,NYSE Arca
 HYNX,T-REX 2X Long SKHY Daily Target ETF,ETF,NYSE Arca
-HYS,PIMCO 0-5 Year High Yield Corporat Bond Index Exchange-Traded Fund,ETF,NYSE Arca
+HYS,PIMCO 0-5 Year High Yield Corporate Bond Exchange-Traded Fund,ETF,NYSE Arca
 HYSA,BondBloxx High Yield Income ETF,ETF,NYSE Arca
 HYSD,Columbia Short Duration High Yield ETF,ETF,NYSE Arca
 HYT,"Blackrock Corporate High Yield Fund, Inc. Common Stock",Stock,NYSE
@@ -8436,7 +8441,7 @@ LOFD,Direxion Daily SpaceX Bear 2X ETF,ETF,NYSE Arca
 LOFF,Direxion Daily SpaceX Bull 2X ETF,ETF,NYSE Arca
 LOHA,Roundhill HALO ETF,ETF,Cboe BZX
 LOMA,Loma Negra Compania Industrial Argentina Sociedad Anonima ADS,Stock,NYSE
-LONZ,PIMCO Senior Loan Active Exchange-Traded Fund,ETF,NYSE Arca
+LONZ,PIMCO Senior Loan and Short-Term Active ETF,ETF,NYSE Arca
 LOPP,Gabelli Love Our Planet & People ETF Gabelli Love Our Planet & People ETF,ETF,NYSE Arca
 LOUP,Innovator Deepwater Frontier Tech ETF,ETF,NYSE Arca
 LOW,"Lowe's Companies, Inc. Common Stock",Stock,NYSE
@@ -9415,7 +9420,7 @@ PHK,Pimco High Income Fund,Stock,NYSE
 PHM,"PulteGroup, Inc. Common Stock",Stock,NYSE
 PHOX,Aura AI Photonics ETF,ETF,NYSE Arca
 PHR,"Phreesia, Inc. Common Stock",Stock,NYSE
-PHYL,PGIM Active High Yield Bond ETF,ETF,NYSE Arca
+PHYL,PGIM Active High Yield Bond ETF,ETF,Cboe BZX
 PHYS,Sprott Physical Gold Trust ETV,ETF,NYSE Arca
 PICB,Invesco International Corporate Bond ETF,ETF,NYSE Arca
 PICK,iShares MSCI Global Select Metals & Mining Producers Fund,ETF,Cboe BZX
