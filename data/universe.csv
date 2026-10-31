@@ -352,6 +352,7 @@ ASMU,Direxion Daily ASML Bull 2X ETF,ETF,NASDAQ
 ASND,Ascendis Pharma A/S - Ordinary Share,Stock,NASDAQ
 ASO,"Academy Sports and Outdoors, Inc. - Common Stock",Stock,NASDAQ
 ASPC,A SPAC III Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
+ASPE,"Aspen Neuroscience, Inc. - Common Stock",Stock,NASDAQ
 ASPI,ASP Isotopes Inc. - Common Stock,Stock,NASDAQ
 ASPS,Altisource Portfolio Solutions S.A. - Common Stock,Stock,NASDAQ
 ASRV,AmeriServ Financial Inc. - Common Stock,Stock,NASDAQ
@@ -472,6 +473,7 @@ BBLG,Bone Biologics Corp - Common Stock,Stock,NASDAQ
 BBNX,"Beta Bionics, Inc. - Common Stock",Stock,NASDAQ
 BBOT,"BridgeBio Oncology Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 BBSI,"Barrett Business Services, Inc. - Common Stock",Stock,NASDAQ
+BBTX,"Bambusa Therapeutics, Inc. - Common stock",Stock,NASDAQ
 BBUL,GraniteShares 2x Long BB Daily ETF,ETF,NASDAQ
 BBYY,GraniteShares YieldBOOST BABA ETF,ETF,NASDAQ
 BCAL,California BanCorp - Common Stock,Stock,NASDAQ
@@ -1256,7 +1258,6 @@ DYAI,"Dyadic International, Inc. - Common Stock",Stock,NASDAQ
 DYFI,IDX Dynamic Fixed Income ETF,ETF,NASDAQ
 DYN,"Dyne Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 DYNB,Hartford Dynamic Bond ETF,ETF,NASDAQ
-DYNC,Dynamix Corporation - Class A Ordinary Share,Stock,NASDAQ
 DYOR,Insight Digital Partners II - Class A Ordinary Shares,Stock,NASDAQ
 DYTA,SGI Dynamic Tactical ETF,ETF,NASDAQ
 EART,Global X Rare Earth & Critical Materials ETF,ETF,NASDAQ
@@ -1706,7 +1707,6 @@ GCGR,General Catalyst Global Resilience Merger Corp. - Class A Ordinary Shares,S
 GCL,GCL Global Holdings Ltd - Ordinary Shares,Stock,NASDAQ
 GCMG,GCM Grosvenor Inc. - Class A Common Stock,Stock,NASDAQ
 GCT,GigaCloud Technology Inc - Class A Ordinary Shares,Stock,NASDAQ
-GCTK,"GlucoTrack, Inc. - Common Stock",Stock,NASDAQ
 GDC,GD Culture Group Limited - Common Stock,Stock,NASDAQ
 GDEV,GDEV Inc. - Ordinary Shares,Stock,NASDAQ
 GDHG,Golden Heaven Group Holdings Ltd.  - Class A Ordinary Shares,Stock,NASDAQ
@@ -2480,7 +2480,6 @@ LMBS,First Trust Low Duration Opportunities ETF,ETF,NASDAQ
 LMNR,Limoneira Co - Common Stock,Stock,NASDAQ
 LMRI,"Lumexa Imaging Holdings, Inc. - Common Stock",Stock,NASDAQ
 LMTL,Direxion Daily LMT Bull 2X ETF,ETF,NASDAQ
-LNAI,Lunai Bioworks Inc. - Common Stock,Stock,NASDAQ
 LNKS,Linkers Industries Limited - Class A Ordinary Shares,Stock,NASDAQ
 LNSR,"LENSAR, Inc. - Common Stock",Stock,NASDAQ
 LNT,Alliant Energy Corporation - Common Stock,Stock,NASDAQ
@@ -2904,6 +2903,7 @@ NNOX,NANO-X IMAGING LTD - Ordinary Shares,Stock,NASDAQ
 NODK,"NI Holdings, Inc. - Common Stock",Stock,NASDAQ
 NOEM,CO2 Energy Transition Corp. - Common Stock,Stock,NASDAQ
 NOMA,NOMADAR Corp. - Class A Common Stock,Stock,NASDAQ
+NORD,Nordicus Partners Corporation - Common Stock,Stock,NASDAQ
 NOVT,Novanta Inc. - Common Shares,Stock,NASDAQ
 NOWL,GraniteShares 2x Long NOW Daily ETF,ETF,NASDAQ
 NPAC,New Providence Acquisition Corp. III - Ordinary Shares,Stock,NASDAQ
@@ -4658,7 +4658,6 @@ YDKG,Yueda Digital Holding - Class A Ordinary Share,Stock,NASDAQ
 YFOR,YYForce Inc. - Class A Ordinary Shares,Stock,NASDAQ
 YHC,LQR House Inc. - Common Stock,Stock,NASDAQ
 YHGJ,Yunhong Green CTI Ltd. - Common Stock,Stock,NASDAQ
-YHNA,YHN Acquisition I Limited - Ordinary Shares,Stock,NASDAQ
 YI,"111, Inc. - American Depositary Shares",Stock,NASDAQ
 YIBO,Planet Image International Limited - Class A Ordinary Shares,Stock,NASDAQ
 YICC,Yorkville International Capital Corp. - Class A Ordinary Shares,Stock,NASDAQ
