@@ -1943,7 +1943,6 @@ HNNA,"Hennessy Advisors, Inc. - Common Stock",Stock,NASDAQ
 HNRG,Hallador Energy Company - Common Stock,Stock,NASDAQ
 HNST,"The Honest Company, Inc. - Common Stock",Stock,NASDAQ
 HNVR,"Hanover Bancorp, Inc. - Common Stock",Stock,NASDAQ
-HODO,House of Doge Inc. - Common Stock,Stock,NASDAQ
 HODU,Direxion Daily HOOD Bull 2X ETF,ETF,NASDAQ
 HOFT,Hooker Furnishings Corporation - Common Stock,Stock,NASDAQ
 HOLO,MicroCloud Hologram Inc. - Ordinary Shares,Stock,NASDAQ
@@ -2136,7 +2135,6 @@ INDH,WisdomTree India Hedged Equity Fund,ETF,NASDAQ
 INDI,"indie Semiconductor, Inc. - Class A Common Stock",Stock,NASDAQ
 INDP,"Indaptus Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 INDQ,Pacer ActiveAlpha India Quality ETF,ETF,NASDAQ
-INDV,"Indivior Pharmaceuticals, Inc.  - Common Stock",Stock,NASDAQ
 INDY,iShares India 50 ETF,ETF,NASDAQ
 INEO,INNEOVA Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
 INGN,"Inogen, Inc - Common Stock",Stock,NASDAQ
@@ -2664,7 +2662,6 @@ MLAA,Mountain Lake Acquisition Corp. II - Class A Ordinary Shares,Stock,NASDAQ
 MLAB,"Mesa Laboratories, Inc. - Common Stock",Stock,NASDAQ
 MLCI,Mount Logan Capital Inc. - Common Stock,Stock,NASDAQ
 MLCO,Melco Resorts & Entertainment Limited - American Depositary Shares ,Stock,NASDAQ
-MLEC,Moolec Science SA - Ordinary Shares,Stock,NASDAQ
 MLGO,"MicroAlgo, Inc. - Ordinary Shares",Stock,NASDAQ
 MLKN,"MillerKnoll, Inc. - Common Stock",Stock,NASDAQ
 MLTX,MoonLake Immunotherapeutics - Class A Ordinary Shares,Stock,NASDAQ
@@ -3975,7 +3972,7 @@ SUJA,"Suja Life, Inc. - Class A Common Stock",Stock,NASDAQ
 SUMA,SUMA Acquisition Corporation - Class A Ordinary Shares,Stock,NASDAQ
 SUNE,"SUNation Energy, Inc. - Common Stock",Stock,NASDAQ
 SUNS,"Sunrise Realty Trust, Inc. - Common Stock",Stock,NASDAQ
-SUPN,"Supernus Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
+SUPN,"Supernus, Inc. - Common Stock",Stock,NASDAQ
 SUPP,TCW Transform Supply Chain ETF,ETF,NASDAQ
 SUPX,SuperX AI Technology Limited - Ordinary Shares,Stock,NASDAQ
 SURG,"SurgePays, Inc. - Common Stock",Stock,NASDAQ
@@ -6573,6 +6570,7 @@ EMFI,Pictet Emerging Markets Debt ETF,ETF,NYSE Arca
 EMGF,iShares Emerging Markets Equity Factor ETF,ETF,Cboe BZX
 EMHC,State Street SPDR Bloomberg Emerging Markets USD Bond ETF,ETF,NYSE Arca
 EMHY,iShares J.P. Morgan EM High Yield Bond ETF,ETF,Cboe BZX
+EMIL,VanEck EM Focus Inflation Bond ETF,ETF,NYSE Arca
 EMJL,Corgi Emerging Markets Equities 15% Structured Buffer ETF - July Series,ETF,Cboe BZX
 EMJN,Corgi Emerging Markets Equities 15% Structured Buffer ETF - June Series,ETF,Cboe BZX
 EMKT,Lazard Emerging Markets Opportunities ETF,ETF,NYSE Arca
@@ -10649,6 +10647,7 @@ TGRW,T. Rowe Price Growth Stock ETF,ETF,NYSE Arca
 TGS,Transportadora de Gas del Sur SA TGS Common Stock,Stock,NYSE
 TGT,Target Corporation Common Stock,Stock,NYSE
 THC,Tenet Healthcare Corporation Common Stock,Stock,NYSE
+THCR,THOR Conservative Risk Dynamic ETF,ETF,NYSE
 THD,iShares MSCI Thailand ETF,ETF,NYSE Arca
 THEQ,T. Rowe Price Hedged Equity ETF,ETF,NYSE Arca
 THG,Hanover Insurance Group Inc,Stock,NYSE
@@ -11213,6 +11212,7 @@ VTP,Vanguard Total Inflation-Protected Securities ETF,ETF,NYSE Arca
 VTR,"Ventas, Inc. Common Stock",Stock,NYSE
 VTS,"Vitesse Energy, Inc. Common Stock",Stock,NYSE
 VTV,Vanguard Morningstar Value ETF,ETF,NYSE Arca
+VTVX,XFUNDS Value Income ETF,ETF,NYSE Arca
 VUG,Vanguard Morningstar Growth ETF,ETF,NYSE Arca
 VUS,Virtus US Dividend ETF,ETF,NYSE Arca
 VUSB,Vanguard Ultra-Short Bond ETF,ETF,Cboe BZX
