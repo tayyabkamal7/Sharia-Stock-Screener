@@ -44,6 +44,7 @@ ACBH,Pacer Metaurus High Income Autocallable ETF,ETF,NASDAQ
 ACCL,Acco Group Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
 ACCV,Accelevation Holdings Corp. - Class A ordinary shares,Stock,NASDAQ
 ACDC,ProFrac Holding Corp. - Class A Common Stock,Stock,NASDAQ
+ACEM,American Century Emerging Markets Insights ETF,ETF,NASDAQ
 ACEP,ARS Core Equity Portfolio ETF,ETF,NASDAQ
 ACET,"Adicet Bio, Inc. - Common Stock",Stock,NASDAQ
 ACFN,"Acorn Energy, Inc. - Common Stock",Stock,NASDAQ
@@ -123,6 +124,7 @@ AGEN,Agenus Inc. - Common Stock,Stock,NASDAQ
 AGGA,EA Astoria Beacon Dynamic Core US Fixed Income ETF,ETF,NASDAQ
 AGIO,"Agios Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
 AGIX,KraneShares Public-Private AI & Technology ETF,ETF,NASDAQ
+AGLT,"Agility Robotics, Inc. - Ordinary Shares",Stock,NASDAQ
 AGMB,AgomAb Therapeutics NV - ADRs representing one common share.,Stock,NASDAQ
 AGMH,AGM Group Holdings Inc. - Class A Ordinary Shares,Stock,NASDAQ
 AGMI,Themes Silver Miners ETF,ETF,NASDAQ
@@ -809,7 +811,6 @@ CCSB,Carbon Collective Short Duration Green Bond ETF,ETF,NASDAQ
 CCSI,"Consensus Cloud Solutions, Inc. - Common Stock",Stock,NASDAQ
 CCSO,Carbon Collective Climate Solutions U.S. Equity ETF,ETF,NASDAQ
 CCTG,CCSC Technology International Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
-CCXI,Churchill Capital Corp XI - Class A Ordinary Shares,Stock,NASDAQ
 CD,Chaince Digital Holdings Inc. - American Ordinary Shares,Stock,NASDAQ
 CDC,VictoryShares US EQ Income Enhanced Volatility Wtd ETF,ETF,NASDAQ
 CDIG,City Different Investments Global Equity ETF,ETF,NASDAQ
@@ -1393,7 +1394,7 @@ ETOR,eToro Group Ltd. - Class A Common Shares,Stock,NASDAQ
 ETRA,"Electra Therapeutics, Inc. - Common stock",Stock,NASDAQ
 ETS,Elite Express Holding Inc. - Class A Common Stock,Stock,NASDAQ
 EU,enCore Energy Corp. - Common Stock,Stock,NASDAQ
-EUDA,Euda Health Holdings Limited - Ordinary Shares,Stock,NASDAQ
+EUDA,Euda Health Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
 EUFN,iShares MSCI Europe Financials ETF,ETF,NASDAQ
 EURK,Eureka Acquisition Corp - Class A Ordinary Share,Stock,NASDAQ
 EVAX,Evaxion A/S - American Depositary Share,Stock,NASDAQ
@@ -1932,6 +1933,7 @@ HLIT,Harmonic Inc. - Common Stock,Stock,NASDAQ
 HLMN,Hillman Solutions Corp. - Common Stock,Stock,NASDAQ
 HLNE,Hamilton Lane Incorporated - Class A Common Stock,Stock,NASDAQ
 HLP,Hongli Group Inc. - Class A Ordinary Shares,Stock,NASDAQ
+HLT,Hilton Worldwide Holdings Inc. - Common Stock,Stock,NASDAQ
 HLTH,Tema Healthcare AI ETF,ETF,NASDAQ
 HLXC,Helix Acquisition Corp. III - Class A Ordinary Shares,Stock,NASDAQ
 HMH,HMH Holding Inc. - Common Stock,Stock,NASDAQ
@@ -2139,6 +2141,7 @@ INEO,INNEOVA Holdings Limited - Class A Ordinary Shares,Stock,NASDAQ
 INGN,"Inogen, Inc - Common Stock",Stock,NASDAQ
 INHD,Inno Holdings Inc. - Common Stock,Stock,NASDAQ
 INIO,INNIO N.V. - Ordinary Shares,Stock,NASDAQ
+INJC,Canary Staked INJ ETF,ETF,NASDAQ
 INK,AB Equity Premium Income ETF,ETF,NASDAQ
 INKT,"MiNK Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 INLF,INLIF LIMITED - Class A Ordinary shares,Stock,NASDAQ
@@ -4636,7 +4639,7 @@ XSLL,Xsolla SPAC 1 - Class A Ordinary Shares,Stock,NASDAQ
 XSPC,VegaShares Space & AI ETF,ETF,NASDAQ
 XSPI,NEOS Boosted S&P 500 High Income ETF,ETF,NASDAQ
 XT,iShares Future Exponential Technologies ETF,ETF,NASDAQ
-XTER,Karman Line Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
+XTER,Xterax Corporation II - Class A Ordinary Shares,Stock,NASDAQ
 XTIA,"XTI Aerospace, Inc. Common Stock  - Common Stock",Stock,NASDAQ
 XTLB,XTL Biopharmaceuticals Ltd. - American Depositary Shares,Stock,NASDAQ
 XUSM,MarketDesk International Momentum ETF,ETF,NASDAQ
@@ -5262,6 +5265,7 @@ BBJP,JPMorgan BetaBuilders Japan ETF,ETF,Cboe BZX
 BBLB,JPMorgan BetaBuilders U.S. Treasury Bond 20+ Year ETF,ETF,Cboe BZX
 BBLS,Munificent Seven ETF,ETF,NYSE Arca
 BBLU,EA Bridgeway Blue Chip ETF,ETF,NYSE Arca
+BBLX,BondBloxx Core Plus ETF,ETF,NYSE Arca
 BBMC,JPMorgan BetaBuilders U.S. Mid Cap Equity ETF,ETF,Cboe BZX
 BBN,BlackRock Taxable Municipal Bond Trust Common Shares of Beneficial Interest,Stock,NYSE
 BBP,Virtus Biotech ETF,ETF,NYSE Arca
@@ -5729,7 +5733,7 @@ CCU,"Compania Cervecerias Unidas, S.A. Common Stock",Stock,NYSE
 CCUP,T-REX 2X Long CRCL Daily Target ETF,ETF,Cboe BZX
 CCZ,Comcast Holdings ZONES,Stock,NYSE
 CDE,"Coeur Mining, Inc. Common Stock",Stock,NYSE
-CDLR,Cadeler A/S American Depositary Share (each representing four (4) Ordinary Shares),Stock,NYSE
+CDLR,Cadeler plc Ordinary Shares,Stock,NYSE
 CDNG,Leverage Shares 2X Long CDNS Daily ETF,ETF,Cboe BZX
 CDP,COPT Defense Properties Common Shares of Beneficial Interest,Stock,NYSE
 CDPI,Columbia High Dividend Premium Income ETF,ETF,NYSE Arca
@@ -6224,6 +6228,7 @@ DFII,FT Vest Bitcoin Strategy & Target Income ETF,ETF,NYSE Arca
 DFIN,"Donnelley Financial Solutions, Inc. Common Stock ",Stock,NYSE
 DFIP,Dimensional Inflation-Protected Securities ETF,ETF,NYSE Arca
 DFIS,Dimensional International Small Cap ETF,ETF,Cboe BZX
+DFIT,Davidson Intermediate Taxable ETF,ETF,Cboe BZX
 DFIV,Dimensional International Value ETF,ETF,NYSE Arca
 DFJ,WisdomTree Japan SmallCap Fund,ETF,NYSE Arca
 DFLV,Dimensional US Large Cap Value ETF,ETF,NYSE Arca
@@ -6303,6 +6308,7 @@ DJUN,FT Vest U.S. Equity Deep Buffer ETF - June,ETF,Cboe BZX
 DK,"Delek US Holdings, Inc. Common Stock",Stock,NYSE
 DKS,Dick's Sporting Goods Inc Common Stock,Stock,NYSE
 DLAG,FT Vest U.S. Equity Dual Directional Buffer ETF - August,ETF,Cboe BZX
+DLAY,Tuttle Capital AI Bottleneck ETF,ETF,Cboe BZX
 DLB,Dolby Laboratories Common Stock,Stock,NYSE
 DLFE,FT Vest U.S. Equity Dual Directional Buffer ETF - February,ETF,Cboe BZX
 DLMY,FT Vest U.S. Equity Dual Directional Buffer ETF - May,ETF,Cboe BZX
@@ -7009,6 +7015,7 @@ FMCE,FM Compounders Equity ETF,ETF,NYSE Arca
 FMCX,FM Focus Equity ETF,ETF,NYSE Arca
 FMDE,Fidelity Enhanced Mid Cap Core ETF,ETF,NYSE Arca
 FMF,First Trust Managed Futures Strategy Fund,ETF,NYSE Arca
+FMIG,FMI Global Equity ETF,ETF,NYSE Arca
 FMKT,The Free Markets ETF,ETF,NYSE Arca
 FMN,Federated Hermes Premier Municipal Income Fund,Stock,NYSE
 FMNY,First Trust New York Municipal High Income ETF,ETF,NYSE Arca
@@ -7562,7 +7569,6 @@ HLIO,"Helios Technologies, Inc. Common Stock",Stock,NYSE
 HLLY,Holley Inc. Common Stock,Stock,NYSE
 HLN,Haleon plc American Depositary Shares (Each representing two Ordinary Shares),Stock,NYSE
 HLSQ,Tessera Defense and Homeland Security Inc. Common Stock,Stock,NYSE American
-HLT,Hilton Worldwide Holdings Inc. Common Stock ,Stock,NYSE
 HMAY,Corgi U.S. Equities 100% Structured Buffer ETF - May Series,ETF,Cboe BZX
 HMC,"Honda Motor Company, Ltd. Common Stock",Stock,NYSE
 HMN,Horace Mann Educators Corporation Common Stock,Stock,NYSE
