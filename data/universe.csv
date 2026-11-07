@@ -183,7 +183,6 @@ AKTX,Akari Therapeutics Plc - American Depositary Shares,Stock,NASDAQ
 ALAB,"Astera Labs, Inc. - Common Stock",Stock,NASDAQ
 ALAR,Alarum Technologies Ltd. - American Depositary Shares,Stock,NASDAQ
 ALCO,"Alico, Inc. - Common Stock",Stock,NASDAQ
-ALDF,Aldel Financial II Inc. - Class A Ordinary Shares,Stock,NASDAQ
 ALDX,"Aldeyra Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 ALEC,"Alector, Inc. - Common Stock",Stock,NASDAQ
 ALF,Centurion Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
@@ -2416,6 +2415,7 @@ LDRX,SGI Enhanced Market Leaders ETF,ETF,NASDAQ
 LDSF,First Trust Low Duration Strategic Focus ETF,ETF,NASDAQ
 LE,"Lands' End, Inc. - Common Stock",Stock,NASDAQ
 LECO,"Lincoln Electric Holdings, Inc. - Common Shares",Stock,NASDAQ
+LEDR,Leader's Advantage Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 LEDS,SemiLEDS Corporation - Common Stock,Stock,NASDAQ
 LEE,"Lee Enterprises, Incorporated - Common Stock",Stock,NASDAQ
 LEGH,Legacy Housing Corporation - Common Stock,Stock,NASDAQ
@@ -10203,9 +10203,7 @@ SJT,San Juan Basin Royalty Trust Common Stock,Stock,NYSE
 SK,Corgi SK hynix 2x Daily ETF,ETF,Cboe BZX
 SKE,Skeena Resources Limited Common Shares,Stock,NYSE
 SKF,ProShares UltraShort Financials,ETF,NYSE Arca
-SKHA,Tradr 2X Long SK hynix Daily ETF,ETF,Cboe BZX
 SKHL,Direxion Daily SK Hynix Bull 2X ETF,ETF,NYSE Arca
-SKHN,Tradr 2X Short SK hynix Daily ETF,ETF,Cboe BZX
 SKHQ,Leverage Shares 2X Short Sk Hynix Daily ETF,ETF,Cboe BZX
 SKHU,ProShares Ultra SK hynix,ETF,NYSE Arca
 SKHX,Leverage Shares 2X Long SK Hynix Daily ETF,ETF,Cboe BZX
@@ -11004,7 +11002,6 @@ USCA,Xtrackers MSCI USA Climate Action Equity ETF,ETF,NYSE Arca
 USCI,United States Commodity Index Fund ETV,ETF,NYSE Arca
 USD,ProShares Ultra Semiconductors,ETF,NYSE Arca
 USDU,WisdomTree Bloomberg U.S. Dollar Bullish Fund,ETF,NYSE Arca
-USE,USCF Energy Commodity Strategy Absolute Return Fund,ETF,NYSE Arca
 USEP,Innovator U.S. Equity Ultra Buffer ETF - September,ETF,Cboe BZX
 USEW,Cambria US EW ETF,ETF,Cboe BZX
 USFD,US Foods Holding Corp. Common Stock,Stock,NYSE
@@ -11347,7 +11344,6 @@ WT,"WisdomTree, Inc. Common Stock",Stock,NYSE
 WTAI,WisdomTree Artificial Intelligence and Innovation Fund,ETF,Cboe BZX
 WTAL,WisdomTree Global Alpha Fund,ETF,Other
 WTI,"W&T Offshore, Inc. Common Stock",Stock,NYSE
-WTIB,USCF Oil Plus Bitcoin Strategy Fund,ETF,NYSE Arca
 WTID,MicroSectors Energy 3X Inverse Leveraged ETNs,ETF,NYSE Arca
 WTIU,MicroSectors Energy 3X Leveraged ETNs,ETF,NYSE Arca
 WTLS,WisdomTree Efficient Long/Short U.S. Equity Fund,ETF,Cboe BZX
