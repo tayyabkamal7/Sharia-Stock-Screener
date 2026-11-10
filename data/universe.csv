@@ -725,7 +725,6 @@ BWB,"Bridgewater Bancshares, Inc. - Common Stock",Stock,NASDAQ
 BWEN,"Broadwind, Inc. - Common Stock",Stock,NASDAQ
 BWFG,"Bankwell Financial Group, Inc. - Common Stock",Stock,NASDAQ
 BWIN,"The Baldwin Insurance Group, Inc. - Class A Common Stock",Stock,NASDAQ
-BWMN,Bowman Consulting Group Ltd. - Common Stock,Stock,NASDAQ
 BXBL,"BOXABL, Inc.  - Common stock",Stock,NASDAQ
 BYAH,"Park Ha Biological Technology Co., Ltd. - Class A Ordinary Shares",Stock,NASDAQ
 BYFC,Broadway Financial Corporation - Class A Common Stock,Stock,NASDAQ
@@ -2144,7 +2143,6 @@ INJC,Canary Staked INJ ETF,ETF,NASDAQ
 INK,AB Equity Premium Income ETF,ETF,NASDAQ
 INKT,"MiNK Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 INLF,INLIF LIMITED - Class A Ordinary shares,Stock,NASDAQ
-INM,InMed Pharmaceuticals Inc. - Common Shares,Stock,NASDAQ
 INMB,INmune Bio Inc. - Common stock,Stock,NASDAQ
 INMD,InMode Ltd.  - Ordinary Shares,Stock,NASDAQ
 INNV,InnovAge Holding Corp. - Common Stock,Stock,NASDAQ
@@ -2592,7 +2590,6 @@ MCHS,Matthews China Innovators Active ETF,ETF,NASDAQ
 MCHX,"Marchex, Inc. - Class B Common Stock",Stock,NASDAQ
 MCRB,"Seres Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 MCRI,"Monarch Casino & Resort, Inc. - Common Stock",Stock,NASDAQ
-MCTA,Charming Medical Limited - Class A Ordinary Shares,Stock,NASDAQ
 MDAI,"Spectral AI, Inc. - Class A Common Stock",Stock,NASDAQ
 MDB,"MongoDB, Inc. - Class A Common Stock",Stock,NASDAQ
 MDBH,"MDB Capital Holdings, LLC - Class A common ",Stock,NASDAQ
@@ -2747,6 +2744,7 @@ MTEN,Mingteng International Corporation Inc. - Class A Ordinary Shares,Stock,NAS
 MTEX,"Mannatech, Incorporated - Common Stock",Stock,NASDAQ
 MTGG,MayTech Global Growth ETF,ETF,NASDAQ
 MTLS,Materialise NV - American Depositary Shares,Stock,NASDAQ
+MTRI,"Mentari Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 MTRX,Matrix Service Company - Common Stock,Stock,NASDAQ
 MTSI,"MACOM Technology Solutions Holdings, Inc. - Common Stock",Stock,NASDAQ
 MTVA,MetaVia Inc.  - Common Stock,Stock,NASDAQ
@@ -3615,7 +3613,6 @@ ROCQ,JPMorgan Nasdaq Equity Premium Yield ETF,ETF,NASDAQ
 ROCY,JPMorgan Equity Premium Yield ETF,ETF,NASDAQ
 ROE,Astoria US Equal Weight Quality Kings ETF,ETF,NASDAQ
 ROIV,Roivant Sciences Ltd. - Common Shares,Stock,NASDAQ
-ROKU,"Roku, Inc. - Class A Common Stock",Stock,NASDAQ
 ROMA,Roma Green Finance Limited - Class A Ordinary Shares,Stock,NASDAQ
 ROOT,"Root, Inc. - Common Stock",Stock,NASDAQ
 ROP,"Roper Technologies, Inc. - Common Stock",Stock,NASDAQ
@@ -4295,7 +4292,6 @@ ULBI,Ultralife Corporation - Common Stock,Stock,NASDAQ
 ULCC,"Frontier Group Holdings, Inc. - Common Stock",Stock,NASDAQ
 ULH,"Universal Logistics Holdings, Inc. - Common Stock",Stock,NASDAQ
 ULTA,"Ulta Beauty, Inc. - Common Stock",Stock,NASDAQ
-ULTI,REX IncomeMax Option Strategy ETF,ETF,NASDAQ
 ULVM,VictoryShares US Value Momentum ETF,ETF,NASDAQ
 UMBF,UMB Financial Corporation - Common Stock,Stock,NASDAQ
 UMMA,Wahed Dow Jones Islamic World ETF,ETF,NASDAQ
@@ -5042,7 +5038,6 @@ ARDT,"Ardent Health, Inc. Common Stock",Stock,NYSE
 ARE,"Alexandria Real Estate Equities, Inc. Common Stock",Stock,NYSE
 ARES,Ares Management Corporation Class A Common Stock,Stock,NYSE
 ARGT,Global X MSCI Argentina ETF,ETF,NYSE Arca
-ARI,"Apollo Commercial Real Estate Finance, Inc",Stock,NYSE
 ARIA,ARIA Opportunities ETF,ETF,NYSE Arca
 ARIS,Aris Mining Corporation Common Shares,Stock,NYSE
 ARKB,ARK 21Shares Bitcoin ETF ,ETF,Cboe BZX
@@ -7639,6 +7634,8 @@ HXE,Mast HedgeIndex Adaptive Equities ETF,ETF,NYSE Arca
 HXF,Mast HedgeIndex Managed Futures Strategy ETF,ETF,NYSE Arca
 HXL,Hexcel Corporation Common Stock,Stock,NYSE
 HY,"Hyster-Yale, Inc. Class A common stock",Stock,NYSE
+HYAC,Haymaker Acquisition Corp V Class A Ordinary Shares,Stock,NYSE
+HYB,Lazard US High Yield ETF,ETF,NYSE Arca
 HYBB,iShares BB Rated Corporate Bond ETF,ETF,NYSE Arca
 HYBL,State Street Blackstone High Income ETF,ETF,Cboe BZX
 HYBX,TCW High Yield Bond ETF,ETF,NYSE
@@ -7647,6 +7644,7 @@ HYDB,iShares High Yield Systematic Bond ETF,ETF,Cboe BZX
 HYDW,Xtrackers Low Beta High Yield Bond ETF,ETF,NYSE Arca
 HYEM,VanEck Emerging Markets High Yield Bond ETF,ETF,NYSE Arca
 HYFI,AB High Yield ETF,ETF,NYSE Arca
+HYFY,Lazard Hybrid Financial Income ETF,ETF,NYSE Arca
 HYG,iShares iBoxx $ High Yield Corporate Bond ETF,ETF,NYSE Arca
 HYGD,MicroSectors -3x Short High Yield Corporate Bond (HYG) ETNs,ETF,Cboe BZX
 HYGH,iShares Interest Rate Hedged High Yield Bond ETF,ETF,NYSE Arca
@@ -8508,6 +8506,8 @@ LYB,LyondellBasell Industries NV Ordinary Shares Class A (Netherlands),Stock,NYS
 LYG,Lloyds Banking Group Plc American Depositary Shares,Stock,NYSE
 LYLD,Cambria Large Cap Shareholder Yield ETF,ETF,Cboe BZX
 LYNX,Lyntris Inc. Common Stock,Stock,NYSE
+LYR,Lyrical U.S. Value Equity ETF,ETF,NYSE Arca
+LYRI,Lyrical International Value Equity ETF,ETF,NYSE Arca
 LYTE,Roundhill Photonics & Optics ETF,ETF,Cboe BZX
 LYV,"Live Nation Entertainment, Inc. Common Stock",Stock,NYSE
 LZB,La-Z-Boy Incorporated Common Stock,Stock,NYSE
@@ -8617,6 +8617,7 @@ MFDX,PIMCO RAFI Dynamic Multi-Factor International Equity ETF,ETF,NYSE Arca
 MFEB,Pacer Swan SOS Moderate (February) ETF,ETF,Cboe BZX
 MFEM,PIMCO RAFI Dynamic Multi-Factor Emerging Markets Equity ETF,ETF,NYSE Arca
 MFG,"Mizuho Financial Group, Inc. Sponosred ADR (Japan)",Stock,NYSE
+MFIX,Nomura Strategic Income ETF,ETF,NYSE Arca
 MFM,Aberdeen Municipal Income Fund Common Shares of Beneficial Interest,Stock,NYSE
 MFSB,MFS Active Core Plus Bond ETF,ETF,NYSE
 MFSD,MFS Active Short Duration Income ETF,ETF,NYSE Arca
@@ -10248,6 +10249,7 @@ SMC,Summit Midstream Corporation Common Stock,Stock,NYSE
 SMCC,Corgi SMCI 2x Daily ETF,ETF,Cboe BZX
 SMCP,SMART Mid Cap ETF,ETF,NYSE Arca
 SMCY,YieldMax SMCI Option Income Strategy ETF,ETF,NYSE Arca
+SMDC,Nomura Small and Mid Cap ETF,ETF,NYSE Arca
 SMDD,UltraPro Short MidCap400,ETF,NYSE Arca
 SMDV,ProShares Russell 2000 Dividend Growers ETF,ETF,Cboe BZX
 SMDX,Intech S&P Small-Mid Cap Diversified Alpha ETF,ETF,NYSE Arca
@@ -10576,7 +10578,6 @@ TBXU,Direxion Daily Biotech Top 5 Bull 2X ETF,ETF,NYSE Arca
 TCAF,T. Rowe Price Capital Appreciation Equity ETF,ETF,NYSE Arca
 TCAI,Tortoise AI Infrastructure ETF,ETF,NYSE
 TCAL,T. Rowe Price Capital Appreciation Premium Income ETF,ETF,NYSE Arca
-TCBI,"Texas Capital Bancshares, Inc. Common Stock",Stock,Other
 TCBX,"Third Coast Bancshares, Inc. Common Stock",Stock,NYSE
 TCHP,T. Rowe Price Blue Chip Growth ETF,ETF,NYSE Arca
 TCI,"Transcontinental Realty Investors, Inc. Common Stock",Stock,NYSE
@@ -10703,7 +10704,6 @@ TKNZ,T. Rowe Price Active Crypto ETF,ETF,NYSE Arca
 TKO,"TKO Group Holdings, Inc. Class A Common Stock",Stock,NYSE
 TKR,Timken Company (The) Common Stock,Stock,NYSE
 TLCI,Touchstone International Equity ETF,ETF,NYSE Arca
-TLDR,The Laddered T-Bill ETF,ETF,Cboe BZX
 TLH,iShares 10-20 Year Treasury Bond ETF,ETF,NYSE Arca
 TLIE,American Beacon The London Company Income Equity ETF,ETF,NYSE Arca
 TLK,"PT Telekomunikasi Indonesia, Tbk",Stock,NYSE
@@ -10876,6 +10876,7 @@ TWOX,iShares Large Cap Accelerated Outcome ETF,ETF,Cboe BZX
 TWSC,Corgi TSM 2x Daily ETF,ETF,Cboe BZX
 TX,"Ternium S.A. Ternium S.A. American Depositary Shares (each representing ten shares, USD1.00 par value)",Stock,NYSE
 TXBC,21Shares FTSE Crypto 10 ex-BTC Index ETF,ETF,NYSE Arca
+TXCP,"Texas Capital Bancshares, Inc. Common Stock",Stock,Other
 TXNM,"TXNM Energy, Inc. Common Stock",Stock,NYSE
 TXNU,Direxion Daily TXN Bull 2X ETF,ETF,NYSE Arca
 TXS,Texas Capital Texas Equity Index ETF,ETF,Other
@@ -11393,6 +11394,7 @@ XCOR,FundX ETF,ETF,NYSE Arca
 XDAT,Franklin Exponential Data ETF,ETF,Cboe BZX
 XDEC,FT Vest U.S. Equity Enhance & Moderate Buffer ETF - December,ETF,Cboe BZX
 XDIV,Roundhill S&P 500 No Dividend Target ETF,ETF,Cboe BZX
+XDLR,Lazard Non-Dollar Active Income ETF,ETF,NYSE Arca
 XDQQ,Innovator Growth Accelerated ETF - Quarterly,ETF,Cboe BZX
 XDSQ,Innovator U.S. Equity Accelerated ETF - Quarterly,ETF,Cboe BZX
 XDTE,Roundhill S&P 500 0DTE Covered Call Strategy ETF,ETF,Cboe BZX
