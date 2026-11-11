@@ -52,7 +52,6 @@ ACGC,ACP Holdings Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 ACGL,Arch Capital Group Ltd. - Common Stock,Stock,NASDAQ
 ACHC,"Acadia Healthcare Company, Inc. - Common Stock",Stock,NASDAQ
 ACHP,Global X Asia Semiconductor ETF,ETF,NASDAQ
-ACHV,"Achieve Life Sciences, Inc.  - Common Shares",Stock,NASDAQ
 ACIC,American Coastal Insurance Corporation - Common Stock,Stock,NASDAQ
 ACIU,AC Immune SA - Common Stock,Stock,NASDAQ
 ACIW,"ACI Worldwide, Inc. - Common Stock",Stock,NASDAQ
@@ -1429,7 +1428,6 @@ EYPT,"EyePoint, Inc. - Common Stock",Stock,NASDAQ
 EZGO,EZGO Technologies Ltd. - Ordinary Shares,Stock,NASDAQ
 EZMO,AlphaDroid Broad Markets Momentum ETF,ETF,NASDAQ
 EZPW,"EZCORP, Inc. - Class A Non-Voting Common Stock",Stock,NASDAQ
-EZRA,"Reliance Global Group, Inc. - Common Stock",Stock,NASDAQ
 EZRO,AlphaDroid Defensive Sector Rotation ETF,ETF,NASDAQ
 FA,First Advantage Corporation - Common Stock,Stock,NASDAQ
 FAAA,Fidelity AAA CLO ETF,ETF,NASDAQ
@@ -1701,7 +1699,7 @@ GBDC,"Golub Capital BDC, Inc. - Closed End Fund",Stock,NASDAQ
 GBFH,GBank Financial Holdings Inc. - Common Stock,Stock,NASDAQ
 GBLI,"Global Indemnity Group, LLC - Class A Common Shares",Stock,NASDAQ
 GBUG,Sprott Active Gold & Silver Miners ETF,ETF,NASDAQ
-GCBC,"Greene County Bancorp, Inc. - Common Stock",Stock,NASDAQ
+GCBC,"Greene Bancorp, Inc. - Common Stock",Stock,NASDAQ
 GCGR,General Catalyst Global Resilience Merger Corp. - Class A Ordinary Shares,Stock,NASDAQ
 GCL,GCL Global Holdings Ltd - Ordinary Shares,Stock,NASDAQ
 GCMG,GCM Grosvenor Inc. - Class A Common Stock,Stock,NASDAQ
@@ -3472,6 +3470,7 @@ QTUM,Defiance Quantum ETF,ETF,NASDAQ
 QUBT,Quantum Computing Inc. - Common Stock,Stock,NASDAQ
 QUCY,Quantum Cyber N.V. - Ordinary Shares,Stock,NASDAQ
 QUIK,QuickLogic Corporation - Common Stock,Stock,NASDAQ
+QUIT,"Achieve Life Sciences, Inc.  - Common Shares",Stock,NASDAQ
 QUMS,Quantumsphere Acquisition Corp. - Ordinary Shares,Stock,NASDAQ
 QURE,uniQure N.V. - Ordinary Shares,Stock,NASDAQ
 QVAL,Alpha Architect U.S. Quantitative Value ETF,ETF,NASDAQ
@@ -3527,7 +3526,6 @@ RDVT,"Red Violet, Inc. - Common Stock ",Stock,NASDAQ
 RDVY,First Trust Rising Dividend Achievers ETF,ETF,NASDAQ
 RDWR,Radware Ltd. - Ordinary Shares,Stock,NASDAQ
 RDZN,"Roadzen, Inc. - Ordinary Shares",Stock,NASDAQ
-REAI,Intelligent Real Estate ETF,ETF,NASDAQ
 REAL,"The RealReal, Inc. - Common Stock",Stock,NASDAQ
 REAX,Real REMAX Group Inc. - Common Stock,Stock,NASDAQ
 REBN,"Reborn Coffee, Inc. - Common Stock",Stock,NASDAQ
@@ -3700,6 +3698,7 @@ SCNI,Scinai Immunotherapeutics Ltd. - American Depositary Shares,Stock,NASDAQ
 SCNX,"Scienture Holdings, Inc. - Common Stock",Stock,NASDAQ
 SCOR,"comScore, Inc. - Common Stock",Stock,NASDAQ
 SCPQ,Social Commerce Partners Corporation - Class A Ordinary Shares,Stock,NASDAQ
+SCQC,SPACCircle Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 SCSC,"ScanSource, Inc. - Common Stock",Stock,NASDAQ
 SCTX,Scribe Therapeutics Inc. - Common Stock,Stock,NASDAQ
 SCWO,374Water Inc. - common stock,Stock,NASDAQ
@@ -4605,6 +4604,7 @@ XERS,"Xeris Biopharma Holdings, Inc. - Common Stock",Stock,NASDAQ
 XEY,GraniteShares YieldBOOST Ether ETF,ETF,NASDAQ
 XFOR,"X4 Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
 XGN,Exagen Inc. - Common Stock,Stock,NASDAQ
+XGPU,"Reliance Global Group, Inc. - Common Stock",Stock,NASDAQ
 XHG,XChange TEC.INC - American Depositary Shares,Stock,NASDAQ
 XHLD,"TEN Holdings, Inc. - Common Stock",Stock,NASDAQ
 XIII,Churchill Capital Corp XIII - Class A Ordinary Shares,Stock,NASDAQ
@@ -5358,6 +5358,7 @@ BGH,Barings Global Short Duration High Yield Fund Common Shares of Beneficial In
 BGIG,Bahl & Gaynor Income Growth ETF,ETF,NYSE Arca
 BGLD,FT Vest Gold Strategy Quarterly Buffer ETF,ETF,Cboe BZX
 BGR,BlackRock Energy and Resources Trust,Stock,NYSE
+BGRD,BNY Mellon Power Ecosystem ETF,ETF,Cboe BZX
 BGS,"B&G Foods, Inc. Common Stock",Stock,NYSE
 BGSF,"BGSF, Inc. Common Stock",Stock,NYSE
 BGSI,Boyd Group Services Inc. Common Shares,Stock,NYSE
@@ -6560,6 +6561,7 @@ EMC,Global X Emerging Markets Great Consumer ETF,ETF,NYSE Arca
 EMCR,Xtrackers Emerging Markets Carbon Reduction and Climate Improvers ETF,ETF,NYSE Arca
 EMCS,Xtrackers MSCI Emerging Markets Select ETF,ETF,NYSE Arca
 EMD,Western Asset Emerging Markets Debt Fund Inc Common Stock,Stock,NYSE
+EMDI,Principal Finisterre Emerging Markets Diversified Income ETF,ETF,NYSE Arca
 EMDM,First Trust Bloomberg Emerging Market Democracies ETF,ETF,NYSE Arca
 EMDV,ProShares MSCI Emerging Markets Dividend Growers ETF,ETF,Cboe BZX
 EME,"EMCOR Group, Inc. Common Stock",Stock,NYSE
@@ -7474,7 +7476,6 @@ HAPS,Harbor Human Capital Factor US Small Cap ETF,ETF,NYSE Arca
 HARD,Simplify Commodities Strategy No K-1 ETF,ETF,NYSE Arca
 HASI,"HA Sustainable Infrastructure Capital, Inc. Common Stock",Stock,NYSE
 HAUG,Corgi U.S. Equities 100% Structured Buffer ETF - August Series,ETF,Cboe BZX
-HAUS,Residential REIT ETF,ETF,Cboe BZX
 HAUZ,Xtrackers International Real Estate ETF,ETF,NYSE Arca
 HAWG,HCM Hedged Equity ETF,ETF,NYSE Arca
 HAWK,"HawkEye 360, Inc. Common Stock",Stock,NYSE
@@ -8481,6 +8482,7 @@ LSVD,LSV Disciplined Value ETF,ETF,NYSE Arca
 LTAX,Nomura Tax-Free USA ETF,ETF,NYSE Arca
 LTB,Corgi FTSE 20 Year U.S. Treasury Bond ETF,ETF,Cboe BZX
 LTC,"LTC Properties, Inc. Common Stock",Stock,NYSE
+LTEQ,Equity Partners ETF,ETF,NYSE
 LTH,"Life Time Group Holdings, Inc. Common Stock",Stock,NYSE
 LTL,ProShares Ultra Communication Services,ETF,NYSE Arca
 LTM,"LATAM Airlines Group S.A. American Depositary Shares (each representing two thousand (2,000) shares of Common Stock)",Stock,NYSE
@@ -9407,6 +9409,7 @@ PGP,Pimco Global StocksPlus & Income Fund Common Shares of Beneficial Interest,S
 PGR,Progressive Corporation (The) Common Stock,Stock,NYSE
 PGRI,Putnam International Stock ETF,ETF,NYSE Arca
 PGRO,Putnam Focused Large Cap Growth ETF,ETF,NYSE Arca
+PGRW,Principal Growth ETF,ETF,Cboe BZX
 PGZ,Principal Real Estate Income Fund Common Shares of Beneficial Interest,Stock,NYSE
 PH,Parker-Hannifin Corporation Common Stock,Stock,NYSE
 PHDG,Invesco S&P 500 Downside Hedged ETF,ETF,NYSE Arca
@@ -9577,7 +9580,6 @@ PSOX,Tema MLCC & PowerSemi ETF,ETF,Cboe BZX
 PSP,Invesco Global Listed Private Equity ETF,ETF,NYSE Arca
 PSQ,ProShares Short QQQ,ETF,NYSE Arca
 PSQA,Palmer Square CLO Senior Debt ETF,ETF,NYSE Arca
-PSQH,"PSQ Holdings, Inc. Class A Common Stock",Stock,NYSE
 PSQO,Palmer Square Credit Opportunities ETF,ETF,NYSE Arca
 PSR,Invesco Active U.S. Real Estate Fund,ETF,NYSE Arca
 PST,ProShares UltraShort Lehman 7-10 Year Treasury,ETF,NYSE Arca
