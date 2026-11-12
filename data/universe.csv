@@ -2351,7 +2351,6 @@ KOSS,Koss Corporation - Common Stock,Stock,NASDAQ
 KOYN,CSLM Digital Asset Acquisition Corp III - Class A Ordinary Shares,Stock,NASDAQ
 KPLT,"Katapult Holdings, Inc. - Common Stock",Stock,NASDAQ
 KPRX,"Kiora Pharmaceuticals, Inc.  - Common Stock",Stock,NASDAQ
-KPTI,Karyopharm Therapeutics Inc. - Common Stock,Stock,NASDAQ
 KQQQ,Kurv Technology Titans Select ETF,ETF,NASDAQ
 KRAQ,KRAKacquisition Corp - Class A Ordinary Shares,Stock,NASDAQ
 KRKR,36Kr Holdings Inc. - American Depositary Shares,Stock,NASDAQ
@@ -5101,7 +5100,6 @@ ASTX,Tradr 2X Long ASTS Daily ETF,ETF,Cboe BZX
 ASTY,Defiance Daily Target 2X Long ASTS ETF,ETF,Cboe BZX
 ASX,"ASE Technology Holding Co., Ltd. American Depositary Shares (each representing Two Common Shares) ",Stock,NYSE
 AT,Defiance Robotics Actuators ETF,ETF,Cboe BZX
-ATCH,"AtlasClear Holdings, Inc. Common Stock",Stock,NYSE American
 ATCL,REX Autocallable Income ETF,ETF,NYSE Arca
 ATEN,"A10 Networks, Inc. Common Stock",Stock,NYSE
 ATFV,Alger 35 ETF,ETF,NYSE Arca
@@ -7564,7 +7562,6 @@ HLI,"Houlihan Lokey, Inc. Class A Common Stock",Stock,NYSE
 HLIO,"Helios Technologies, Inc. Common Stock",Stock,NYSE
 HLLY,Holley Inc. Common Stock,Stock,NYSE
 HLN,Haleon plc American Depositary Shares (Each representing two Ordinary Shares),Stock,NYSE
-HLSQ,Tessera Defense and Homeland Security Inc. Common Stock,Stock,NYSE American
 HMAY,Corgi U.S. Equities 100% Structured Buffer ETF - May Series,ETF,Cboe BZX
 HMC,"Honda Motor Company, Ltd. Common Stock",Stock,NYSE
 HMN,Horace Mann Educators Corporation Common Stock,Stock,NYSE
@@ -7713,6 +7710,7 @@ IBIK,iShares iBonds Oct 2034 Term TIPS ETF,ETF,NYSE Arca
 IBIL,iShares iBonds Oct 2035 Term TIPS ETF,ETF,NYSE Arca
 IBIM,iShares iBonds Oct 2036 Term TIPS ETF,ETF,NYSE Arca
 IBLC,iShares Blockchain and Tech ETF,ETF,NYSE Arca
+IBLY,FT Vest Equity Target Income Plus 0-3 Month Treasury ETF,ETF,Cboe BZX
 IBM,International Business Machines Corporation Common Stock,Stock,NYSE
 IBMO,iShares iBonds Dec 2026 Term Muni Bond ETF,ETF,Cboe BZX
 IBMP,iShares iBonds Dec 2027 Term Muni Bond ETF,ETF,Cboe BZX
@@ -7910,6 +7908,10 @@ IPOS,Renaissance Capital Greenwich Fund,ETF,NYSE Arca
 IQDF,Northern Trust International Quality Dividend ETF,ETF,NYSE Arca
 IQDG,WisdomTree International Quality Dividend Growth Fund,ETF,Cboe BZX
 IQDY,Northern Trust International Quality Dividend Dynamic ETF,ETF,NYSE Arca
+IQEE,Invesco Emerging Markets Enhanced ETF,ETF,NYSE Arca
+IQEI,Invesco International Developed Enhanced ETF,ETF,NYSE Arca
+IQEL,Invesco U.S. Large Cap Enhanced ETF,ETF,NYSE Arca
+IQES,Invesco U.S. Small Cap Enhanced ETF,ETF,NYSE Arca
 IQHI,NYLIM MacKay High Income ETF,ETF,NYSE Arca
 IQI,Invesco Quality Municipal Income Trust Common Stock,Stock,NYSE
 IQLT,iShares MSCI Intl Quality Factor ETF,ETF,NYSE Arca
@@ -8606,7 +8608,6 @@ MEIB,Direxion META Defined Income Boost ETF,ETF,Cboe BZX
 MEM,Matthews Emerging Markets Equity Active ETF,ETF,NYSE Arca
 MEME,Roundhill Meme Stock ETF,ETF,NYSE Arca
 MEMX,Matthews Emerging Markets ex China Active ETF,ETF,NYSE Arca
-MEMY,Tuttle Capital Meme Stock Income Blast ETF,ETF,Cboe BZX
 MET,"MetLife, Inc. Common Stock",Stock,NYSE
 METG,Leverage Shares 2X Long META Daily ETF,ETF,Cboe BZX
 METQ,Tradr 2X Short META Daily ETF,ETF,Cboe BZX
