@@ -1029,6 +1029,7 @@ CRIS,"Curis, Inc. - Common Stock",Stock,NASDAQ
 CRMD,CorMedix Inc. - Common Stock,Stock,NASDAQ
 CRMG,Leverage Shares 2X Long CRM Daily ETF,ETF,NASDAQ
 CRML,Critical Metals Corp. - Ordinary Shares,Stock,NASDAQ
+CRMN,Skyline Builders Group Holding Limited - Class A Ordinary Shares,Stock,NASDAQ
 CRMT,"America's Car-Mart, Inc. - Common Stock",Stock,NASDAQ
 CRNC,Cerence Inc. - Common Stock,Stock,NASDAQ
 CRNT,Ceragon Networks Ltd. - Ordinary Shares,Stock,NASDAQ
@@ -2303,7 +2304,6 @@ KALU,Kaiser Aluminum Corporation - Common Stock,Stock,NASDAQ
 KARD,"Kardigan, Inc. - Common Stock",Stock,NASDAQ
 KARO,Karooooo Ltd. - Ordinary shares,Stock,NASDAQ
 KAT,Scharf ETF,ETF,NASDAQ
-KAZR,Skyline Builders Group Holding Limited - Class A Ordinary Shares,Stock,NASDAQ
 KBON,Karbon Capital Partners Corp. - Class A Ordinary Shares,Stock,NASDAQ
 KBSX,FST Corp. - Ordinary Shares,Stock,NASDAQ
 KBWB,Invesco KBW Bank ETF,ETF,NASDAQ
@@ -2983,7 +2983,6 @@ NXTC,"NextCure, Inc. - Common Stock",Stock,NASDAQ
 NXTG,First Trust Indxx NextG ETF,ETF,NASDAQ
 NXTS,Nexentis Technologies Inc. - Common Stock,Stock,NASDAQ
 NXTT,Next Technology Holding Inc. - Ordinary Shares,Stock,NASDAQ
-NXXT,"NextNRG, Inc. - Common Stock",Stock,NASDAQ
 NYAX,Nayax Ltd. - Ordinary Shares,Stock,NASDAQ
 NYXH,Nyxoah SA - Ordinary Shares,Stock,NASDAQ
 NZAC,State Street SPDR MSCI ACWI Climate Paris Aligned ETF,ETF,NASDAQ
@@ -5750,7 +5749,7 @@ CF,"CF Industries Holdings, Inc. Common Stock",Stock,NYSE
 CFG,"Citizens Financial Group, Inc. Common Stock",Stock,NYSE
 CFIT,Cambria Fixed Income Trend ETF,ETF,Cboe BZX
 CFND,C1 Fund Inc. Common Stock,Stock,NYSE
-CFR,"Cullen/Frost Bankers, Inc. Common Stock",Stock,NYSE
+CFR,"Cullen/Frost Bankers, Inc. Common Stock",Stock,Other
 CGAU,Centerra Gold Inc. Common Shares,Stock,NYSE
 CGBL,Capital Group Core Balanced ETF,ETF,NYSE Arca
 CGCB,Capital Group Core Bond ETF,ETF,NYSE Arca
@@ -7296,6 +7295,7 @@ GLED,GalaxyEdge Acquisition Corporation Ordinary Shares,Stock,NYSE
 GLIN,VanEck India Growth Leaders ETF,ETF,NYSE Arca
 GLIX,Lazard Listed Infrastructure ETF,ETF,NYSE Arca
 GLL,ProShares UltraShort Gold,ETF,NYSE Arca
+GLLD,"MicroSectors Gold 3X Leveraged ETNs due January 29, 2043",ETF,NYSE Arca
 GLNK,Grayscale Chainlink Trust ETF,ETF,NYSE Arca
 GLO,Clough Global Opportunities Fund Common Stock,Stock,NYSE American
 GLOB,Globant S.A. Common Shares,Stock,NYSE
@@ -8208,6 +8208,7 @@ KBE,State Street SPDR S&P Bank ETF,ETF,NYSE Arca
 KBFR,Innovator U.S. Small Cap Managed 10 Buffer ETF,ETF,NYSE Arca
 KBH,KB Home Common Stock,Stock,NYSE
 KBR,"KBR, Inc. Common Stock",Stock,NYSE
+KBTY,Guinness Atkinson K-Beauty ETF,ETF,NYSE Arca
 KBUF,KraneShares 90% KWEB Defined Outcome January 2027 ETF,ETF,NYSE Arca
 KCCA,KraneShares California Carbon Allowance Strategy ETF,ETF,NYSE Arca
 KCE,State Street SPDR S&P Capital Markets ETF,ETF,NYSE Arca
@@ -8270,7 +8271,6 @@ KNO,AXS Knowledge Leaders ETF,ETF,NYSE Arca
 KNOV,Innovator U.S. Small Cap Power Buffer ETF - November,ETF,Cboe BZX
 KNOW,Fundamentals First ETF,ETF,Cboe BZX
 KNRG,Simplify Kayne Anderson Energy and Infrastructure Credit ETF,ETF,NYSE Arca
-KNRX,KNOREX LTD. Class A Ordinary Shares,Stock,NYSE American
 KNSL,"Kinsale Capital Group, Inc. Common Stock",Stock,NYSE
 KNTK,Kinetik Holdings Inc. Class A Common Stock,Stock,NYSE
 KNX,Knight-Swift Transportation Holdings Inc.,Stock,NYSE
@@ -8525,6 +8525,7 @@ MAGA,Truth Social America First ETF,ETF,NYSE Arca
 MAGC,Roundhill China Magnificent Seven ETF,ETF,Cboe BZX
 MAGG,Madison Aggregate Bond ETF,ETF,NYSE Arca
 MAGN,Magnera Corporation Common Stock,Stock,NYSE
+MAGP,Roundhill Magnificent Seven Plus ETF,ETF,Cboe BZX
 MAGS,Roundhill Magnificent Seven ETF,ETF,Cboe BZX
 MAGX,Roundhill Daily 2X Long Magnificent Seven ETF,ETF,Cboe BZX
 MAGY,Roundhill Magnificent Seven Covered Call ETF,ETF,Cboe BZX
@@ -8982,6 +8983,7 @@ NISM,NYLIM International Small-Mid Cap Equity ETF,ETF,NYSE Arca
 NITE,The Nightview Fund NITE,ETF,NYSE Arca
 NJAN,Innovator Growth-100 Power Buffer ETF - January,ETF,Cboe BZX
 NJNK,Columbia U.S. High Yield ETF,ETF,NYSE Arca
+NJPN,Nomura Japan Equity ETF,ETF,NYSE Arca
 NJR,NewJersey Resources Corporation Common Stock,Stock,NYSE
 NJUL,Innovator Growth-100 Power Buffer ETF - July,ETF,Cboe BZX
 NJUN,Innovator Growth-100 Power Buffer ETF - June,ETF,Cboe BZX
@@ -10155,7 +10157,6 @@ SHEL,Shell PLC American Depositary Shares (each representing two (2) Ordinary Sh
 SHG,Shinhan Financial Group Co Ltd American Depositary Shares,Stock,NYSE
 SHLD,Global X Defense Tech ETF,ETF,NYSE Arca
 SHM,State Street SPDR Nuveen ICE Short Term Municipal Bond ETF,ETF,NYSE Arca
-SHNY,"MicroSectors Gold 3X Leveraged ETNs due January 29, 2043",ETF,NYSE Arca
 SHO,"Sunstone Hotel Investors, Inc. Sunstone Hotel Investors, Inc. Common Shares",Stock,NYSE
 SHOC,Strive U.S. Semiconductor ETF,ETF,NYSE
 SHPP,Pacer Industrials and Logistics ETF,ETF,NYSE Arca
@@ -11100,6 +11101,7 @@ VEGX,International Vegan Climate ETF,ETF,Cboe BZX
 VEL,"Velocity Financial, Inc. Common Stock",Stock,NYSE
 VELL,Defiance Daily Target 2X Long VELO ETF,ETF,Cboe BZX
 VEM,Virtus Emerging Markets Dividend ETF,ETF,NYSE Arca
+VEMB,Vanguard Emerging Markets Bond Active ETF,ETF,Cboe BZX
 VEMY,Virtus Stone Harbor Emerging Markets High Yield Bond ETF,ETF,NYSE Arca
 VENU,Venu Holding Corporation Common Stock,Stock,NYSE American
 VET,Vermilion Energy Inc. Common (Canada),Stock,NYSE
