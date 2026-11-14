@@ -911,7 +911,6 @@ CLBK,"Columbia Financial, Inc. - Common Stock",Stock,NASDAQ
 CLBT,Cellebrite DI Ltd. - Ordinary Shares,Stock,NASDAQ
 CLDX,"Celldex Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 CLFD,"Clearfield, Inc. - Common Stock",Stock,NASDAQ
-CLGN,CollPlant Biotechnologies Ltd. - Ordinary Shares,Stock,NASDAQ
 CLIK,Click Holdings Limited - Ordinary Share,Stock,NASDAQ
 CLIR,ClearSign Technologies Corporation - Common Stock,Stock,NASDAQ
 CLLS,Cellectis S.A. - American Depositary Shares,Stock,NASDAQ
@@ -1473,8 +1472,6 @@ FCUV,Focus Universal Inc. - Common Stock,Stock,NASDAQ
 FCVT,First Trust SSI Strategic Convertible Securities ETF,ETF,NASDAQ
 FDBC,"Fidelity D & D Bancorp, Inc. - Common Stock",Stock,NASDAQ
 FDCF,Fidelity Disruptive Communications ETF,ETF,NASDAQ
-FDFF,Fidelity Disruptive Finance ETF,ETF,NASDAQ
-FDIF,Fidelity Disruptors ETF,ETF,NASDAQ
 FDIG,Fidelity Crypto Industry and Digital Payments ETF,ETF,NASDAQ
 FDIQ,Invesco Bloomberg Financial Data Providers ETF,ETF,NASDAQ
 FDIV,MarketDesk Focused U.S. Dividend ETF,ETF,NASDAQ
@@ -1565,8 +1562,6 @@ FMAC,Future Money Acquisition Corporation - Ordinary Shares,Stock,NASDAQ
 FMAO,"Farmers & Merchants Bancorp, Inc. - Common Stock",Stock,NASDAQ
 FMB,First Trust Managed Municipal ETF,ETF,NASDAQ
 FMBH,"First Mid Bancshares, Inc. - Common Stock",Stock,NASDAQ
-FMED,Fidelity Disruptive Medicine ETF,ETF,NASDAQ
-FMET,Fidelity Metaverse ETF,ETF,NASDAQ
 FMFC,Kandal M Venture Limited - Class A ordinary Shares,Stock,NASDAQ
 FMHI,First Trust Municipal High Income ETF,ETF,NASDAQ
 FMNB,Farmers National Banc Corp. - Common Stock,Stock,NASDAQ
@@ -2492,6 +2487,7 @@ LOPE,"Grand Canyon Education, Inc. - Common Stock",Stock,NASDAQ
 LOT,Lotus Technology Inc. - American Depositary Shares,Stock,NASDAQ
 LOTI,Liberty One Tactical Income ETF,ETF,NASDAQ
 LOVE,The Lovesac Company - Common Stock,Stock,NASDAQ
+LOVI,Live Oak Acquisition Corp. VI - Class A Ordinary Shares,Stock,NASDAQ
 LPAA,Launch One Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 LPBB,Launch Two Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 LPCN,Lipocine Inc. - Common Stock,Stock,NASDAQ
@@ -3029,7 +3025,7 @@ OKYO,OKYO Pharma Limited - Ordinary Shares,Stock,NASDAQ
 OLB,"The OLB Group, Inc. - Common Stock",Stock,NASDAQ
 OLED,Universal Display Corporation - Common Stock,Stock,NASDAQ
 OLLI,"Ollie's Bargain Outlet Holdings, Inc. - Common Stock",Stock,NASDAQ
-OLMA,"Olema Pharmaceuticals, Inc. - Common Stock",Stock,NASDAQ
+OLMA,"Olema Oncology, Inc. - Common Stock",Stock,NASDAQ
 OLOX,Olenox Industries Inc. - Common Stock,Stock,NASDAQ
 OM,"Outset Medical, Inc. - Common Stock",Stock,NASDAQ
 OMAB,Grupo Aeroportuario del Centro Norte S.A.B. de C.V. - American Depositary Shares each representing 8 Series B shares,Stock,NASDAQ
@@ -3058,6 +3054,7 @@ OPAL,OPAL Fuels Inc. - Class A Common Stock,Stock,NASDAQ
 OPBK,OP Bancorp - Common Stock,Stock,NASDAQ
 OPCH,"Option Care Health, Inc. - Common Stock",Stock,NASDAQ
 OPEN,Opendoor Technologies Inc  - Common Stock,Stock,NASDAQ
+OPHI,CollPlant Biotechnologies Ltd. - Ordinary Shares,Stock,NASDAQ
 OPI,Office Properties Income Trust - Common shares of beneficial interest,Stock,NASDAQ
 OPK,"Opko Health, Inc. - Common Stock",Stock,NASDAQ
 OPNW,"OpenWorld, Inc. - Common Stock",Stock,NASDAQ
@@ -3356,7 +3353,6 @@ PTF,Invesco Dorsey Wright Technology Momentum ETF,ETF,NASDAQ
 PTGX,"Protagonist Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 PTH,Invesco Dorsey Wright Healthcare Momentum ETF,ETF,NASDAQ
 PTIR,GraniteShares 2x Long PLTR Daily ETF,ETF,NASDAQ
-PTLE,PTL LTD - Class A Ordinary Shares,Stock,NASDAQ
 PTLO,Portillo's Inc. - Class A Common Stock,Stock,NASDAQ
 PTN,"Palatin Technologies, Inc. - Common Stock",Stock,NASDAQ
 PTNQ,Pacer Trendpilot 100 ETF,ETF,NASDAQ
@@ -4517,7 +4513,7 @@ WETO,Wetour Robotics Limited - Ordinary Shares,Stock,NASDAQ
 WEYS,"Weyco Group, Inc. - Common Stock",Stock,NASDAQ
 WFCF,"Where Food Comes From, Inc. - Common Stock",Stock,NASDAQ
 WFF,WF Holding Limited - Ordinary Shares,Stock,NASDAQ
-WFRD,Weatherford International plc - Ordinary shares,Stock,NASDAQ
+WFRD,Weatherford International Corp - Common Stock,Stock,NASDAQ
 WGMI,CoinShares Bitcoin Mining and Digital Power ETF,ETF,NASDAQ
 WGS,GeneDx Holdings Corp. - Class A Common Stock,Stock,NASDAQ
 WHF,"WhiteHorse Finance, Inc. - Closed End Fund",Stock,NASDAQ
@@ -4575,6 +4571,7 @@ WULF,TeraWulf Inc. - Common Stock,Stock,NASDAQ
 WVE,"Wave Life Sciences, Inc. - Common Stock",Stock,NASDAQ
 WVVI,"Willamette Valley Vineyards, Inc. - Common Stock",Stock,NASDAQ
 WW,"WW International, Inc.  - Common Stock",Stock,NASDAQ
+WWB,Windward Bio Group AG - Common shares,Stock,NASDAQ
 WWD,"Woodward, Inc. - Common Stock",Stock,NASDAQ
 WXM,WF International Limited - Ordinary Shares,Stock,NASDAQ
 WYFI,"WhiteFiber, Inc. - Ordinary Shares",Stock,NASDAQ
@@ -4711,6 +4708,7 @@ ZURA,Zura Bio Limited - Class A Ordinary shares,Stock,NASDAQ
 ZVRA,"Zevra Therapeutics, Inc.  - Common Stock",Stock,NASDAQ
 ZYBT,Zhengye Biotechnology Holding Limited - Class A Ordinary Shares,Stock,NASDAQ
 ZYME,Zymeworks Inc. - Common Stock,Stock,NASDAQ
+ZYN,PTL LTD - Class A Ordinary Shares,Stock,NASDAQ
 A,"Agilent Technologies, Inc. Common Stock",Stock,NYSE
 AA,Alcoa Corporation Common Stock ,Stock,NYSE
 AAA,Alternative Access First Priority CLO Bond ETF,ETF,NYSE Arca
@@ -5616,6 +5614,7 @@ BWA,BorgWarner Inc. Common Stock,Stock,NYSE
 BWET,Breakwave Tanker Shipping ETF,ETF,NYSE Arca
 BWG,BrandywineGLOBAL Global Income Opportunities Fund Inc.,Stock,NYSE
 BWIV,Blue Water Acquisition Corp. IV Class A Ordinary Shares,Stock,NYSE
+BWLB,Brandywine Large Cap ETF,ETF,NYSE Arca
 BWLP,BW LPG Limited Common Shares,Stock,NYSE
 BWMX,"Betterware de Mexico, S.A.P.I. de C.V. Ordinary Shares",Stock,NYSE
 BWQG,BWM Quality Growth ETF,ETF,Cboe BZX
@@ -7054,7 +7053,6 @@ FPAG,FPA Global Equity ETF,ETF,Cboe BZX
 FPAS,FPA Short Duration Government ETF,ETF,Cboe BZX
 FPH,"Five Point Holdings, LLC Class A Common Shares",Stock,NYSE
 FPI,Farmland Partners Inc. Common Stock,Stock,NYSE
-FPRO,Fidelity Real Estate Investment ETF,ETF,Cboe BZX
 FPS,"Forgent Power Solutions, Inc. Class A Common Stock",Stock,NYSE
 FPSX,Leverage Shares 2X Long FPS Daily ETF,ETF,Cboe BZX
 FPWR,First Trust EIP Power Solutions ETF,ETF,NYSE Arca
@@ -8592,6 +8590,7 @@ MDCR,Pacer Swan SOS Moderate December ETF,ETF,Cboe BZX
 MDEV,First Trust Indxx Medical Devices ETF,ETF,Cboe BZX
 MDLV,Morgan Dempsey Large Cap Value ETF,ETF,Cboe BZX
 MDPL,Monarch Dividend Plus Index ETF,ETF,Cboe BZX
+MDRN,Modern Mining Technology Corp. Common Shares,Stock,NYSE American
 MDST,Westwood Salient Enhanced Midstream Income ETF,ETF,NYSE
 MDT,Medtronic plc. Ordinary Shares,Stock,NYSE
 MDU,"MDU Resources Group, Inc. Common Stock (Holding Company)",Stock,NYSE
@@ -11012,7 +11011,6 @@ USEW,Cambria US EW ETF,ETF,Cboe BZX
 USFD,US Foods Holding Corp. Common Stock,Stock,NYSE
 USFE,First Eagle US Equity ETF,ETF,NYSE Arca
 USFR,WisdomTree Floating Rate Treasury Fund,ETF,NYSE Arca
-USG,USCF Gold Strategy Plus Income Fund,ETF,NYSE Arca
 USGX,Corgi U.S. Growth 2x Daily ETF,ETF,Cboe BZX
 USHY,iShares Broad USD High Yield Corporate Bond ETF,ETF,Cboe BZX
 USL,United States 12 Month Oil,ETF,NYSE Arca
@@ -11231,6 +11229,7 @@ VUSV,Vanguard Wellington U.S. Value Active ETF,ETF,Cboe BZX
 VV,Vanguard Morningstar Large-Cap ETF,ETF,NYSE Arca
 VVR,Invesco Senior Income Trust Common Stock (DE),Stock,NYSE
 VVV,Valvoline Inc. Common Stock,Stock,NYSE
+VVVV,vVARDIS Holding AG Class A Ordinary Shares,Stock,NYSE
 VVX,"V2X, Inc. Common Stock",Stock,NYSE
 VWO,Vanguard FTSE Emerging Markets ETF,ETF,NYSE Arca
 VXF,Vanguard Extended Market ETF,ETF,NYSE Arca
