@@ -641,6 +641,7 @@ BRLS,Borealis Foods Inc. - Class A Common Shares,Stock,NASDAQ
 BRLT,"Brilliant Earth Group, Inc. - Class A Common Stock",Stock,NASDAQ
 BRNX,BrenX Ltd. - Ordinary Shares,Stock,NASDAQ
 BRNY,Burney U.S. Factor Rotation ETF,ETF,NASDAQ
+BRRK,Bluerock Acquisition Corp. II - Class A Ordinary Shares,Stock,NASDAQ
 BRRR,Coinshares Bitcoin ETF,ETF,NASDAQ
 BRTM,B&R Technology Merger Corp. - Class A Ordinary Shares,Stock,NASDAQ
 BRTR,iShares Total Return Active ETF,ETF,NASDAQ
@@ -1580,7 +1581,7 @@ FNWD,Finward Bancorp - common stock,Stock,NASDAQ
 FNX,First Trust Mid Cap Core AlphaDEX Fund,ETF,NASDAQ
 FNY,First Trust Mid Cap Growth AlphaDEX Fund,ETF,NASDAQ
 FOCL,"EDAP TMS S.A. - American Depositary Shares, each representing One Ordinary Share",Stock,NASDAQ
-FOFO,"Hang Feng Technology Innovation Co., Ltd. - Ordinary Shares",Stock,NASDAQ
+FOFO,"Hang Feng Technology Innovation Co., Ltd. - Class A Ordinary Shares",Stock,NASDAQ
 FORM,"FormFactor, Inc. - Common Stock",Stock,NASDAQ
 FORR,"Forrester Research, Inc. - Common Stock",Stock,NASDAQ
 FORTY,Formula Systems (1985) Ltd. - American Depositary Shares,Stock,NASDAQ
@@ -1884,6 +1885,7 @@ HCIC,Hennessy Capital Investment Corp. VIII - Class A Ordinary Shares,Stock,NASD
 HCKT,"The Hackett Group, Inc. - Common Stock",Stock,NASDAQ
 HCM,HUTCHMED (China) Limited - American Depositary Shares,Stock,NASDAQ
 HCMA,HCM III Acquisition Corp. - Class A Ordinary Share,Stock,NASDAQ
+HCOP,Hartford Hybrid and Credit Opportunities ETF,ETF,NASDAQ
 HCOW,Amplify COWS Covered Call ETF,ETF,NASDAQ
 HCSG,"Healthcare Services Group, Inc. - Common Stock",Stock,NASDAQ
 HCTI,"Healthcare Triangle, Inc. - Common Stock",Stock,NASDAQ
@@ -2958,7 +2960,6 @@ NVX,NOVONIX Limited - American Depository Shares,Stock,NASDAQ
 NVYY,GraniteShares YieldBOOST NVDA ETF,ETF,NASDAQ
 NWBI,"Northwest Bancshares, Inc. - Common Stock",Stock,NASDAQ
 NWCL,newcleo plc - Ordinary Shares,Stock,NASDAQ
-NWE,"NorthWestern Energy Group, Inc.  - Common Stock",Stock,NASDAQ
 NWFL,Norwood Financial Corp. - Common Stock,Stock,NASDAQ
 NWGL,CL Workshop Group Limited - American Depositary Shares,Stock,NASDAQ
 NWL,Newell Brands Inc. - Common Stock,Stock,NASDAQ
@@ -3232,7 +3233,6 @@ PLAY,"Dave & Buster's Entertainment, Inc. - Common Stock",Stock,NASDAQ
 PLBC,Plumas Bancorp - Common Stock,Stock,NASDAQ
 PLBL,Polibeli Group Ltd - Class A Ordinary Shares,Stock,NASDAQ
 PLBY,"Playboy, Inc. - Common Stock",Stock,NASDAQ
-PLCE,"Children's Place, Inc. (The) - Common Stock",Stock,NASDAQ
 PLCI,Pelican Acquisition II Corporation - Ordinary Shares,Stock,NASDAQ
 PLMK,Plum Acquisition Corp. IV - Class A Ordinary Shares,Stock,NASDAQ
 PLMR,"Palomar Holdings, Inc. - Common stock",Stock,NASDAQ
@@ -5416,7 +5416,6 @@ BKEM,BNY Mellon Emerging Markets Equity ETF,ETF,NYSE Arca
 BKF,iShares MSCI BIC ETF,ETF,NYSE Arca
 BKFI,BNY Mellon Active Core Bond ETF,ETF,NYSE Arca
 BKGI,BNY Mellon Global Infrastructure Income ETF,ETF,Cboe BZX
-BKH,Black Hills Corporation Common Stock,Stock,NYSE
 BKHY,BNY Mellon High Yield ETF,ETF,NYSE Arca
 BKIE,BNY Mellon International Equity ETF,ETF,NYSE Arca
 BKKT,"Bakkt, Inc. Class A Common Stock",Stock,NYSE
@@ -7662,6 +7661,7 @@ HYT,"Blackrock Corporate High Yield Fund, Inc. Common Stock",Stock,NYSE
 HYTI,FT Vest High Yield & Target Income ETF,ETF,NYSE Arca
 HYTR,Counterpoint High Yield Trend ETF,ETF,NYSE
 HYUP,Xtrackers High Beta High Yield Bond ETF,ETF,NYSE Arca
+HZN,Bright Horizon Energy Corporation Common Stock,Stock,NYSE
 HZO,"MarineMax, Inc.  (FL) Common Stock",Stock,NYSE
 IACL,GraniteShares US 100 Autocallable Income ETF,ETF,Cboe BZX
 IAF,"abrdn Australia Equity Fund, Inc. Common Stock",Stock,NYSE American
@@ -7959,7 +7959,6 @@ ITDH,iShares LifePath Target Date 2060 ETF,ETF,NYSE Arca
 ITDI,iShares LifePath Target Date 2065 ETF,ETF,NYSE Arca
 ITDJ,iShares LifePath Target Date 2070 ETF,ETF,NYSE Arca
 ITEQ,Amplify BlueStar Israel Technology ETF,ETF,NYSE Arca
-ITGR,Integer Holdings Corporation Common Stock,Stock,NYSE
 ITM,VanEck Intermediate Muni ETF,ETF,Cboe BZX
 ITOT,iShares Core S&P Total U.S. Stock Market ETF,ETF,NYSE Arca
 ITP,"IT Tech Packaging, Inc. Common Stock",Stock,NYSE American
@@ -8308,7 +8307,6 @@ KSTR,KraneShares China Technology & Semiconductor STAR 50 Index ETF,ETF,NYSE Arc
 KT,KT Corporation Common Stock,Stock,NYSE
 KTB,"Kontoor Brands, Inc. Common Stock ",Stock,NYSE
 KTEC,KraneShares Hang Seng TECH Index ETF,ETF,NYSE Arca
-KTF,DWS Municipal Income Trust,Stock,NYSE
 KTN,Structured Products Corp 8.205% CorTS 8.205% Corporate Backed Trust Securities (CorTS),Stock,NYSE
 KTUP,T-REX 2X Long KTOS Daily Target ETF,ETF,Cboe BZX
 KULR,"KULR Technology Group, Inc. Common Stock",Stock,NYSE American
@@ -8567,7 +8565,7 @@ MBND,State Street Nuveen Municipal Bond ETF,ETF,Cboe BZX
 MBOX,Freedom Day Dividend ETF,ETF,NYSE Arca
 MBSD,Northern Trust Disciplined Duration MBS ETF,ETF,NYSE Arca
 MBSF,Regan Floating Rate MBS ETF,ETF,NYSE Arca
-MBSX,Regan Fixed Rate MBS ETF,ETF,NYSE Arca
+MBSX,Regan Fixed Rate MBS ETF,ETF,Other
 MC,Moelis & Company Class A Common Stock,Stock,NYSE
 MCB,Metropolitan Bank Holding Corp. Common Stock,Stock,NYSE
 MCD,McDonald's Corporation Common Stock,Stock,NYSE
@@ -9510,6 +9508,7 @@ POCT,Innovator U.S. Equity Power Buffer ETF - October,ETF,Cboe BZX
 POEL,Defiance Daily Target 2X Long POET ETF,ETF,Cboe BZX
 POMG,PRIMECAP Odyssey Discovery ETF,ETF,NYSE Arca
 POR,Portland General Electric Co Common Stock,Stock,NYSE
+PORT,Southport Acquisition Corp. II Class A Ordinary Shares,Stock,NYSE
 POST,"Post Holdings, Inc. Common Stock",Stock,NYSE
 POW,VistaShares Electrification Supercycle ETF,ETF,NYSE Arca
 POWA,Invesco Bloomberg Pricing Power ETF,ETF,NYSE Arca
