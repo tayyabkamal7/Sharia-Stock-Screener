@@ -18,6 +18,7 @@ AAPL,Apple Inc. - Common Stock,Stock,NASDAQ
 AAPU,Direxion Daily AAPL Bull 2X ETF,ETF,NASDAQ
 AARD,"Aardvark Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 AAUB,Alpha Architect US Equity 4 ETF,ETF,NASDAQ
+AAUD,Alpha Architect US Equity 5 ETF,ETF,NASDAQ
 AAUS,Alpha Architect US Equity ETF,ETF,NASDAQ
 AAVM,Alpha Architect Global Factor Equity ETF,ETF,NASDAQ
 AAXJ,iShares MSCI All Country Asia ex Japan ETF,ETF,NASDAQ
@@ -1120,6 +1121,7 @@ CZFS,"Citizens Financial Services, Inc. - Common Stock",Stock,NASDAQ
 CZNC,Citizens & Northern Corp - Common Stock,Stock,NASDAQ
 CZR,"Caesars Entertainment, Inc. - Common Stock",Stock,NASDAQ
 CZWI,"Citizens Community Bancorp, Inc. - Common Stock",Stock,NASDAQ
+CZZL,Cizzle Brands Corporation - Common Stock,Stock,NASDAQ
 DAAQ,Digital Asset Acquisition Corp. - Class A Ordinary shares,Stock,NASDAQ
 DADS,Digital Asset Debt Strategy ETF,ETF,NASDAQ
 DAIC,"CID HoldCo, Inc. - Common Stock",Stock,NASDAQ
@@ -2215,6 +2217,7 @@ IRWD,"Ironwood Pharmaceuticals, Inc. - Class A Common Stock",Stock,NASDAQ
 ISBA,Isabella Bank Corporation - Common stock,Stock,NASDAQ
 ISHG,iShares 1-3 Year International Treasury Bond ETF,ETF,NASDAQ
 ISHP,First Trust S-Network E-Commerce ETF,ETF,NASDAQ
+ISMH,xETFs International Semiconductor ETF,ETF,NASDAQ
 ISNR,Snow Rothschild Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 ISPC,iSpecimen Inc. - Common Stock,Stock,NASDAQ
 ISPR,Ispire Technology Inc. - Common Stock,Stock,NASDAQ
@@ -2616,7 +2619,6 @@ MEMA,Man Active Emerging Markets Alternative ETF,ETF,NASDAQ
 MEMS,Matthews Emerging Markets Discovery Active ETF,ETF,NASDAQ
 MENS,Jyong Biotech Ltd. - Ordinary shares,Stock,NASDAQ
 MEOH,Methanex Corporation - Common Stock,Stock,NASDAQ
-MERC,Mercer International Inc. - Common Stock,Stock,NASDAQ
 MESH,Meshflow Acquisition Corp. - Class A Ordinary Shares,Stock,NASDAQ
 MESO,Mesoblast Limited - American Depositary Shares,Stock,NASDAQ
 META,"Meta Platforms, Inc. - Class A Common Stock",Stock,NASDAQ
@@ -8143,7 +8145,7 @@ JOBC,Corgi JOBY 2x Daily ETF,ETF,Cboe BZX
 JOBX,Tradr 2X Long JOBY Daily ETF,ETF,Cboe BZX
 JOBY,"Joby Aviation, Inc. Common Stock",Stock,NYSE
 JOE,St. Joe Company (The) Common Stock,Stock,NYSE
-JOET,Virtus Terranova U.S. Quality Momentum ETF,ETF,NYSE Arca
+JOET,Virtus NYSE Terranova U.S. Quality Momentum ETF,ETF,NYSE Arca
 JOF,Japan Smaller Capitalization Fund Inc Common Stock,Stock,NYSE
 JOJO,ATAC Credit Rotation ETF,ETF,NYSE Arca
 JOUL,Corgi High Voltage Grid Equipment ETF,ETF,Cboe BZX
@@ -9243,7 +9245,6 @@ ONTX,Corgi ONTO 2x Daily ETF,ETF,Cboe BZX
 ONX,Tradr 2X Long ON Daily ETF,ETF,Cboe BZX
 OOMA,"Ooma, Inc. Common Stock",Stock,NYSE
 OOSP,Obra Opportunistic Structured Products ETF,ETF,NYSE Arca
-OPAY,"OPay Limited American Depositary Shares, each representing ten Ordinary Shares",Stock,NYSE
 OPER,ETF ClearShares Ultra-Short Maturity ETF,ETF,NYSE Arca
 OPEX,Tradr 2X Long OPEN Daily ETF,ETF,Cboe BZX
 OPFI,OppFi Inc. Class A Common Stock,Stock,NYSE
@@ -11052,7 +11053,6 @@ UTG,Reaves Utility Income Fund Common Shares of Beneficial Interest,Stock,NYSE A
 UTI,Universal Technical Institute Inc Common Stock,Stock,NYSE
 UTL,UNITIL Corporation Common Stock,Stock,NYSE
 UTSL,Direxion Daily Utilities Bull 3X ETF,ETF,NYSE Arca
-UTZ,Utz Brands Inc Class A Common Stock ,Stock,NYSE
 UUP,Invesco DB USD Index Bullish Fund ETF,ETF,NYSE Arca
 UUPP,Principal CLO ETF,ETF,Cboe BZX
 UUUC,Corgi UUUU 2x Daily ETF,ETF,Cboe BZX
@@ -11605,6 +11605,7 @@ YGLD,Simplify Gold Strategy ETF,ETF,NYSE Arca
 YINN,Direxion Daily FTSE China Bull 3X ETF,ETF,NYSE Arca
 YJUN,FT Vest International Equity Moderate Buffer ETF - June,ETF,Cboe BZX
 YLD,Principal Active High Yield ETF,ETF,NYSE Arca
+YLDS,Harbor Arena Structured Income ETF,ETF,NYSE Arca
 YLDW,Westwood Enhanced Income Opportunity ETF,ETF,NYSE Arca
 YLDY,Horizon High Income ETF,ETF,Cboe BZX
 YMAG,YieldMax Magnificent 7 Fund of Option Income ETFs,ETF,NYSE Arca
