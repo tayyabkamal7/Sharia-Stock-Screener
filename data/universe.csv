@@ -1012,7 +1012,6 @@ CPAG,F/m Compoundr U.S. Aggregate Bond ETF,ETF,NASDAQ
 CPB,The Campbell's Company - Common Stock,Stock,NASDAQ
 CPBI,"Central Plains Bancshares, Inc. - Common Stock",Stock,NASDAQ
 CPHC,Canterbury Park Holding Corporation - Common Stock,Stock,NASDAQ
-CPHY,F/m Compoundr High Yield Bond ETF,ETF,NASDAQ
 CPIX,Cumberland Pharmaceuticals Inc. - Common Stock,Stock,NASDAQ
 CPLS,AB Core Plus Bond ETF,ETF,NASDAQ
 CPOP,"Pop Culture Group Co., Ltd - Class A Ordinary Shares",Stock,NASDAQ
@@ -1281,7 +1280,6 @@ EBAY,eBay Inc. - Common Stock,Stock,NASDAQ
 EBC,"Eastern Bankshares, Inc. - Common Stock",Stock,NASDAQ
 EBI,Longview Advantage ETF,ETF,NASDAQ
 EBIZ,Global X E-commerce ETF,ETF,NASDAQ
-EBMT,"Eagle Bancorp Montana, Inc. - Common Stock",Stock,NASDAQ
 EBON,Ebang International Holdings Inc. - Class A Ordinary Shares,Stock,NASDAQ
 ECBK,"ECB Bancorp, Inc. - Common Stock",Stock,NASDAQ
 ECHO,EchoStar Corporation - Common stock,Stock,NASDAQ
@@ -2194,7 +2192,6 @@ IOVA,"Iovance Biotherapeutics, Inc. - Common Stock",Stock,NASDAQ
 IOYY,GraniteShares YieldBOOST IONQ ETF,ETF,NASDAQ
 IPAR,"Interparfums, Inc. - Common Stock",Stock,NASDAQ
 IPDN,"Professional Diversity Network, Inc. - Common Stock",Stock,NASDAQ
-IPFX,Inflection Point Acquisition Corp. VI - Class A Ordinary Shares,Stock,NASDAQ
 IPGP,IPG Photonics Corporation - Common Stock,Stock,NASDAQ
 IPHA,Innate Pharma S.A. - American Depositary Shares,Stock,NASDAQ
 IPHX,Inflection Point Acquisition Corp. VIII - Class A Ordinary Shares,Stock,NASDAQ
@@ -3011,6 +3008,7 @@ OBA,Oxley Bridge Acquisition Limited - Class A Ordinary Shares,Stock,NASDAQ
 OBAI,"Our Bond, Inc. - Common Stock",Stock,NASDAQ
 OBIL,US Treasury 12 Month Bill ETF,ETF,NASDAQ
 OBIO,"Orchestra BioMed Holdings, Inc. - Ordinary Shares",Stock,NASDAQ
+OBMT,"Opportunity Bancorp, Inc. - Common Stock",Stock,NASDAQ
 OBT,"Orange County Bancorp, Inc. - Common Stock",Stock,NASDAQ
 OBTC,Osprey Bitcoin Trust,ETF,NASDAQ
 OBX,"Obsidian Therapeutics, Inc. - Common Stock",Stock,NASDAQ
@@ -3519,7 +3517,6 @@ RBIL,F/m Ultrashort Treasury Inflation-Protected Security (TIPS) ETF,ETF,NASDAQ
 RBKB,"Rhinebeck Bancorp, Inc. - Common Stock",Stock,NASDAQ
 RBNE,Robin Energy Ltd. - Common Stock,Stock,NASDAQ
 RCAT,"Red Cat Holdings, Inc. - Common Stock",Stock,NASDAQ
-RCAX,Defiance Daily Target 2x Long RCAT ETF,ETF,NASDAQ
 RCBC,River City Bank - Common stock,Stock,NASDAQ
 RCEL,"Avita Medical, Inc. - Common Stock",Stock,NASDAQ
 RCGE,RockCreek Global Equality ETF,ETF,NASDAQ
@@ -5944,7 +5941,6 @@ COPL,Copley Acquisition Corp Ordinary Shares,Stock,NYSE
 COPR,Idaho Copper Corporation Common Stock,Stock,NYSE American
 COPX,Global X Copper Miners ETF,ETF,NYSE Arca
 COPY,"Tweedy, Browne Insider + Value ETF",ETF,NYSE Arca
-COPZ,Defiance Daily Target 2X Long Copper Miners ETF,ETF,NYSE Arca
 COR,"Cencora, Inc. Common Stock",Stock,NYSE
 CORB,AB Core Bond ETF,ETF,NYSE Arca
 CORD,T-REX 2X Inverse CRWV Daily Target ETF,ETF,Cboe BZX
@@ -7999,6 +7995,7 @@ ITW,Illinois Tool Works Inc. Common Stock,Stock,NYSE
 ITWO,ProShares Russell 2000 High Income ETF,ETF,Cboe BZX
 IVAI,Ives Ultra AI Opportunities Inc. Common Stock,Stock,NYSE
 IVE,iShares S&P 500 Value ETF,ETF,NYSE Arca
+IVEA,Dan IVES Wedbush AI Autocallable Income ETF,ETF,NYSE Arca
 IVEP,Dan IVES Wedbush AI Power & Infrastructure ETF,ETF,NYSE Arca
 IVES,Dan IVES Wedbush AI Revolution ETF,ETF,NYSE Arca
 IVLU,iShares MSCI Intl Value Factor ETF,ETF,NYSE Arca
@@ -8249,7 +8246,6 @@ KDEC,Innovator U.S. Small Cap Power Buffer ETF - December,ETF,Cboe BZX
 KDEF,PLUS Korea Defense Industry Index ETF,ETF,NYSE Arca
 KDRN,Kingsbarn Tactical Bond ETF,ETF,NYSE Arca
 KDVD,Keeley Dividend ETF,ETF,NYSE Arca
-KEEX,Defiance Daily Target 2x Long KEEL ETF,ETF,Cboe BZX
 KEMQ,KraneShares Public-Private Emerging Markets Internet and Technology ETF,ETF,NYSE Arca
 KEMX,KraneShares MSCI Emerging Markets ex China Index ETF,ETF,NYSE Arca
 KEN,Kenon Holdings Ltd. Ordinary Shares,Stock,NYSE
@@ -9000,7 +8996,7 @@ NHYB,Nuveen High Yield Corporate Bond ETF,ETF,NYSE Arca
 NHYM,Nuveen High Yield Municipal Income ETF,ETF,NYSE Arca
 NI,NiSource Inc Common Stock,Stock,NYSE
 NIC,Nicolet Bankshares Inc. Common Stock,Stock,NYSE
-NICO,Hexis Active Nicotine Engagement ETF,ETF,NYSE Arca
+NICO,Hexis Active Nicotine Engagement ETF,ETF,Other
 NIE,Virtus Equity & Convertible Income Fund Common Shares of Beneficial Interest,Stock,NYSE
 NIHI,NEOS MSCI EAFE High Income ETF,ETF,Cboe BZX
 NIM,Nuveen Select Maturities Municipal Fund Common Stock,Stock,NYSE
@@ -9737,6 +9733,7 @@ QRED,QuasarEdge Acquisition Corporation Ordinary Shares,Stock,NYSE
 QSE,Corgi Growth & Technology 10% Structured Buffer ETF - September Series,ETF,Cboe BZX
 QSIG,WisdomTree U.S. Short Term Corporate Bond Fund,ETF,Cboe BZX
 QSOL,Invesco Galaxy Solana ETF,ETF,Cboe BZX
+QSPC,"Quantum Space, Inc. Class A-1 Common Stock",Stock,NYSE
 QSPT,FT Vest Nasdaq-100 Buffer ETF - September,ETF,Cboe BZX
 QSR,Restaurant Brands International Inc. Common Shares,Stock,NYSE
 QSU,Defiance Daily Target 2X Long QS ETF,ETF,NYSE Arca
@@ -11602,6 +11599,7 @@ XZO,"Exzeo Group, Inc. Common Stock",Stock,NYSE
 YALA,"Yalla Group Limited American Depositary Shares, each representing one Class A Ordinary Share",Stock,NYSE
 YALL,Truth Social God Bless America ETF,ETF,NYSE Arca
 YANG,Direxion Daily FTSE China Bear 3X ETF,ETF,NYSE Arca
+YANT,YieldMax ANT Option Income Strategy ETF,ETF,NYSE Arca
 YASX,Yorkville America Space Index ETF,ETF,NYSE Arca
 YBIT,YieldMax Bitcoin Option Income Strategy ETF,ETF,NYSE Arca
 YBTC,Roundhill Bitcoin Covered Call Strategy ETF,ETF,Cboe BZX
