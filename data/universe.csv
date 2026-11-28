@@ -1828,7 +1828,7 @@ GRAG,Leverage Shares 2X Long GRAB Daily ETF,ETF,NASDAQ
 GRAL,"GRAIL, Inc. - Common Stock",Stock,NASDAQ
 GRAN,Grande Group Limited - Class A Ordinary Shares,Stock,NASDAQ
 GRCE,"Grace Therapeutics, Inc. - Common Stock",Stock,NASDAQ
-GRDX,GridAI Technologies Corp.  - Common Stock,Stock,NASDAQ
+GRDX,GridAI Power Corp. - Common Stock,Stock,NASDAQ
 GRFS,"Grifols, S.A. - American Depositary Shares",Stock,NASDAQ
 GRI,"GRI Bio, Inc. - Common Stock",Stock,NASDAQ
 GRID,First Trust NASDAQ Clean Edge Smart Grid Infrastructure Index Fund,ETF,NASDAQ
@@ -1908,7 +1908,6 @@ HCMA,HCM III Acquisition Corp. - Class A Ordinary Share,Stock,NASDAQ
 HCOP,Hartford Hybrid and Credit Opportunities ETF,ETF,NASDAQ
 HCOW,Amplify COWS Covered Call ETF,ETF,NASDAQ
 HCSG,"Healthcare Services Group, Inc. - Common Stock",Stock,NASDAQ
-HCTI,"Healthcare Triangle, Inc. - Common Stock",Stock,NASDAQ
 HCWB,HCW Biologics Inc. - Common Stock,Stock,NASDAQ
 HDL,SUPER HI INTERNATIONAL HOLDING LTD. - American Depositary Shares,Stock,NASDAQ
 HDRN,"Hadron Energy, Inc. - Common Stock",Stock,NASDAQ
@@ -3760,7 +3759,7 @@ SGA,"Saga Communications, Inc. - Class A Common Stock",Stock,NASDAQ
 SGC,"Superior Group of Companies, Inc. - Common Stock",Stock,NASDAQ
 SGHT,"Sight Sciences, Inc. - Common Stock",Stock,NASDAQ
 SGLD,Scorpio Gold Corporation - Common Stock,Stock,NASDAQ
-SGLY,Singularity Future Technology Ltd. - Common Stock,Stock,NASDAQ
+SGLY,Compower Ltd. - Common Stock,Stock,NASDAQ
 SGML,Sigma Lithium Corporation - common shares,Stock,NASDAQ
 SGMT,Sagimet Biosciences Inc. - Series A Common Stock,Stock,NASDAQ
 SGP,"SpyGlass Pharma, Inc. - Common Stock",Stock,NASDAQ
@@ -4489,7 +4488,6 @@ VTWG,Vanguard Russell 2000 Growth ETF,ETF,NASDAQ
 VTWO,Vanguard Russell 2000 ETF,ETF,NASDAQ
 VTWV,Vanguard Russell 2000 Value ETF,ETF,NASDAQ
 VUZI,Vuzix Corporation  - Common Stock,Stock,NASDAQ
-VVOS,"Vivos Therapeutics, Inc. - Common Stock",Stock,NASDAQ
 VWAV,"VisionWave Holdings, Inc. - Common Stock",Stock,NASDAQ
 VWOB,Vanguard Emerging Markets Government Bond ETF,ETF,NASDAQ
 VXUS,Vanguard Total International Stock ETF,ETF,NASDAQ
@@ -4849,6 +4847,7 @@ AFIX,Allspring Broad Market Core Bond ETF,ETF,NYSE Arca
 AFK,VanEck Africa Index ETF,ETF,NYSE Arca
 AFL,AFLAC Incorporated Common Stock,Stock,NYSE
 AFLG,First Trust Active Factor Large Cap ETF,ETF,NYSE Arca
+AFLR,Aligned Pathway Flourishing ETF,ETF,NYSE Arca
 AFMC,First Trust Active Factor Mid Cap ETF,ETF,NYSE Arca
 AFSM,First Trust Active Factor Small Cap ETF,ETF,NYSE Arca
 AG,First Majestic Silver Corp. Ordinary Shares (Canada),Stock,NYSE
@@ -5518,7 +5517,6 @@ BOND,PIMCO Active Bond Exchange-Traded Fund Exchange-Traded Fund,ETF,NYSE
 BOOT,"Boot Barn Holdings, Inc. Common Stock",Stock,NYSE
 BORR,Borr Drilling Limited Common Shares,Stock,NYSE
 BOUT,CapForce IBD Breakout Opportunities ETF,ETF,NYSE Arca
-BOW,Bowhead Specialty Holdings Inc. Common Stock,Stock,NYSE
 BOX,"Box, Inc. Class A Common Stock",Stock,NYSE
 BOXA,Alpha Architect Aggregate Bond ETF,ETF,Cboe BZX
 BOXX,Alpha Architect 1-3 Month Box ETF,ETF,Cboe BZX
@@ -6103,7 +6101,7 @@ CWH,"Camping World Holdings, Inc. Class A Common Stock",Stock,NYSE
 CWI,State Street SPDR MSCI ACWI ex-US ETF,ETF,NYSE Arca
 CWK,Cushman & Wakefield Ltd. Common Shares,Stock,NYSE
 CWS,AdvisorShares Focused Equity ETF,ETF,NYSE Arca
-CWT,California Water Service Group Common Stock,Stock,NYSE
+CWT,Watermark Utilities Common Stock,Stock,NYSE
 CWVX,Tradr 2X Long CRWV Daily ETF,ETF,Cboe BZX
 CX,"Cemex, S.A.B. de C.V. Sponsored ADR",Stock,NYSE
 CXM,"Sprinklr, Inc. Class A Common Stock",Stock,NYSE
@@ -6427,7 +6425,6 @@ DUSB,Dimensional Ultrashort Fixed Income ETF,ETF,NYSE Arca
 DUSL,Direxion Daily Industrials Bull 3X ETF,ETF,NYSE Arca
 DUST,Direxion Daily Gold Miners Index Bear 2X ETF,ETF,NYSE Arca
 DUTY,U.S. Defense ETF,ETF,NYSE Arca
-DV,"DoubleVerify Holdings, Inc. Common Stock",Stock,NYSE
 DVA,DaVita Inc. Common Stock,Stock,NYSE
 DVDN,Kingsbarn Dividend Opportunity ETF,ETF,NYSE Arca
 DVN,Devon Energy Corporation Common Stock,Stock,NYSE
@@ -8945,7 +8942,7 @@ NBSM,Neuberger Small-Mid Cap ETF,ETF,NYSE Arca
 NBTR,Neuberger Total Return Bond ETF,ETF,NYSE Arca
 NBXG,Neuberger Next Generation Connectivity Fund Inc. Common Stock,Stock,NYSE
 NC,"NACCO Industries, Inc. Common Stock",Stock,NYSE
-NCA,Nuveen California Municipal Value Fund,Stock,NYSE
+NCA,Nuveen California Municipal Income Fund Common Stock,Stock,NYSE
 NCDL,Nuveen Churchill Direct Lending Corp. Common Stock,Stock,NYSE
 NCLH,Norwegian Cruise Line Holdings Ltd. Ordinary Shares,Stock,NYSE
 NCLO,Nuveen AA-BBB CLO ETF,ETF,NYSE Arca
@@ -9036,7 +9033,7 @@ NNI,"Nelnet, Inc. Common Stock",Stock,NYSE
 NNN,"NNN REIT, Inc. Common Stock",Stock,NYSE
 NNOV,Innovator Growth-100 Power Buffer ETF - November,ETF,Cboe BZX
 NNVC,"NanoViricides, Inc. Common Stock",Stock,NYSE American
-NNY,Nuveen New York Municipal Value Fund Common Stock,Stock,NYSE
+NNY,Nuveen New York Municipal Income Fund Common Stock,Stock,NYSE
 NOA,North American Construction Group Ltd. Common Shares (no par),Stock,NYSE
 NOAH,Noah Holdings Limited American Depositary Shares,Stock,NYSE
 NOBL,ProShares S&P 500 Dividend Aristocrats ETF,ETF,Cboe BZX
@@ -10354,7 +10351,6 @@ SONY,Sony Group Corporation American Depositary Shares ,Stock,NYSE
 SOR,"Source Capital, Inc. Cmn Shs of BI",Stock,NYSE
 SOS,SOS Limited Class A Ordinary Shares,Stock,NYSE
 SOUL,Soulpower Acquisition Corporation Class A Ordinary Shares,Stock,NYSE
-SOVF,Sovereign's Capital Flourish Fund,ETF,NYSE Arca
 SOXL,Direxion Daily Semiconductor Bull 3X ETF,ETF,NYSE Arca
 SOXS,Direxion Daily Semiconductor Bear 3X ETF,ETF,NYSE Arca
 SOXY,YieldMax Target 12 Semiconductor Option Income ETF,ETF,NYSE Arca
